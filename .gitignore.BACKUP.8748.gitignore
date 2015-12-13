@@ -1,0 +1,19 @@
+.htaccess
+/config.php
+admin/config.php
+<<<<<<< HEAD
+store/config.php
+=======
+
+>>>>>>> 9369cf3dba6b688d77f7754e30dd74502de94c5d
+!index.html
+
+download/
+image/data/
+image/cache/
+system/cache/
+<<<<<<< HEAD
+system/logs/
+=======
+system/logs/
+>>>>>>> 9369cf3dba6b688d77f7754e30dd74502de94c5d

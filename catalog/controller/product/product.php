@@ -197,7 +197,7 @@ class ControllerProductProduct extends Controller {
 
 		$product_info = $this->model_catalog_product->getProduct($product_id);
 		$seller_name = $this->model_catalog_seller->getSellerName($product_id);
-
+		//echo "<pre>";print_r($product_info);exit;
 		if ($product_info) {
 			$url = '';
 
@@ -263,6 +263,8 @@ class ControllerProductProduct extends Controller {
 			$this->document->setDescription($product_info['meta_description']);
 			$this->document->setKeywords($product_info['meta_keyword']);
 			$this->document->addLink($this->url->link('product/product', 'product_id=' . $this->request->get['product_id']), 'canonical');
+			$this->document->addScript('catalog/view/javascript/fancybox/jquery.fancybox.js');
+			$this->document->addStyle('catalog/view/javascript/fancybox/jquery.fancybox.css');
 			$this->document->addScript('catalog/view/javascript/jquery/magnific/jquery.magnific-popup.min.js');
 			$this->document->addStyle('catalog/view/javascript/jquery/magnific/magnific-popup.css');
 			$this->document->addScript('catalog/view/javascript/jquery/datetimepicker/moment.js');
@@ -430,6 +432,12 @@ class ControllerProductProduct extends Controller {
 				$data['minimum'] = $product_info['minimum'];
 			} else {
 				$data['minimum'] = 1;
+			}
+
+			if ($product_info['stitch']) {
+				$data['stitch'] = $product_info['stitch'];
+			} else {
+				$data['stitch'] = 'no';
 			}
 
 			$data['review_status'] = $this->config->get('config_review_status');

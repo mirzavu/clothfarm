@@ -94,6 +94,7 @@ $_['entry_html_product_bottom']    = 'Bottom custom block';
 $_['entry_html_product_right']    = 'Right custom block';
 
 $_['entry_slick_block']    = 'Promo content for Slick listing';
+$_['entry_stitch']    = 'Stitch me';
 
 // Help
 $_['help_keyword']           = 'Do not use spaces, instead replace spaces with - and make sure the keyword is globally unique.';

@@ -46,6 +46,7 @@ class ModelCatalogProduct extends Model {
 				'reviews'          => $query->row['reviews'] ? $query->row['reviews'] : 0,
 				'seller_reviews'          => $query->row['seller_reviews'] ? $query->row['seller_reviews'] : 0,
 				'minimum'          => $query->row['minimum'],
+				'stitch'           => $query->row['stitch'],
 				'sort_order'       => $query->row['sort_order'],
 				'status'           => $query->row['status'],
 				'date_added'       => $query->row['date_added'],

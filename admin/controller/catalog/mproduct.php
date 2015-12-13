@@ -646,7 +646,7 @@ class ControllerCatalogMproduct extends Controller {
 		$data['entry_reward'] = $this->language->get('entry_reward');
 		$data['entry_layout'] = $this->language->get('entry_layout');
 		$data['entry_recurring'] = $this->language->get('entry_recurring');
-
+		$data['entry_stitch'] = $this->language->get('entry_stitch');
 		$data['help_keyword'] = $this->language->get('help_keyword');
 		$data['help_sku'] = $this->language->get('help_sku');
 		$data['help_upc'] = $this->language->get('help_upc');
@@ -1032,6 +1032,14 @@ class ControllerCatalogMproduct extends Controller {
 			$data['minimum'] = $product_info['minimum'];
 		} else {
 			$data['minimum'] = 1;
+		}
+
+		if (isset($this->request->post['stitch'])) {
+			$data['stitch'] = $this->request->post['stitch'];
+		} elseif (!empty($product_info)) {
+			$data['stitch'] = $product_info['stitch'];
+		} else {
+			$data['stitch'] = 1;
 		}
 
 		if (isset($this->request->post['subtract'])) {

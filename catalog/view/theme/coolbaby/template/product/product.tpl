@@ -470,7 +470,38 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                       </div>
                   </div>
                   <div class="clearfix visible-xs"></div>
+                  <?php 
+                  if($stitch == "yes")
+                  {
+                  ?>
+                  <a class="mam btn btn-cool btn-lg" href="#stitch-pop"><i class="icon flaticon-shopping66">  </i>Add to Cart</a>
+                  <a id="measure-trigger" class="mam2" href="#measure">bla</a>
+                  <div style="display: none">
+                            <div id="stitch-pop">
+                              <div id="stitch"><button class="btn btn-cool btn-lg" id="button-stitch"><i class="icon icon flaticon-star129"></i>Stitch Farm</button></div>
+                              <div id="nostitch"><button class="btn btn-cool btn-lg" id="button-no-stitch"><i class="icon icon"></i>Continue to Checkout</button></div>
+                            </div>
+                  </div>
+                  <div style="display: none">
+                            <div id="measure">
+                              <img height="450px" width="500px" src="http://localhost/clothfarm/images/images/model.jpg">
+                              <input type="text" size="3" maxlength="3" class="form-control" value="Button 1" style="position:absolute;right:50%;top:50%;" />
+                              <div id="stitch"><button class="btn btn-cool btn-lg" id="button-stitch"><i class="icon icon flaticon-star129"></i>Stitch Far</button></div>
+                              <div id="nostitch"><button class="btn btn-cool btn-lg" id="button-no-stitch"><i class="icon icon"></i>Continue to Checkout</button></div>
+                            </div>
+                  </div>
+                  <button style="display: none" class="btn btn-cool btn-lg" type="submit" id="button-cart" data-loading-text="<?php echo $text_loading; ?>"><i class="icon flaticon-shopping66"></i><?php echo $button_cart; ?></button>
+
+                  <?php 
+                  }
+                  else
+                  {
+                  ?>
                   <button class="btn btn-cool btn-lg" type="submit" id="button-cart" data-loading-text="<?php echo $text_loading; ?>"><i class="icon flaticon-shopping66"></i><?php echo $button_cart; ?></button>
+                  <?php
+                  }
+                  ?>
+
                   <div class="product-controls">
                       <a onclick="wishlist_theme.add('<?php echo $product_id; ?>');" data-toggle="tooltip" title="<?php echo $button_wishlist; ?>">
                           <span class="icon flaticon-heart68"></span>

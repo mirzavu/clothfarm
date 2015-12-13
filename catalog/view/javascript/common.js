@@ -23,6 +23,43 @@ function getURLVar(key) {
 }
 
 $(document).ready(function() {
+
+		console.log('dfd');
+	$('.mam').fancybox({
+		maxWidth	: 800,
+		maxHeight	: 300,
+		fitToView	: false,
+		width		: '70%',
+		height		: '70%',
+		autoSize	: false,
+		closeClick	: false,
+		openEffect	: 'none',
+		closeEffect	: 'none'
+	});
+
+	$('.mam2').fancybox({
+		maxWidth	: 460,
+		maxHeight	: 500,
+		fitToView	: true,
+		width		: '70%',
+		height		: '70%',
+		autoSize	: false,
+		closeClick	: false,
+		openEffect	: 'none',
+		closeEffect	: 'none'
+	});
+
+	$('#nostitch').on("click",function(){
+		$.fancybox.close();
+		$('#button-cart').click();
+	});
+
+	$('#stitch').on("click",function(){
+		console.log('sdfgsdfsfgsdf');
+		$.fancybox.close();
+		$('#measure-trigger').click();
+	});
+
 	// Adding the clear Fix
 	cols1 = $('#column-right, #column-left').length;
 	
