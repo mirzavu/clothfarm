@@ -1,0 +1,446 @@
+.icons-sprite, .icons-envelope, .icons-phone, .icons-pike {
+  background-image: url('../image/veplatform/icons-sdb320c34e8.png');
+  background-repeat: no-repeat; }
+
+.icons-envelope {
+  background-position: 0 0; }
+
+.icons-phone {
+  background-position: 0 -12px; }
+
+.icons-pike {
+  background-position: 0 -28px; }
+
+@font-face {
+  font-family: DINWeb;
+  src: url(../fonts/DINWeb.eot?) format("eot"), url(../fonts/DINWeb.woff) format("woff"), url(../fonts/DINComp.ttf) format("truetype"); }
+@font-face {
+  font-family: DINWeb-Medium;
+  src: url(../fonts/DINWeb-Medium.eot?) format("eot"), url(../fonts/DINWeb-Medium.woff) format("woff"), url(../fonts/DINComp-Medium.ttf) format("truetype"); }
+@font-face {
+  font-family: DINWeb-Bold;
+  src: url(../fonts/DINWeb-Bold.eot?) format("eot"), url(../fonts/DINWeb-Bold.woff) format("woff"), url(../fonts/DINComp-Bold.ttf) format("truetype"); }
+@font-face {
+  font-family: DINWeb-Light;
+  src: url(../fonts/DINWeb-Light.eot?) format("eot"), url(../fonts/DINWeb-Light.woff) format("woff"), url(../fonts/DINComp-Light.ttf) format("truetype"); }
+#veinteractive_main {
+  background-color: #fff;
+  margin: 0;
+  overflow-x: hidden; }
+  #veinteractive_main .main_messages h2, #veinteractive_main p, #veinteractive_main span, #veinteractive_main li {
+    font-family: DINWeb;
+    text-transform: none;
+    border-bottom: 0; }
+  #veinteractive_main .content_grid {
+    width: 100%;
+    min-width: 700px;
+    max-width: 1200px;
+    padding-left: 30px;
+    margin: 0 auto; }
+    @media screen and (max-width: 1200px) {
+      #veinteractive_main .content_grid {
+        min-width: 500px;
+        max-width: 900px; }
+        #veinteractive_main .content_grid .ve_header {
+          height: 246px; } }
+  #veinteractive_main a {
+    text-decoration: none;
+    font-family: DINWeb-Bold; }
+  #veinteractive_main .ve_header .header_top .right_header .hidden, #veinteractive_main .hidden .extra_content {
+    display: none; }
+  #veinteractive_main .icons-pike, #veinteractive_main .icons-envelope, #veinteractive_main .icons-phone {
+    display: inline-block;
+    position: relative; }
+  #veinteractive_main .icons-envelope, #veinteractive_main .icons-phone {
+    margin-right: 15px; }
+  #veinteractive_main .icons-pike {
+    height: 12px;
+    width: 12px;
+    top: 2px;
+    margin-left: 5px; }
+  #veinteractive_main .icons-envelope {
+    height: 12px;
+    width: 17px;
+    top: 2px; }
+  #veinteractive_main .icons-phone {
+    height: 18px;
+    width: 18px;
+    top: 3px; }
+  #veinteractive_main .ve_header {
+    background: url("../image/veplatform/header_banner.jpg") center center;
+    width: 100%;
+    padding-bottom: 70px;
+    height: 300px; }
+    #veinteractive_main .ve_header .header_top {
+      padding: 35px 50px; }
+      #veinteractive_main .ve_header .header_top .left_header, #veinteractive_main .ve_header .header_top .right_header {
+        width: 50%; }
+      #veinteractive_main .ve_header .header_top .left_header {
+        float: left; }
+      #veinteractive_main .ve_header .header_top .right_header {
+        float: right; }
+        #veinteractive_main .ve_header .header_top .right_header .main_menu {
+          margin-top: 37px; }
+        #veinteractive_main .ve_header .header_top .right_header li {
+          display: block;
+          text-align: right; }
+          @media screen and (max-width: 1200px) {
+            #veinteractive_main .ve_header .header_top .right_header li {
+              text-align: left; } }
+          #veinteractive_main .ve_header .header_top .right_header li .cli_quest {
+            color: #92ab45;
+            margin-right: 10px;
+            font-size: 16px; }
+          #veinteractive_main .ve_header .header_top .right_header li a {
+            color: #fff;
+            font-size: 20px; }
+            #veinteractive_main .ve_header .header_top .right_header li a:hover {
+              color: #92ab45; }
+    #veinteractive_main .ve_header .faint-line {
+      margin: 50px 0;
+      padding-top: 10px;
+      border-top: 2px solid #788590;
+      border-top: 2px solid rgba(255, 255, 255, 0.05); }
+      #veinteractive_main .ve_header .faint-line .main_messages .conf-msg, #veinteractive_main .ve_header .faint-line .main_messages .thx-msg {
+        display: block;
+        text-align: left;
+        margin: 20px 0; }
+      #veinteractive_main .ve_header .faint-line .main_messages .thx-msg {
+        color: #9d9a9a;
+        font-size: 28px; }
+      #veinteractive_main .ve_header .faint-line .main_messages .conf-msg {
+        color: #fff;
+        font-size: 36px; }
+  #veinteractive_main .ve_main .hidden {
+    display: none; }
+  #veinteractive_main .ve_main .click_locked {
+    cursor: default; }
+  #veinteractive_main .ve_main .company_info, #veinteractive_main .ve_main .legal_info, #veinteractive_main .ve_main .thanks_info {
+    margin: 70px auto; }
+    #veinteractive_main .ve_main .company_info .info_text p, #veinteractive_main .ve_main .legal_info .info_text p, #veinteractive_main .ve_main .thanks_info .info_text p {
+      color: #6e7479;
+      font-size: 16px;
+      line-height: 25px; }
+    #veinteractive_main .ve_main .company_info .info_text a, #veinteractive_main .ve_main .legal_info .info_text a, #veinteractive_main .ve_main .thanks_info .info_text a {
+      color: #1fbd9d; }
+      #veinteractive_main .ve_main .company_info .info_text a:hover, #veinteractive_main .ve_main .legal_info .info_text a:hover, #veinteractive_main .ve_main .thanks_info .info_text a:hover {
+        color: #000; }
+    #veinteractive_main .ve_main .company_info .info_text .ve-list, #veinteractive_main .ve_main .legal_info .info_text .ve-list, #veinteractive_main .ve_main .thanks_info .info_text .ve-list {
+      list-style-image: url("../image/veplatform/ve-check.png");
+      margin: 0;
+      padding: 0 40px; }
+      #veinteractive_main .ve_main .company_info .info_text .ve-list li, #veinteractive_main .ve_main .legal_info .info_text .ve-list li, #veinteractive_main .ve_main .thanks_info .info_text .ve-list li {
+        color: #6e7479;
+        line-height: 25px;
+        font-size: 16px; }
+    #veinteractive_main .ve_main .company_info .info_text .social-info, #veinteractive_main .ve_main .legal_info .info_text .social-info, #veinteractive_main .ve_main .thanks_info .info_text .social-info {
+      margin: 0;
+      padding: 0; }
+      #veinteractive_main .ve_main .company_info .info_text .social-info li, #veinteractive_main .ve_main .legal_info .info_text .social-info li, #veinteractive_main .ve_main .thanks_info .info_text .social-info li {
+        list-style: none;
+        margin: 5px 10px; }
+      #veinteractive_main .ve_main .company_info .info_text .social-info a, #veinteractive_main .ve_main .legal_info .info_text .social-info a, #veinteractive_main .ve_main .thanks_info .info_text .social-info a {
+        font-size: 16px; }
+      #veinteractive_main .ve_main .company_info .info_text .social-info span, #veinteractive_main .ve_main .legal_info .info_text .social-info span, #veinteractive_main .ve_main .thanks_info .info_text .social-info span {
+        color: #6e7479;
+        font-size: 16px; }
+      #veinteractive_main .ve_main .company_info .info_text .social-info .country, #veinteractive_main .ve_main .legal_info .info_text .social-info .country, #veinteractive_main .ve_main .thanks_info .info_text .social-info .country {
+        font-family: DINWeb-Bold; }
+    #veinteractive_main .ve_main .company_info .logo_content img, #veinteractive_main .ve_main .legal_info .logo_content img, #veinteractive_main .ve_main .thanks_info .logo_content img {
+      margin: 0px 0px 10px; }
+  #veinteractive_main .ve_main .thanks_info {
+    margin-top: -50px;
+    min-height: 359px; }
+  #veinteractive_main .ve_main .product_activation {
+    background-color: #f0f0f0;
+    padding: 70px 5px; }
+    #veinteractive_main .ve_main .product_activation .smooth_scroll {
+      cursor: default; }
+    #veinteractive_main .ve_main .product_activation .product_activation_content .product_act_title {
+      font-family: DINWeb-Medium;
+      color: #343f48;
+      padding-bottom: 5px;
+      margin-bottom: 32px;
+      font-size: 30px;
+      font-weight: lighter;
+      display: block;
+      text-align: center;
+      border-bottom: 1px solid #dadada;
+      margin-top: 0;
+      text-transform: none; }
+    #veinteractive_main .ve_main .product_activation .product_activation_content .extra_content {
+      margin: 64px 0px 0px; }
+      #veinteractive_main .ve_main .product_activation .product_activation_content .extra_content .product_logo, #veinteractive_main .ve_main .product_activation .product_activation_content .extra_content p {
+        float: left; }
+      #veinteractive_main .ve_main .product_activation .product_activation_content .extra_content .product_logo {
+        width: 30%; }
+        @media screen and (max-width: 1200px) {
+          #veinteractive_main .ve_main .product_activation .product_activation_content .extra_content .product_logo {
+            display: none; } }
+      #veinteractive_main .ve_main .product_activation .product_activation_content .extra_content p {
+        width: 70%;
+        font-size: 16px;
+        line-height: 25px; }
+        @media screen and (max-width: 1200px) {
+          #veinteractive_main .ve_main .product_activation .product_activation_content .extra_content p {
+            font-size: 14px;
+            line-height: 25px;} }
+        @media screen and (max-width: 1200px) {
+          #veinteractive_main .ve_main .product_activation .product_activation_content .extra_content p {
+            width: auto; } }
+    #veinteractive_main .ve_main .product_activation .product_activation_content .product {
+      width: 25%; }
+      #veinteractive_main .ve_main .product_activation .product_activation_content .product .click_div {
+        cursor: pointer; }
+      #veinteractive_main .ve_main .product_activation .product_activation_content .product .product_logo, #veinteractive_main .ve_main .product_activation .product_activation_content .product .product_name {
+        margin: 0 auto; }
+      #veinteractive_main .ve_main .product_activation .product_activation_content .product .product_logo {
+        height: 250px;
+        width: 205px; }
+        @media screen and (max-width: 1200px) {
+          #veinteractive_main .ve_main .product_activation .product_activation_content .product .product_logo {
+            height: 205px; } }
+      #veinteractive_main .ve_main .product_activation .product_activation_content .product .product_name {
+        text-align: center; }
+        #veinteractive_main .ve_main .product_activation .product_activation_content .product .product_name p {
+          font-size: 16px; }
+      #veinteractive_main .ve_main .product_activation .product_activation_content .product input[type="checkbox"] {
+        display: none; }
+      #veinteractive_main .ve_main .product_activation .product_activation_content .product input[type="checkbox"] + label {
+        display: block;
+        margin: 20px auto;
+        width: 22px;
+        height: 22px;
+        background: url("../image/veplatform/radio_unselected.png") left top no-repeat; }
+      #veinteractive_main .ve_main .product_activation .product_activation_content .product input[type="checkbox"]:checked + label {
+        background: url("../image/veplatform/radio_selected.png") left top no-repeat; }
+      #veinteractive_main .ve_main .product_activation .product_activation_content .product input[type="checkbox"]:disabled + label {
+        background: url("../image/veplatform/product_selected.png") left top no-repeat; }
+        #veinteractive_main .ve_main .product_activation .product_activation_content .product input[type="checkbox"]:disabled + label:hover {
+          cursor: default; }
+      #veinteractive_main .ve_main .product_activation .product_activation_content .product label:hover {
+        cursor: pointer; }
+      #veinteractive_main .ve_main .product_activation .product_activation_content .product .quest_btn {
+        font-family: DINWeb-Medium;
+        background-color: #f0f0f0;
+        color: #1fbd9d;
+        border: 1px solid #dadada;
+        padding: 10px;
+        display: block;
+        margin: 0 auto;
+        font-size: 18px; }
+      #veinteractive_main .ve_main .product_activation .product_activation_content .product .quest_btn:hover {
+        cursor: pointer; }
+    #veinteractive_main .ve_main .product_activation .product_activation_content .product-extra-info .product_logo {
+      height: 184px;
+      width: 211px;
+      margin: 0 auto; }
+    #veinteractive_main .ve_main .product_activation .product_activation_content .product-extra-info #vecontact_info_content .product_logo, #veinteractive_main .ve_main .product_activation .product_activation_content .product-extra-info #vechat_info_content .product_logo, #veinteractive_main .ve_main .product_activation .product_activation_content .product-extra-info #veassist_info_content .product_logo, #veinteractive_main .ve_main .product_activation .product_activation_content .product-extra-info #veads_info_content .product_logo {
+      margin-right: 50px;}
+      @media screen and (max-width: 1200px) {
+        #veinteractive_main .ve_main .product_activation .product_activation_content .product-extra-info #vecontact_info_content .product_logo, #veinteractive_main .ve_main .product_activation .product_activation_content .product-extra-info #vechat_info_content .product_logo, #veinteractive_main .ve_main .product_activation .product_activation_content .product-extra-info #veassist_info_content .product_logo, #veinteractive_main .ve_main .product_activation .product_activation_content .product-extra-info #veads_info_content .product_logo {
+          margin-right: 0; } }
+    #veinteractive_main .ve_main .product_activation .product_activation_content .product-extra-info #vecontact_info_content .product_logo {
+      background: url("../image/veplatform/vecontact-logo-min.png") no-repeat; }
+      @media screen and (max-width: 1200px) {
+        #veinteractive_main .ve_main .product_activation .product_activation_content .product-extra-info #vecontact_info_content .product_logo {
+          background: url("../image/veplatform/vecontact-logo-min.png") no-repeat scroll 40% 0% transparent;
+          margin-right: 50px;
+        } }
+    #veinteractive_main .ve_main .product_activation .product_activation_content .product-extra-info #vechat_info_content .product_logo {
+      background: url("../image/veplatform/vechat-logo-min.png") no-repeat; }
+      @media screen and (max-width: 1200px) {
+        #veinteractive_main .ve_main .product_activation .product_activation_content .product-extra-info #vechat_info_content .product_logo {
+          background: url("../image/veplatform/vechat-logo-min.png") no-repeat scroll 40% 0% transparent;
+          margin-right:50px;
+        } }
+    #veinteractive_main .ve_main .product_activation .product_activation_content .product-extra-info #veassist_info_content .product_logo {
+      background: url("../image/veplatform/veassist-logo-min.png") no-repeat; }
+      @media screen and (max-width: 1200px) {
+        #veinteractive_main .ve_main .product_activation .product_activation_content .product-extra-info #veassist_info_content .product_logo {
+          background: url("../image/veplatform/veassist-logo-min.png") no-repeat scroll 40% 0% transparent;
+          margin-right: 50px;
+        } }
+    #veinteractive_main .ve_main .product_activation .product_activation_content .product-extra-info #veads_info_content .product_logo {
+      background: url("../image/veplatform/veads-logo-min.png") no-repeat; }
+      @media screen and (max-width: 1200px) {
+        #veinteractive_main .ve_main .product_activation .product_activation_content .product-extra-info #veads_info_content .product_logo {
+          background: url("../image/veplatform/veads-logo-min.png") no-repeat scroll 40% 0% transparent;
+          margin-right:50px;} }
+    #veinteractive_main .ve_main .product_activation .product_activation_content .product-extra-info .quest_btn {
+      font-family: DINWeb-Medium;
+      background-color: #f0f0f0;
+      color: #1fbd9d;
+      border: 1px solid #dadada;
+      padding: 10px;
+      font-size: 18px; }
+    #veinteractive_main .ve_main .product_activation .product_activation_content .product-extra-info .quest_btn:hover {
+      cursor: pointer; }
+    #veinteractive_main .ve_main .product_activation .product_activation_content .vecontact .product_logo {
+      background: url("../image/veplatform/vecontact_v4.png") no-repeat scroll 40% 0% transparent; }
+      @media screen and (max-width: 1200px) {
+        #veinteractive_main .ve_main .product_activation .product_activation_content .vecontact .product_logo {
+          background: url("../image/veplatform/vecontact_text_small.png") no-repeat scroll 40% 0% transparent; } }
+    @media screen and (max-width: 1120px) {
+      #veinteractive_main .ve_main .product_activation .product_activation_content .vecontact {
+        width: 50%;
+        display: inline-block;
+        margin-bottom: 50px; } }
+    #veinteractive_main .ve_main .product_activation .product_activation_content .vechat {
+      float: right; }
+      #veinteractive_main .ve_main .product_activation .product_activation_content .vechat .product_logo {
+        background: url("../image/veplatform/vechat_v4.png") no-repeat scroll 40% 0% transparent; }
+        @media screen and (max-width: 1200px) {
+          #veinteractive_main .ve_main .product_activation .product_activation_content .vechat .product_logo {
+            background: url("../image/veplatform/vechat_text_small.png") no-repeat scroll 40% 0% transparent; } }
+      @media screen and (max-width: 1120px) {
+        #veinteractive_main .ve_main .product_activation .product_activation_content .vechat {
+          width: 50%;
+          display: inline-block;
+          margin-bottom: 50px; } }
+    #veinteractive_main .ve_main .product_activation .product_activation_content .veassist {
+      float: right; }
+      #veinteractive_main .ve_main .product_activation .product_activation_content .veassist .product_logo {
+        background: url("../image/veplatform/veassist_v4.png") no-repeat scroll 40% 0% transparent; }
+        @media screen and (max-width: 1200px) {
+          #veinteractive_main .ve_main .product_activation .product_activation_content .veassist .product_logo {
+            background: url("../image/veplatform/veassist_text_small.png") no-repeat scroll 40% 0% transparent; } }
+      @media screen and (max-width: 1120px) {
+        #veinteractive_main .ve_main .product_activation .product_activation_content .veassist {
+          width: 50%;
+          display: inline-block;
+          margin-bottom: 50px; } }
+    #veinteractive_main .ve_main .product_activation .product_activation_content .veads {
+      float: right; }
+      #veinteractive_main .ve_main .product_activation .product_activation_content .veads .product_logo {
+        background: url("../image/veplatform/veads_v4.png") no-repeat scroll 40% 0% transparent; }
+        @media screen and (max-width: 1200px) {
+          #veinteractive_main .ve_main .product_activation .product_activation_content .veads .product_logo {
+            background: url("../image/veplatform/veads_text_small.png") no-repeat scroll 40% 0% transparent; } }
+      @media screen and (max-width: 1120px) {
+      #veinteractive_main .ve_main .product_activation .product_activation_content .veads {
+        width: 50%;
+        display: inline-block;
+        margin-bottom: 50px; } }
+      #veinteractive_main .ve_footer {
+        background-color: #2f383c; }
+      #veinteractive_main .ve_footer .footer-content {
+        margin: 0 auto;
+        padding: 20px 20px 0 20px;
+        font-size: 14px;
+        color: #fff; }
+      #veinteractive_main .ve_footer .footer-content .footer-left, #veinteractive_main .ve_footer .footer-content .footer-right {
+        width: auto;
+        display: block; }
+      #veinteractive_main .ve_footer .footer-content .footer-left {
+        float: left;
+        clear: none;
+        text-align: left;
+        font-weight: bold;
+        font-size: 15px; }
+      #veinteractive_main .ve_footer .footer-content .footer-left a {
+          font-family: DINWeb-Light;
+          color: #fff;
+          font-size:14px;}
+      #veinteractive_main .ve_footer .footer-content .footer-left a:hover {
+            color: #1fbd9d; }
+      #veinteractive_main .ve_footer .footer-content .footer-right {
+          text-align: right;
+          font-weight: bold;
+          font-size: 15px;
+          clear: none;
+          padding: 0 25px 0 0;
+          display: block; }
+        #veinteractive_main .ve_footer .footer-content .footer-right span {
+          font-family: DINWeb-Light; }
+        #veinteractive_main .ve_footer .footer_img {
+          left: 42%;
+          top: -20px;
+          position: relative; }
+        #veinteractive_main .btn_product {
+          font-family: DINWeb-Medium;
+          background-color: #13be9c;
+          color: #fff;
+          border: 1px solid #dadada;
+          padding: 10px;
+          display: block;
+          font-size: 20px; }
+        #veinteractive_main .btn_product:hover {
+          cursor: pointer; }
+        #veinteractive_main .btn_product:disabled {
+          display: none; }
+        #veinteractive_main .a_product {
+          padding-top: 50px;
+          margin-left: 45%;
+          font-size: 14px; }
+
+      @media screen and (max-width: 1000px) {
+        #veinteractive_main .ve_header{
+        height: 125px;}
+        #veinteractive_main .ve_footer .footer-content .footer-right{
+        display: none;}
+        #veinteractive_main .ve_header .faint-line{
+        display: none;}
+        #veinteractive_main .ve_footer .footer_img{
+        display: none;}
+        #veinteractive_main .ve_footer {
+        height: 70px; }
+        #veinteractive_main .footer-right {
+        margin-right: 20px; }
+        #veinteractive_main .a_product{
+        margin-left: 39%;}
+        #veinteractive_main .footer_img {
+        display: none; }
+      }
+
+         @media screen and (max-width: 766px) {
+        #veinteractive_main .ve_header {
+        height: 125px; }
+        #veinteractive_main .footer_img {
+        display: none; }
+        #veinteractive_main .content_grid{
+        width: auto;}
+        #veinteractive_main .ve_main .product_activation .product_activation_content .vecontact {
+        width: 100%;
+        display: inline-block;
+        text-align: center;}
+        #veinteractive_main .ve_main .product_activation .product_activation_content .vechat {
+        width: 100%;
+        display: inline-block;
+        text-align: center;}
+        #veinteractive_main .ve_main .product_activation .product_activation_content .veassist {
+        width: 100%;
+        display: inline-block;
+        text-align: center;}
+        #veinteractive_main .ve_main .product_activation .product_activation_content .veads {
+        width: 100%;
+        display: inline-block;
+        text-align: center;}}
+
+      @media screen and (max-width: 550px) {
+        #veinteractive_main .ve_header {
+        height: 125px; }
+        #veinteractive_main .footer_img {
+        display: none; }
+        #veinteractive_main .content_grid{
+        min-width:300px;
+        max-width: 500px;}
+        #veinteractive_main .ve_main .product_activation .product_activation_content .vecontact {
+        width: 100%;
+        display: inline-block;
+        text-align: center;}
+        #veinteractive_main .ve_main .product_activation .product_activation_content .vechat {
+        width: 100%;
+        display: inline-block;
+        text-align: center;}
+        #veinteractive_main .ve_main .product_activation .product_activation_content .veassist {
+        width: 100%;
+        display: inline-block;
+        text-align: center;}
+        #veinteractive_main .ve_main .product_activation .product_activation_content .veads {
+        width: 100%;
+        display: inline-block;
+        text-align: center;}
+        #veinteractive_main .a_product{
+        margin-left: 35%;}
+      }

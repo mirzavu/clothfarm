@@ -1,0 +1,135 @@
+---------- Date: 2015-12-05 12:07:14 ~ IP : 192.168.1.3 ----------
+REQUEST URI : /upload/index.php?route=common/home
+MOD DETAILS:
+   modFile   : /home/inalap/workspace/fayas/upload/vqmod/xml/news.xml
+   id        : News
+   version   : OC 2.x
+   vqmver    : 2.0.0
+   author    : Equotix
+
+File Name    : catalog/view/theme/*/template/common/footer.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><a href="<?php echo $voucher; ?>"><?php echo $text_voucher; ?></a></li>
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2015-12-05 12:17:16 ~ IP : 192.168.1.3 ----------
+REQUEST URI : /upload/admin/index.php?route=sale/order&token=428735d3b375ba4041e058d4c3d297da
+MOD DETAILS:
+   modFile   : /home/inalap/workspace/fayas/upload/vqmod/xml/news.xml
+   id        : News
+   version   : OC 2.x
+   vqmver    : 2.0.0
+   author    : Equotix
+
+File Name    : admin/view/template/common/menu.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><a href="<?php echo $feed; ?>"><?php echo $text_feed; ?></a></li>
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2015-12-05 12:18:06 ~ IP : 192.168.1.3 ----------
+REQUEST URI : /upload/admin/index.php?route=setting/store&token=428735d3b375ba4041e058d4c3d297da
+MOD DETAILS:
+   modFile   : /home/inalap/workspace/fayas/upload/vqmod/xml/news.xml
+   id        : News
+   version   : OC 2.x
+   vqmver    : 2.0.0
+   author    : Equotix
+
+File Name    : admin/view/template/common/menu.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><a href="<?php echo $feed; ?>"><?php echo $text_feed; ?></a></li>
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2015-12-05 12:18:11 ~ IP : 192.168.1.3 ----------
+REQUEST URI : /upload/admin/index.php?route=setting/store&token=428735d3b375ba4041e058d4c3d297da
+MOD DETAILS:
+   modFile   : /home/inalap/workspace/fayas/upload/vqmod/xml/news.xml
+   id        : News
+   version   : OC 2.x
+   vqmver    : 2.0.0
+   author    : Equotix
+
+File Name    : admin/view/template/common/menu.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><a href="<?php echo $feed; ?>"><?php echo $text_feed; ?></a></li>
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2015-12-05 12:34:44 ~ IP : 192.168.1.3 ----------
+REQUEST URI : /upload/admin/index.php?route=sale/customer/edit&token=428735d3b375ba4041e058d4c3d297da&customer_id=1
+MOD DETAILS:
+   modFile   : /home/inalap/workspace/fayas/upload/vqmod/xml/news.xml
+   id        : News
+   version   : OC 2.x
+   vqmver    : 2.0.0
+   author    : Equotix
+
+File Name    : admin/view/template/common/menu.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><a href="<?php echo $feed; ?>"><?php echo $text_feed; ?></a></li>
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2015-12-05 12:35:09 ~ IP : 192.168.1.3 ----------
+REQUEST URI : /upload/admin/index.php?route=sale/customer/edit&token=428735d3b375ba4041e058d4c3d297da&customer_id=1
+MOD DETAILS:
+   modFile   : /home/inalap/workspace/fayas/upload/vqmod/xml/news.xml
+   id        : News
+   version   : OC 2.x
+   vqmver    : 2.0.0
+   author    : Equotix
+
+File Name    : admin/view/template/common/menu.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><a href="<?php echo $feed; ?>"><?php echo $text_feed; ?></a></li>
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2015-12-05 13:08:04 ~ IP : 192.168.1.3 ----------
+REQUEST URI : /upload/admin/index.php?route=common/dashboard&token=428735d3b375ba4041e058d4c3d297da
+MOD DETAILS:
+   modFile   : /home/inalap/workspace/fayas/upload/vqmod/xml/news.xml
+   id        : News
+   version   : OC 2.x
+   vqmver    : 2.0.0
+   author    : Equotix
+
+File Name    : admin/view/template/common/menu.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><a href="<?php echo $feed; ?>"><?php echo $text_feed; ?></a></li>
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2015-12-05 13:11:21 ~ IP : 192.168.1.3 ----------
+REQUEST URI : /upload/index.php?route=account/account
+MOD DETAILS:
+   modFile   : /home/inalap/workspace/fayas/upload/vqmod/xml/news.xml
+   id        : News
+   version   : OC 2.x
+   vqmver    : 2.0.0
+   author    : Equotix
+
+File Name    : catalog/view/theme/*/template/common/footer.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><a href="<?php echo $voucher; ?>"><?php echo $text_voucher; ?></a></li>
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2015-12-05 14:03:18 ~ IP : 192.168.1.3 ----------
+REQUEST URI : /upload/admin/index.php?route=catalog/mproduct/add&token=c6e14c515f7eda74a0e1f5f5951fe3f3
+MOD DETAILS:
+   modFile   : /home/inalap/workspace/fayas/upload/vqmod/xml/news.xml
+   id        : News
+   version   : OC 2.x
+   vqmver    : 2.0.0
+   author    : Equotix
+
+File Name    : admin/view/template/common/menu.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><a href="<?php echo $feed; ?>"><?php echo $text_feed; ?></a></li>
+
+----------------------------------------------------------------------
+
+

@@ -1,0 +1,60 @@
+---------- Date: 2015-12-04 12:53:17 ~ IP : 192.168.1.4 ----------
+REQUEST URI : /upload/admin/index.php?route=setting/setting&token=a341891536fe7fe52b1b727aa8f65076
+MOD DETAILS:
+   modFile   : /home/inalap/workspace/fayas/upload/vqmod/xml/news.xml
+   id        : News
+   version   : OC 2.x
+   vqmver    : 2.0.0
+   author    : Equotix
+
+File Name    : admin/view/template/common/menu.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><a href="<?php echo $feed; ?>"><?php echo $text_feed; ?></a></li>
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2015-12-04 12:59:53 ~ IP : 192.168.1.4 ----------
+REQUEST URI : /upload/
+MOD DETAILS:
+   modFile   : /home/inalap/workspace/fayas/upload/vqmod/xml/news.xml
+   id        : News
+   version   : OC 2.x
+   vqmver    : 2.0.0
+   author    : Equotix
+
+File Name    : catalog/view/theme/*/template/common/footer.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><a href="<?php echo $voucher; ?>"><?php echo $text_voucher; ?></a></li>
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2015-12-04 13:04:48 ~ IP : 192.168.1.4 ----------
+REQUEST URI : /upload/
+MOD DETAILS:
+   modFile   : /home/inalap/workspace/fayas/upload/vqmod/xml/news.xml
+   id        : News
+   version   : OC 2.x
+   vqmver    : 2.0.0
+   author    : Equotix
+
+File Name    : catalog/view/theme/*/template/common/footer.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><a href="<?php echo $voucher; ?>"><?php echo $text_voucher; ?></a></li>
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2015-12-04 13:06:38 ~ IP : 192.168.1.4 ----------
+REQUEST URI : /upload/admin/index.php?route=design/layout&token=a341891536fe7fe52b1b727aa8f65076
+MOD DETAILS:
+   modFile   : /home/inalap/workspace/fayas/upload/vqmod/xml/news.xml
+   id        : News
+   version   : OC 2.x
+   vqmver    : 2.0.0
+   author    : Equotix
+
+File Name    : admin/view/template/common/menu.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><a href="<?php echo $feed; ?>"><?php echo $text_feed; ?></a></li>
+
+----------------------------------------------------------------------
+
+

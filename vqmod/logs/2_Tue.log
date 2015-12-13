@@ -1,0 +1,40 @@
+---------- Date: 2015-12-08 16:02:28 ~ IP : 92.99.226.243 ----------
+REQUEST URI : /admin/index.php?route=extension/module&token=e83a7cebc9f85efb4b4da792416cb328
+MOD DETAILS:
+   modFile   : /home/clothfarm/public_html/vqmod/xml/socl_login.xml
+   id        : Social Login
+   version   : 1.1
+   vqmver    : 2.4.1
+   author    : Sandklock
+
+File Name    : system/startup.php(0)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): // Common
+
+MOD DETAILS:
+   modFile   : /home/clothfarm/public_html/vqmod/xml/news.xml
+   id        : News
+   version   : OC 2.x
+   vqmver    : 2.0.0
+   author    : Equotix
+
+File Name    : admin/view/template/common/menu.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><a href="<?php echo $feed; ?>"><?php echo $text_feed; ?></a></li>
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2015-12-08 16:03:52 ~ IP : 92.99.226.243 ----------
+REQUEST URI : /index.php?route=common/home
+MOD DETAILS:
+   modFile   : /home/clothfarm/public_html/vqmod/xml/news.xml
+   id        : News
+   version   : OC 2.x
+   vqmver    : 2.0.0
+   author    : Equotix
+
+File Name    : catalog/view/theme/*/template/common/footer.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><a href="<?php echo $voucher; ?>"><?php echo $text_voucher; ?></a></li>
+
+----------------------------------------------------------------------
+
+

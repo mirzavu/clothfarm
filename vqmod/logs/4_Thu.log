@@ -1,0 +1,15 @@
+---------- Date: 2015-12-10 09:32:43 ~ IP : 122.178.93.95 ----------
+REQUEST URI : /admin/index.php?route=common/dashboard&token=6311e8dc81d906163e735e371e54d553
+MOD DETAILS:
+   modFile   : /home/clothfarm/public_html/vqmod/xml/news.xml
+   id        : News
+   version   : OC 2.x
+   vqmver    : 2.0.0
+   author    : Equotix
+
+File Name    : admin/view/template/common/menu.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><a href="<?php echo $feed; ?>"><?php echo $text_feed; ?></a></li>
+
+----------------------------------------------------------------------
+
+
