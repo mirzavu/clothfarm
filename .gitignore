@@ -1,7 +1,7 @@
 .htaccess
 /config.php
 admin/config.php
-
+store/config.php
 !index.html
 
 download/
