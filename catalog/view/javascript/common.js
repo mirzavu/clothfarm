@@ -24,9 +24,16 @@ function getURLVar(key) {
 
 $(document).ready(function() {
 
-		console.log('dfd');
+		console.log('dfdd');
+	$('a.pop').mouseout(function() {
+		setTimeout(function(){
+		  $('a.pop').show();
+		}, 0.001);
+		
+	});
+	$('[data-toggle="popover"]').popover();   
 	$('.mam').fancybox({
-		maxWidth	: 800,
+		maxWidth	: 412,
 		maxHeight	: 300,
 		fitToView	: false,
 		width		: '70%',
@@ -38,15 +45,18 @@ $(document).ready(function() {
 	});
 
 	$('.mam2').fancybox({
-		maxWidth	: 460,
+		maxWidth	: 490,
 		maxHeight	: 500,
 		fitToView	: true,
-		width		: '70%',
-		height		: '70%',
+		width		: '55%',
+		height		: '80%',
 		autoSize	: false,
 		closeClick	: false,
 		openEffect	: 'none',
-		closeEffect	: 'none'
+		closeEffect	: 'none',
+		'onComplete': function() {
+      $("#fancybox-wrap").css({'top':'20px', 'bottom':'auto'});
+   }
 	});
 
 	$('#nostitch').on("click",function(){

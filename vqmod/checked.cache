@@ -983,3 +983,10 @@ admin\language\english\catalog\product.php
 admin\view\template\catalog\product_list.tpl
 admin\view\template\catalog\product_form.tpl
 admin\controller\catalog\category.php
+catalog\controller\information\contact.php
+catalog\language\english\information\contact.php
+catalog\model\localisation\location.php
+catalog\view\theme\coolbaby\template\information\contact.tpl
+catalog\controller\information\information.php
+catalog\language\english\information\information.php
+catalog\view\theme\coolbaby\template\information\information.tpl

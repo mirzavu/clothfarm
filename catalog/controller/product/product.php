@@ -265,6 +265,8 @@ class ControllerProductProduct extends Controller {
 			$this->document->addLink($this->url->link('product/product', 'product_id=' . $this->request->get['product_id']), 'canonical');
 			$this->document->addScript('catalog/view/javascript/fancybox/jquery.fancybox.js');
 			$this->document->addStyle('catalog/view/javascript/fancybox/jquery.fancybox.css');
+			//$this->document->addStyle('catalog/view/javascript/bootstrap/bootstrap.min.css');
+			//$this->document->addScript('catalog/view/javascript/bootstrap/fancybox/bootstrap.min.js');
 			$this->document->addScript('catalog/view/javascript/jquery/magnific/jquery.magnific-popup.min.js');
 			$this->document->addStyle('catalog/view/javascript/jquery/magnific/magnific-popup.css');
 			$this->document->addScript('catalog/view/javascript/jquery/datetimepicker/moment.js');

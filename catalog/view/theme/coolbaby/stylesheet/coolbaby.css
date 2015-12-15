@@ -7967,3 +7967,6 @@ opacity: 1.0;
 
 /* layout panel */
 
+.fancybox-wrap { 
+    top: 100px !important; 
+}

@@ -475,20 +475,61 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                   {
                   ?>
                   <a class="mam btn btn-cool btn-lg" href="#stitch-pop"><i class="icon flaticon-shopping66">  </i>Add to Cart</a>
-                  <a id="measure-trigger" class="mam2" href="#measure">bla</a>
+                  <a style="display: none" id="measure-trigger" class="mam2" href="#measure"></a>
                   <div style="display: none">
                             <div id="stitch-pop">
-                              <div id="stitch"><button class="btn btn-cool btn-lg" id="button-stitch"><i class="icon icon flaticon-star129"></i>Stitch Farm</button></div>
-                              <div id="nostitch"><button class="btn btn-cool btn-lg" id="button-no-stitch"><i class="icon icon"></i>Continue to Checkout</button></div>
+                              <div style="float:left" id="stitch"><button class="btn btn-cool btn-lg" id="button-stitch"><i class="icon icon flaticon-star129"></i>Stitch Farm</button></div>
+                              <div style="float:left;padding-left:15px;" id="nostitch"><button class="btn btn-cool btn-lg" id="button-no-stitch"><i class="icon icon"></i>Continue to Checkout</button></div>
                             </div>
                   </div>
                   <div style="display: none">
-                            <div id="measure">
-                              <img height="450px" width="500px" src="http://localhost/clothfarm/images/images/model.jpg">
-                              <input type="text" size="3" maxlength="3" class="form-control" value="Button 1" style="position:absolute;right:50%;top:50%;" />
-                              <div id="stitch"><button class="btn btn-cool btn-lg" id="button-stitch"><i class="icon icon flaticon-star129"></i>Stitch Far</button></div>
-                              <div id="nostitch"><button class="btn btn-cool btn-lg" id="button-no-stitch"><i class="icon icon"></i>Continue to Checkout</button></div>
+                          <div id="measure">
+
+                            <div style="float:left;">
+                                    <h2 id="write_review">Measurements</h2>
+                                    <div class="form-group required">
+                                        <div class="col-sm-12">
+                                            <input id="input-name" type="text" name="name" class="form-control" value="Neck" onblur="if (this.value == '') {this.value = 'Neck';}" onfocus="if(this.value == 'Neck') {this.value = '';}">
+                                        </div>
+                                    </div>
+                                    <div class="form-group required">
+                                        <div class="col-sm-12">
+                                            <input id="input-name" type="text" name="name" class="form-control" value="Neck" onblur="if (this.value == '') {this.value = 'Neck';}" onfocus="if(this.value == 'Neck') {this.value = '';}">
+                                        </div>
+                                    </div>
+                                    <div class="form-group required">
+                                        <div class="col-sm-12">
+                                            <input id="input-name" type="text" name="name" class="form-control" value="Neck" onblur="if (this.value == '') {this.value = 'Neck';}" onfocus="if(this.value == 'Neck') {this.value = '';}">
+                                        </div>
+                                    </div>
+                                    <div class="form-group required">
+                                        <div class="col-sm-12">
+                                            <input id="input-name" type="text" name="name" class="form-control" value="Neck" onblur="if (this.value == '') {this.value = 'Neck';}" onfocus="if(this.value == 'Neck') {this.value = '';}">
+                                        </div>
+                                    </div>
+                                    <div class="form-group required">
+                                        <div class="col-sm-12">
+                                            <input id="input-name" type="text" name="name" class="form-control" value="Neck" onblur="if (this.value == '') {this.value = 'Neck';}" onfocus="if(this.value == 'Neck') {this.value = '';}">
+                                        </div>
+                                    </div>
+                                    <div class="form-group required">
+                                        <div class="col-sm-12">
+                                            <input id="input-name" type="text" name="name" class="form-control" value="Neck" onblur="if (this.value == '') {this.value = 'Neck';}" onfocus="if(this.value == 'Neck') {this.value = '';}">
+                                        </div>
+                                    </div>
+                                    <div class="form-group required">
+                                        <div class="col-sm-12">
+                                            <input id="input-name" type="text" name="name" class="form-control" value="Neck" onblur="if (this.value == '') {this.value = 'Neck';}" onfocus="if(this.value == 'Neck') {this.value = '';}">
+                                        </div>
+                                    </div>
+
+                                    <a class="pop" href="#" data-toggle="popover" title="Popover Header" data-trigger="hover" data-content="Some content inside the popover" style="position:absolute;right:50%;top:50%;" ><img src="http://localhost/clothfarm/images/images/dot.png" /></a>
+   
+                                </div>
+                            <div  style="float:left;">
+                              <img height="500px" width="330px" src="http://localhost/clothfarm/images/images/dummy.jpg">
                             </div>
+                          </div>
                   </div>
                   <button style="display: none" class="btn btn-cool btn-lg" type="submit" id="button-cart" data-loading-text="<?php echo $text_loading; ?>"><i class="icon flaticon-shopping66"></i><?php echo $button_cart; ?></button>
 
