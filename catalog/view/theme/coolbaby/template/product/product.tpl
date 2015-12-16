@@ -817,6 +817,28 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
 
 </div>
 
+<div id="content-new" style="" class="product-view product-info row <?php echo ($option_color ? 'content' : ''); ?>">
+  <div style="float:left;" class="product-info-cell product-description content_info">
+
+        <h1 class="product_title" itemprop="name">abc</h1>
+          <div class="line-divider"></div>
+          <div id="product">    
+                  <div class="clearfix visible-xs"></div>
+                        <a class="mam btn btn-cool btn-lg" href="#stitch-pop"><i class="icon flaticon-attachment13">  </i>Add to Cart</a>
+
+                  <div class="col-sm-6">
+                      <input style="height:54px;" id="input-name" type="text" name="name" class="form-control" value="Your Name..." onblur="if (this.value == '') {this.value = 'Your Name...';}" onfocus="if(this.value == 'Your Name...') {this.value = '';}">
+                  </div>
+          </div>
+          
+          <div class="line-divider"></div>
+
+                <!--end tabs for creative product view-->
+
+        <div class="line-divider"></div>
+   </div>
+  </div>
+
 
 <!--tabs for classic product view-->
 <?php if ($page_type != 0) : ?>
