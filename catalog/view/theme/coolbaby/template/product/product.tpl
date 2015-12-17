@@ -834,7 +834,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
         <div role="tabpanel" class="tab-pane fade in active" id="home">
               <div style="float:left;" class="product-info-cell product-description content_info">
 
-              <h1 class="product_title" itemprop="name">MEASUREMENT</h1>
+              <h1 class="product_title" itemprop="name" align="center">MEASUREMENT</h1>
                 <div class="line-divider"></div>
                 <div class="measure-tab">    
                         <div class="clearfix visible-xs"></div>
@@ -849,42 +849,105 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
 
                 <div class="measure-tab">    
                         <div class="clearfix visible-xs"></div>
-                        <button class="btn btn-cool btn-measure"><i class="icon flaticon-attachment13">  </i>Test</button>
+                        <button rel="around-above-waist" class="btn btn-cool btn-measure"><i class="icon flaticon-attachment13">  </i>Test</button>
 
                         <div class="input-measure">
                             <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Nek" onblur="if (this.value == '') {this.value = 'Nek';}" onfocus="if(this.value == 'Nek') {this.value = '';}">
                         </div>
                 </div>
-                                <div class="line-divider"></div>
+                <div class="line-divider"></div>
 
                 <div class="measure-tab">    
                         <div class="clearfix visible-xs"></div>
-                        <button class="btn btn-cool btn-measure"><i class="icon flaticon-attachment13">  </i>Test</button>
+                        <button rel="shoulder" id="txtshoulder" class="btn btn-cool btn-measure"><i class="icon flaticon-attachment13">  </i>Test</button>
 
                         <div class="input-measure">
                             <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Nek" onblur="if (this.value == '') {this.value = 'Nek';}" onfocus="if(this.value == 'Nek') {this.value = '';}">
                         </div>
                 </div>
-                                <div class="line-divider"></div>
+                <div class="line-divider"></div>
 
                 <div class="measure-tab">    
                         <div class="clearfix visible-xs"></div>
-                        <button class="btn btn-cool btn-measure"><i class="icon flaticon-attachment13">  </i>Test</button>
+                        <button rel="around-arm-hole" id="txtarmhole" class="btn btn-cool btn-measure"><i class="icon flaticon-attachment13">  </i>Test</button>
 
                         <div class="input-measure">
                             <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Nek" onblur="if (this.value == '') {this.value = 'Nek';}" onfocus="if(this.value == 'Nek') {this.value = '';}">
                         </div>
                 </div>
-                                <div class="line-divider"></div>
-
                 <div class="measure-tab">    
                         <div class="clearfix visible-xs"></div>
-                        <button class="btn btn-cool btn-measure"><i class="icon flaticon-attachment13">  </i>Test</button>
+                        <button rel="around-arm" id="txtarm" class="btn btn-cool btn-measure"><i class="icon flaticon-attachment13">  </i>Test</button>
 
                         <div class="input-measure">
                             <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Nek" onblur="if (this.value == '') {this.value = 'Nek';}" onfocus="if(this.value == 'Nek') {this.value = '';}">
                         </div>
                 </div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button id="txtheight" rel="skd-height" class="btn btn-cool btn-measure"><i class="icon flaticon-attachment13">  </i>Test</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Nek" onblur="if (this.value == '') {this.value = 'Nek';}" onfocus="if(this.value == 'Nek') {this.value = '';}">
+                        </div>
+                </div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button rel="around-arm" class="btn btn-cool btn-measure"><i class="icon flaticon-attachment13">  </i>Test</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Nek" onblur="if (this.value == '') {this.value = 'Nek';}" onfocus="if(this.value == 'Nek') {this.value = '';}">
+                        </div>
+                </div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button rel="around-arm" class="btn btn-cool btn-measure"><i class="icon flaticon-attachment13">  </i>Test</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Nek" onblur="if (this.value == '') {this.value = 'Nek';}" onfocus="if(this.value == 'Nek') {this.value = '';}">
+                        </div>
+                </div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button rel="around-arm" class="btn btn-cool btn-measure"><i class="icon flaticon-attachment13">  </i>Test</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Nek" onblur="if (this.value == '') {this.value = 'Nek';}" onfocus="if(this.value == 'Nek') {this.value = '';}">
+                        </div>
+                </div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button rel="around-arm" class="btn btn-cool btn-measure"><i class="icon flaticon-attachment13">  </i>Test</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Nek" onblur="if (this.value == '') {this.value = 'Nek';}" onfocus="if(this.value == 'Nek') {this.value = '';}">
+                        </div>
+                </div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button rel="around-arm" class="btn btn-cool btn-measure"><i class="icon flaticon-attachment13">  </i>Test</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Nek" onblur="if (this.value == '') {this.value = 'Nek';}" onfocus="if(this.value == 'Nek') {this.value = '';}">
+                        </div>
+                </div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button rel="around-arm" class="btn btn-cool btn-measure"><i class="icon flaticon-attachment13">  </i>Test</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Nek" onblur="if (this.value == '') {this.value = 'Nek';}" onfocus="if(this.value == 'Nek') {this.value = '';}">
+                        </div>
+                </div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button rel="around-arm" class="btn btn-cool btn-measure"><i class="icon flaticon-attachment13">  </i>Test</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Nek" onblur="if (this.value == '') {this.value = 'Nek';}" onfocus="if(this.value == 'Nek') {this.value = '';}">
+                        </div>
+                </div>
+
 
                       <!--end tabs for creative product view-->
 
