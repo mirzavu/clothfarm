@@ -65,7 +65,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
 <?php echo $content_top; ?>
 
 
-  <div id="content" class="product-view product-info row <?php echo ($option_color ? 'content' : ''); ?>">
+  <div id="content" style="display:none" class="product-view product-info row <?php echo ($option_color ? 'content' : ''); ?>">
 
         <?php if ($page_type != 0) : ?><?php echo $column_left; ?><?php endif; ?>
 
@@ -818,25 +818,303 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
 </div>
 
 <div id="content-new" style="" class="product-view product-info row <?php echo ($option_color ? 'content' : ''); ?>">
-  <div style="float:left;" class="product-info-cell product-description content_info">
 
-        <h1 class="product_title" itemprop="name">abc</h1>
-          <div class="line-divider"></div>
-          <div id="product">    
-                  <div class="clearfix visible-xs"></div>
-                        <a class="mam btn btn-cool btn-lg" href="#stitch-pop"><i class="icon flaticon-attachment13">  </i>Add to Cart</a>
+  <div>
 
-                  <div class="col-sm-6">
-                      <input style="height:54px;" id="input-name" type="text" name="name" class="form-control" value="Your Name..." onblur="if (this.value == '') {this.value = 'Your Name...';}" onfocus="if(this.value == 'Your Name...') {this.value = '';}">
-                  </div>
-          </div>
-          
-          <div class="line-divider"></div>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+  </ul>
 
-                <!--end tabs for creative product view-->
+  <!-- Tab panes -->
+  <div class="tab-content">
+        <div role="tabpanel" class="tab-pane fade in active" id="home">
+              <div style="float:left;" class="product-info-cell product-description content_info">
 
-        <div class="line-divider"></div>
-   </div>
+              <h1 class="product_title" itemprop="name">MEASUREMENT</h1>
+                <div class="line-divider"></div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button rel="around-bust" id="txtbust" class="btn btn-cool btn-measure"><i class="icon flaticon-attachment13">  </i>Test</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Nek" onblur="if (this.value == '') {this.value = 'Nek';}" onfocus="if(this.value == 'Nek') {this.value = '';}">
+                        </div>
+                </div>
+                
+                <div class="line-divider"></div>
+
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button class="btn btn-cool btn-measure"><i class="icon flaticon-attachment13">  </i>Test</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Nek" onblur="if (this.value == '') {this.value = 'Nek';}" onfocus="if(this.value == 'Nek') {this.value = '';}">
+                        </div>
+                </div>
+                                <div class="line-divider"></div>
+
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button class="btn btn-cool btn-measure"><i class="icon flaticon-attachment13">  </i>Test</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Nek" onblur="if (this.value == '') {this.value = 'Nek';}" onfocus="if(this.value == 'Nek') {this.value = '';}">
+                        </div>
+                </div>
+                                <div class="line-divider"></div>
+
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button class="btn btn-cool btn-measure"><i class="icon flaticon-attachment13">  </i>Test</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Nek" onblur="if (this.value == '') {this.value = 'Nek';}" onfocus="if(this.value == 'Nek') {this.value = '';}">
+                        </div>
+                </div>
+                                <div class="line-divider"></div>
+
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button class="btn btn-cool btn-measure"><i class="icon flaticon-attachment13">  </i>Test</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Nek" onblur="if (this.value == '') {this.value = 'Nek';}" onfocus="if(this.value == 'Nek') {this.value = '';}">
+                        </div>
+                </div>
+
+                      <!--end tabs for creative product view-->
+
+              <div class="line-divider"></div>
+         </div>
+
+         <!-- images-->
+
+
+          <!-- popup div-->
+         <div class="demoRgt demoWidth rgt">
+                                    <div class="lft mesureUnit">
+                                        <div class="clr">
+                                        </div>
+                                        <div id="txtbusttext" class="howMesure fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Around Bust</strong></h3>
+                                            <p>
+                                               Measure under arms around the fullest part of the bust. Be sure to keep tape level across back and comfortably loose as per your wearing habits. 
+                                            </p>
+                                        </div>
+                                        <div id="txtawaisttext" class="howMesure fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Around Above Waist</strong></h3>
+                                            <p>
+                                                
+                                                Place the tape just under the mid-section below the bust, where the blouse will
+                                                end. Take the measurement from just under the bust and just above the waist.
+                                            </p>
+                                        </div>
+                                        <div id="txtshouldertext" class="howMesure  fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Shoulder</strong></h3>
+                                            <p>
+                                                Measure shoulder from one shoulder point to other shoulder point horizontally from
+                                                back.
+                                            </p>
+                                        </div>
+                                        <div id="txtarmholetext" class="howMesure fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Around Arm Hole</strong></h3>
+                                            <p>
+                                                From the highest point on the shoulder measure around arm hole with your arm hanging
+                                                down.
+                                            </p>
+                                        </div>
+                                        <div id="txtarmtext" class="howMesure fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Around Arm</strong></h3>
+                                            <p>
+                                                Measure the middle of bisceps level of your arm keeping the hand relaxed.
+                                            </p>
+                                        </div>
+                                        <div id="txtheighttext" class="howMesure fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Your Height</strong></h3>
+                                            <p>
+                                                Stand in your stocking feet with your feet slightly apart and your back to a wall.
+                                                Measure from the floor to the top of your head.
+                                            </p>
+                                        </div>
+                                        <div id="txtheightCmtext" class="howMesure fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Your Height</strong></h3>
+                                            <p>
+                                                Stand in your stocking feet with your feet slightly apart and your back to a wall.
+                                                Measure from the floor to the top of your head.
+                                            </p>
+                                        </div>
+                                        <div id="txtfrontneckdepthtext" class="howMesure fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Front Neck Depth</strong></h3>
+                                            <p>
+                                                Measuring from the front neck point to your desired depth diagonally.
+                                            </p>
+                                        </div>
+                                        <div id="txtbackneckdepthtext" class="howMesure fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Back Neck Depth</strong></h3>
+                                            <p>
+                                                Measuring from the back neck point to your desired depth diagonally.
+                                            </p>
+                                        </div>
+                                        <div id="txtsleevelengthtext" class="howMesure fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Sleeve Length</strong></h3>
+                                            <p>
+                                                Starting from the outside edge of the shoulder bone, measure upto the desired length.
+                                            </p>
+                                        </div>
+                                        <div id="txtuppertoplengthtext" class="howMesure fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Kameez Length</strong></h3>
+                                            <p>
+                                                Measure length from the shoulder point to your desired length like shown in the image.
+                                            </p>
+                                        </div>
+
+                                        <div id="txtwaisttext" class="howMesure fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Around Waist</strong></h3>
+                                            <p>
+                                                Measure around waist keeping the tape straight from back.
+                                            </p>
+                                        </div>
+                                        <div id="txthipstext" class="howMesure fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Around Hips</strong></h3>
+                                            <p>
+                                                Measure around the upper part of the hip, keeping the tape straight from the back
+                                                and front.
+                                            </p>
+                                        </div>
+                                        <div id="txtbottomlengthtext" class="howMesure fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Salwar Length</strong></h3>
+                                            <p>
+                                                Measuring from the waist, measuring upto the desired length.
+                                            </p>
+                                        </div>
+                                        <div class="howMesure fit" id="txtkneetext" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Around Knee</strong></h3>
+                                            <p>
+                                                Measure around the knee, while keeping your posture straight.
+                                            </p>
+                                        </div>                                        <div class="howMesure fit" id="txtthightext" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Around Thigh</strong></h3>
+                                            <p>
+                                                Measure around thigh of the leg, while keeping your posture straight.
+                                            </p>
+                                        </div>
+                                        <div class="howMesure fit" id="txtankletext" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Around Ankle</strong></h3>
+                                            <p>
+                                                Measure around ankle of the foot, while keeping your posture straight
+                                            </p>
+                                        </div>
+                                        <div class="howMesure fit" id="txtcalftext" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Around Calf</strong></h3>
+                                            <p>
+                                                Measure around calf of the leg, while keeping your posture straight.
+                                            </p>
+                                        </div>
+                                        <div class="howMesure fit" id="txtbottomtext" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Around Bottom</strong></h3>
+                                            <p>
+                                                Measure around bottom of the salwar.
+                                            </p>
+                                        </div>
+                                        <div class="clr">
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="rgt">
+                                        <img alt="" src="images/stitch/measure-dummy.jpg" class="DummyImg" id="fitdummy"></div>
+                                </div> 
+
+
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="profile">...</div>
+    <div role="tabpanel" class="tab-pane fade" id="messages">...</div>
+    <div role="tabpanel" class="tab-pane fade" id="settings">...</div>
+  </div>
+
+</div>
+
+
+
   </div>
 
 

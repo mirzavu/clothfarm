@@ -7970,3 +7970,46 @@ opacity: 1.0;
 .fancybox-wrap { 
     top: 100px !important; 
 }
+
+.btn-measure{
+    width: 50%;
+    float: left;
+}
+
+.input-measure{
+    width: 50%;
+    float: right;
+}
+
+.measureGide{width:980px; margin:0px auto; padding-left:7px;}
+.measureGide h1{float:left;font-size:21px; color:#231f20}
+.measureGideLft{float:left;width:518px;border-bottom:1px solid #C1C2C1;}
+.measureGideLft p,.bottomStyle p{padding:5px 0px;border-bottom:1px solid #C1C2C1;font-size:12px;color:#231f20;line-height:18px;}
+.measureGideLftType{float:left;margin-top:15px;font-size:14px;}
+.measureGideLftType span{margin-bottom:20px;color:#000;font-weight:bold;display:block}
+.measureGideLftType.mrtLft{margin-left:105px;}
+.measureGideLftType a{color:#007EC6;margin:0px 0px 20px 5px;cursor:pointer;display:block}
+#upperNav{background-color:#f5f5f5; float:right; border:solid 1px #c1c2c1;}
+#upperNav ul{ float:left; font-size:13px; font-weight:bold; color:#333333; text-transform:uppercase;}
+#upperNav li{ float:left; cursor:pointer;}
+#upperNav li a{ padding:5px 35px; text-decoration:none; float:left;}
+#upperNav li a:hover{background:#eb0f8e; color:#fff !important;}
+#upperNav li a.selcted{ background:#eb0f8e; color:#fff;}
+.demoRgt.demoWidth{width:280px;}
+.mesureUnit{width:257px;}
+.mesureUnit p{padding-bottom:15px;}
+.howMesure{background: none repeat scroll 0 0 #F2F2F2;position: relative;border: 1px solid #B5B5B5;border-radius: 10px 10px 10px 10px;color: #000000;float: left;margin-left: -27px;padding: 25px 25px 10px 25px;top: 90px;width: 223px;z-index: 1000;display: none;}
+.howMesure.fit{margin-left: -261px;top:370px;position: absolute;font-size:13px;}
+.howMesure.styleMesure{ *top:190px;top:170px;left:-59px;}
+.howMesure h3{font-size:23px;}
+.rgtArrow{background: url(   "../images/mmt/rgt-arrow.gif" ) no-repeat scroll 0 0 transparent;float: right;height: 21px;margin-right: -42px;width: 17px;position: absolute;right: 25px;}
+.bottomStyle{margin:75px 0px 20px 0px;width:987px;float:left;}
+.bottomStyle span{display:block;font-size:21px; color:#231f20}    
+.imgbox{width:888px;overflow:hidden;float:left;margin:0px 10px;height:185px;}  
+.imgbox ul li{float:left; padding:12px 17px 0 18px; width:113px;}
+.imgbox ul li img{border:1px solid #C1C2C1;}
+.imgbox ul li span{display:block;font-size:12px; text-align:center}
+.imgbox ul li.mrgRgt{margin-right:0px;}
+.lftArr{margin:58px 0px 0px 34px;float:left;cursor:pointer;background: url("../images/left-arrows.gif") no-repeat scroll 0px 0px transparent; cursor: pointer; width:22px;height: 33px;}
+.rgtArr{margin:58px 0px 0px 0px;float:left;cursor:pointer;background:url(../images/right-arrows.gif) no-repeat right 0px;height:33px; width:22px}
+.mrgTop{margin-top:0px;}
