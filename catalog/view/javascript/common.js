@@ -100,7 +100,9 @@ $(document).ready(function() {
 	$('#stitch').on("click",function(){
 		console.log('sdfgsdfsfgsdf');
 		$.fancybox.close();
-		$('#measure-trigger').click();
+		$('#content').hide();
+		$('#content-new').show();
+		//$('#measure-trigger').click();
 	});
 
 	// Adding the clear Fix

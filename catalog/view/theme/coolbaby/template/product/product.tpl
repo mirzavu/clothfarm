@@ -65,7 +65,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
 <?php echo $content_top; ?>
 
 
-  <div id="content" style="display:none" class="product-view product-info row <?php echo ($option_color ? 'content' : ''); ?>">
+  <div id="content" class="product-view product-info row <?php echo ($option_color ? 'content' : ''); ?>">
 
         <?php if ($page_type != 0) : ?><?php echo $column_left; ?><?php endif; ?>
 
@@ -817,7 +817,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
 
 </div>
 
-<div id="content-new" style="" class="product-view product-info row <?php echo ($option_color ? 'content' : ''); ?>">
+<div id="content-new" style="display:none" class="product-view product-info row <?php echo ($option_color ? 'content' : ''); ?>">
 
   <div>
 
@@ -838,7 +838,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                 <div class="line-divider"></div>
                 <div class="measure-tab">    
                         <div class="clearfix visible-xs"></div>
-                        <button rel="around-bust" id="txtbust" class="btn btn-cool btn-measure"><i class="icon flaticon-attachment13">  </i>Test</button>
+                        <button rel="around-bust" id="txtbust" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i>Test</button>
 
                         <div class="input-measure">
                             <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Nek" onblur="if (this.value == '') {this.value = 'Nek';}" onfocus="if(this.value == 'Nek') {this.value = '';}">
@@ -849,7 +849,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
 
                 <div class="measure-tab">    
                         <div class="clearfix visible-xs"></div>
-                        <button rel="around-above-waist" class="btn btn-cool btn-measure"><i class="icon flaticon-attachment13">  </i>Test</button>
+                        <button rel="around-above-waist" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i>Test</button>
 
                         <div class="input-measure">
                             <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Nek" onblur="if (this.value == '') {this.value = 'Nek';}" onfocus="if(this.value == 'Nek') {this.value = '';}">
@@ -859,7 +859,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
 
                 <div class="measure-tab">    
                         <div class="clearfix visible-xs"></div>
-                        <button rel="shoulder" id="txtshoulder" class="btn btn-cool btn-measure"><i class="icon flaticon-attachment13">  </i>Test</button>
+                        <button rel="shoulder" id="txtshoulder" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i>Test</button>
 
                         <div class="input-measure">
                             <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Nek" onblur="if (this.value == '') {this.value = 'Nek';}" onfocus="if(this.value == 'Nek') {this.value = '';}">
@@ -869,7 +869,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
 
                 <div class="measure-tab">    
                         <div class="clearfix visible-xs"></div>
-                        <button rel="around-arm-hole" id="txtarmhole" class="btn btn-cool btn-measure"><i class="icon flaticon-attachment13">  </i>Test</button>
+                        <button rel="around-arm-hole" id="txtarmhole" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i>Test</button>
 
                         <div class="input-measure">
                             <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Nek" onblur="if (this.value == '') {this.value = 'Nek';}" onfocus="if(this.value == 'Nek') {this.value = '';}">
@@ -877,7 +877,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                 </div>
                 <div class="measure-tab">    
                         <div class="clearfix visible-xs"></div>
-                        <button rel="around-arm" id="txtarm" class="btn btn-cool btn-measure"><i class="icon flaticon-attachment13">  </i>Test</button>
+                        <button rel="around-arm" id="txtarm" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i>Test</button>
 
                         <div class="input-measure">
                             <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Nek" onblur="if (this.value == '') {this.value = 'Nek';}" onfocus="if(this.value == 'Nek') {this.value = '';}">
@@ -885,7 +885,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                 </div>
                 <div class="measure-tab">    
                         <div class="clearfix visible-xs"></div>
-                        <button id="txtheight" rel="skd-height" class="btn btn-cool btn-measure"><i class="icon flaticon-attachment13">  </i>Test</button>
+                        <button id="txtheight" rel="skd-height" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i>Test</button>
 
                         <div class="input-measure">
                             <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Nek" onblur="if (this.value == '') {this.value = 'Nek';}" onfocus="if(this.value == 'Nek') {this.value = '';}">
@@ -893,7 +893,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                 </div>
                 <div class="measure-tab">    
                         <div class="clearfix visible-xs"></div>
-                        <button rel="around-arm" class="btn btn-cool btn-measure"><i class="icon flaticon-attachment13">  </i>Test</button>
+                        <button rel="around-arm" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i>Test</button>
 
                         <div class="input-measure">
                             <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Nek" onblur="if (this.value == '') {this.value = 'Nek';}" onfocus="if(this.value == 'Nek') {this.value = '';}">
@@ -901,7 +901,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                 </div>
                 <div class="measure-tab">    
                         <div class="clearfix visible-xs"></div>
-                        <button rel="around-arm" class="btn btn-cool btn-measure"><i class="icon flaticon-attachment13">  </i>Test</button>
+                        <button rel="around-arm" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i>Test</button>
 
                         <div class="input-measure">
                             <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Nek" onblur="if (this.value == '') {this.value = 'Nek';}" onfocus="if(this.value == 'Nek') {this.value = '';}">
@@ -909,7 +909,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                 </div>
                 <div class="measure-tab">    
                         <div class="clearfix visible-xs"></div>
-                        <button rel="around-arm" class="btn btn-cool btn-measure"><i class="icon flaticon-attachment13">  </i>Test</button>
+                        <button rel="around-arm" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i>Test</button>
 
                         <div class="input-measure">
                             <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Nek" onblur="if (this.value == '') {this.value = 'Nek';}" onfocus="if(this.value == 'Nek') {this.value = '';}">
@@ -917,7 +917,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                 </div>
                 <div class="measure-tab">    
                         <div class="clearfix visible-xs"></div>
-                        <button rel="around-arm" class="btn btn-cool btn-measure"><i class="icon flaticon-attachment13">  </i>Test</button>
+                        <button rel="around-arm" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i>Test</button>
 
                         <div class="input-measure">
                             <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Nek" onblur="if (this.value == '') {this.value = 'Nek';}" onfocus="if(this.value == 'Nek') {this.value = '';}">
@@ -925,7 +925,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                 </div>
                 <div class="measure-tab">    
                         <div class="clearfix visible-xs"></div>
-                        <button rel="around-arm" class="btn btn-cool btn-measure"><i class="icon flaticon-attachment13">  </i>Test</button>
+                        <button rel="around-arm" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i>Test</button>
 
                         <div class="input-measure">
                             <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Nek" onblur="if (this.value == '') {this.value = 'Nek';}" onfocus="if(this.value == 'Nek') {this.value = '';}">
@@ -933,7 +933,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                 </div>
                 <div class="measure-tab">    
                         <div class="clearfix visible-xs"></div>
-                        <button rel="around-arm" class="btn btn-cool btn-measure"><i class="icon flaticon-attachment13">  </i>Test</button>
+                        <button rel="around-arm" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i>Test</button>
 
                         <div class="input-measure">
                             <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Nek" onblur="if (this.value == '') {this.value = 'Nek';}" onfocus="if(this.value == 'Nek') {this.value = '';}">
@@ -941,7 +941,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                 </div>
                 <div class="measure-tab">    
                         <div class="clearfix visible-xs"></div>
-                        <button rel="around-arm" class="btn btn-cool btn-measure"><i class="icon flaticon-attachment13">  </i>Test</button>
+                        <button rel="around-arm" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i>Test</button>
 
                         <div class="input-measure">
                             <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Nek" onblur="if (this.value == '') {this.value = 'Nek';}" onfocus="if(this.value == 'Nek') {this.value = '';}">
