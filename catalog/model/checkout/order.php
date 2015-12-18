@@ -1,5 +1,5 @@
 <?php
-class ModelCheckoutOrder extends Model {
+class ModelCheckoutOrder extends Model { 
 	public function addOrder($data, $order_status_id = "") { //print_r($data); exit;
 		$this->event->trigger('pre.order.add', $data); 
 
@@ -30,7 +30,7 @@ class ModelCheckoutOrder extends Model {
 				$this->db->query("INSERT INTO " . DB_PREFIX . "customer_to_store SET customer_id = '" . (int)$data['customer_id'] . "', 	store_id = '" . $query->row['store_id'] . "'");
 				}
 			}
-			$this->db->query("INSERT INTO " . DB_PREFIX . "order_product SET order_id = '" . (int)$order_id . "', product_id = '" . (int)$product['product_id'] . "', name = '" . $this->db->escape($product['name']) . "', model = '" . $this->db->escape($product['model']) . "', quantity = '" . (int)$product['quantity'] . "', price = '" . (float)$product['price'] . "', total = '" . (float)$product['total'] . "', tax = '" . (float)$product['tax'] . "', reward = '" . (int)$product['reward'] . "', merchant_id = '". $vendor ."', shipping = '" . (float)$product['product_shipping'] . "'");		
+			$this->db->query("INSERT INTO " . DB_PREFIX . "order_product SET order_id = '" . (int)$order_id . "', product_id = '" . (int)$product['product_id'] . "', name = '" . $this->db->escape($product['name']) . "', model = '" . $this->db->escape($product['model']) . "', quantity = '" . (int)$product['quantity'] . "', price = '" . (float)$product['price'] . "', stitch = '" . $product['test'] . "', total = '" . (float)$product['total'] . "', tax = '" . (float)$product['tax'] . "', reward = '" . (int)$product['reward'] . "', merchant_id = '". $vendor ."', shipping = '" . (float)$product['product_shipping'] . "'");		
 
 			$order_product_id = $this->db->getLastId();
 

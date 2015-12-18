@@ -290,7 +290,7 @@ class ControllerCheckoutCart extends Controller {
 		$this->load->model('catalog/product');
 
 		$product_info = $this->model_catalog_product->getProduct($product_id);
-
+		//$ttt =json_encode($this->request->post['option']);var_dump($ttt);return;
 		if ($product_info) {
 			if (isset($this->request->post['quantity'])) {
 				$quantity = (int)$this->request->post['quantity'];
@@ -303,6 +303,13 @@ class ControllerCheckoutCart extends Controller {
 			} else {
 				$option = array();
 			}
+
+			if (isset($this->request->post['test'])) {
+				$test = $this->request->post['test'];
+			} else {
+				$test = 'testval';
+			}
+			
 
 			$product_options = $this->model_catalog_product->getProductOptions($this->request->post['product_id']);
 
@@ -333,7 +340,7 @@ class ControllerCheckoutCart extends Controller {
 			}
 
 			if (!$json) {
-				$this->cart->add($this->request->post['product_id'], $quantity, $option, $recurring_id);
+				$this->cart->add($this->request->post['product_id'], $quantity, $option, $recurring_id, $test);
 
 				$json['success'] = sprintf($this->language->get('text_success'), $this->url->link('product/product', 'product_id=' . $this->request->post['product_id']), $product_info['name'], $this->url->link('checkout/cart'));
 

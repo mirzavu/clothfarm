@@ -823,25 +823,24 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
 
   <!-- Nav tabs -->
   <ul class="nav nav-tabs" role="tablist">
-    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
-    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
-    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
-    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">SAREE</a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">SALWAR KAMEEZ</a></li>
+    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">LEHENGA CHOLI</a></li>
   </ul>
 
   <!-- Tab panes -->
   <div class="tab-content">
         <div role="tabpanel" class="tab-pane fade in active" id="home">
               <div style="float:left;" class="product-info-cell product-description content_info">
-
+                <input style="display:none;" type="text" name="test" value="11">
               <h1 class="product_title" itemprop="name" align="center">MEASUREMENT</h1>
                 <div class="line-divider"></div>
                 <div class="measure-tab">    
                         <div class="clearfix visible-xs"></div>
-                        <button rel="around-bust" id="txtbust" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i>Test</button>
+                        <button rel="around-bust" id="txtbust" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Bust</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Nek" onblur="if (this.value == '') {this.value = 'Nek';}" onfocus="if(this.value == 'Nek') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
                         </div>
                 </div>
                 
@@ -849,102 +848,142 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
 
                 <div class="measure-tab">    
                         <div class="clearfix visible-xs"></div>
-                        <button rel="around-above-waist" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i>Test</button>
+                        <button rel="around-above-waist" id="txtawaist" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Above Waist</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Nek" onblur="if (this.value == '') {this.value = 'Nek';}" onfocus="if(this.value == 'Nek') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
                         </div>
                 </div>
                 <div class="line-divider"></div>
 
                 <div class="measure-tab">    
                         <div class="clearfix visible-xs"></div>
-                        <button rel="shoulder" id="txtshoulder" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i>Test</button>
+                        <button rel="shoulder" id="txtshoulder" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Shoulder</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Nek" onblur="if (this.value == '') {this.value = 'Nek';}" onfocus="if(this.value == 'Nek') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
                         </div>
                 </div>
                 <div class="line-divider"></div>
 
                 <div class="measure-tab">    
                         <div class="clearfix visible-xs"></div>
-                        <button rel="around-arm-hole" id="txtarmhole" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i>Test</button>
+                        <button rel="around-arm-hole" id="txtarmhole" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Arm Hole</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Nek" onblur="if (this.value == '') {this.value = 'Nek';}" onfocus="if(this.value == 'Nek') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
                         </div>
                 </div>
                 <div class="measure-tab">    
                         <div class="clearfix visible-xs"></div>
-                        <button rel="around-arm" id="txtarm" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i>Test</button>
+                        <button rel="around-arm" id="txtarm" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Arm</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Nek" onblur="if (this.value == '') {this.value = 'Nek';}" onfocus="if(this.value == 'Nek') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
                         </div>
                 </div>
                 <div class="measure-tab">    
                         <div class="clearfix visible-xs"></div>
-                        <button id="txtheight" rel="skd-height" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i>Test</button>
+                        <button id="txtheight" rel="skd-height" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Your Height</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Nek" onblur="if (this.value == '') {this.value = 'Nek';}" onfocus="if(this.value == 'Nek') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
                         </div>
                 </div>
                 <div class="measure-tab">    
                         <div class="clearfix visible-xs"></div>
-                        <button rel="around-arm" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i>Test</button>
+                        <button id="txtfrontneckdepth" rel="frontneckdepth" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Front Neck Depth</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Nek" onblur="if (this.value == '') {this.value = 'Nek';}" onfocus="if(this.value == 'Nek') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
                         </div>
                 </div>
                 <div class="measure-tab">    
                         <div class="clearfix visible-xs"></div>
-                        <button rel="around-arm" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i>Test</button>
+                        <button id="txtbackneckdepth" rel="backneckdepth" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Back Neck Depth</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Nek" onblur="if (this.value == '') {this.value = 'Nek';}" onfocus="if(this.value == 'Nek') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
                         </div>
                 </div>
                 <div class="measure-tab">    
                         <div class="clearfix visible-xs"></div>
-                        <button rel="around-arm" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i>Test</button>
+                        <button id="txtsleevelength" rel="sleevelength" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Sleeve Length</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Nek" onblur="if (this.value == '') {this.value = 'Nek';}" onfocus="if(this.value == 'Nek') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
                         </div>
                 </div>
                 <div class="measure-tab">    
                         <div class="clearfix visible-xs"></div>
-                        <button rel="around-arm" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i>Test</button>
+                        <button id="txtuppertoplength" rel="uppertoplength" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Kameez Length</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Nek" onblur="if (this.value == '') {this.value = 'Nek';}" onfocus="if(this.value == 'Nek') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
                         </div>
                 </div>
                 <div class="measure-tab">    
                         <div class="clearfix visible-xs"></div>
-                        <button rel="around-arm" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i>Test</button>
+                        <button rel="around-waist" id="txtwaist" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Waist</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Nek" onblur="if (this.value == '') {this.value = 'Nek';}" onfocus="if(this.value == 'Nek') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
                         </div>
                 </div>
                 <div class="measure-tab">    
                         <div class="clearfix visible-xs"></div>
-                        <button rel="around-arm" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i>Test</button>
+                        <button rel="around-hips" id="txthips" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Hips</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Nek" onblur="if (this.value == '') {this.value = 'Nek';}" onfocus="if(this.value == 'Nek') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
                         </div>
                 </div>
                 <div class="measure-tab">    
                         <div class="clearfix visible-xs"></div>
-                        <button rel="around-arm" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i>Test</button>
+                        <button id="txtbottomlength" rel="salwarlength" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Salwar Length</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Nek" onblur="if (this.value == '') {this.value = 'Nek';}" onfocus="if(this.value == 'Nek') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
+                        </div>
+                </div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button id="txtknee" rel="knee" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Knee</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
+                        </div>
+                </div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button id="txtthigh" rel="thigh" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Thigh</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
+                        </div>
+                </div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button id="txtankle" rel="ankle" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Ankle</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
+                        </div>
+                </div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button id="txtcalf" rel="calf" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Calf</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
+                        </div>
+                </div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button id="txtbottom" rel="bottom" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Bottom</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
                         </div>
                 </div>
 
@@ -1427,10 +1466,11 @@ $('select[name=\'recurring_id\'], input[name="quantity"]').change(function(){
 //--></script>
 <script type="text/javascript"><!--
 $('#button-cart').on('click', function() {
+  console.log('sdf');
 	$.ajax({
 		url: 'index.php?route=checkout/cart/add',
 		type: 'post',
-		data: $('#product input[type=\'text\'], #product input[type=\'hidden\'], #product input[type=\'radio\']:checked, #product input[type=\'checkbox\']:checked, #product select, #product textarea'),
+		data: $('#content-new input[type=\'text\'], #product input[type=\'text\'], #product input[type=\'hidden\'], #product input[type=\'radio\']:checked, #product input[type=\'checkbox\']:checked, #product select, #product textarea'),
 		dataType: 'json',
 		beforeSend: function() {
 			$('#button-cart').button('loading');
@@ -1439,6 +1479,7 @@ $('#button-cart').on('click', function() {
 			$('#button-cart').button('reset');
 		},
 		success: function(json) {
+      //console.log(json);return;
 			$('.alert, .text-danger').remove();
 			$('.form-group').removeClass('has-error');
 

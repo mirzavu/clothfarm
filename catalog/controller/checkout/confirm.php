@@ -26,7 +26,7 @@ class ControllerCheckoutConfirm extends Controller {
 
 		// Validate if payment method has been set.
 		if (!isset($this->session->data['payment_method'])) {
-			$redirect = $this->url->link('checkout/checkout', '', 'SSL');
+			$redirect = $this->url->link('checkout/checkout', '', 'SSL'); 
 		}
 
 		// Validate cart has products and has stock.
@@ -220,6 +220,7 @@ class ControllerCheckoutConfirm extends Controller {
 					'quantity'   => $product['quantity'],
 					'subtract'   => $product['subtract'],
 					'price'      => $product['price'],
+					'test'       => $product['test'],
 					'total'      => $product['total'],
 					'tax'        => $this->tax->getTax($product['price'], $product['tax_class_id']),
 					'reward'     => $product['reward'],
@@ -317,7 +318,7 @@ class ControllerCheckoutConfirm extends Controller {
 
 			$this->load->model('checkout/order');
 
-			$this->session->data['order_id'] = $this->model_checkout_order->addOrder($order_data);
+			$this->session->data['order_id'] = $this->model_checkout_order->addOrder($order_data); 
 
 			$data['text_recurring_item'] = $this->language->get('text_recurring_item');
 			$data['text_payment_recurring'] = $this->language->get('text_payment_recurring');

@@ -33,6 +33,12 @@ class Cart {
 					$options = array();
 				}
 
+				if (!empty($product['test'])) {
+					$test = $product['test'];
+				} else {
+					$test = 'testval';
+				}
+
 				// Profile
 				if (!empty($product['recurring_id'])) {
 					$recurring_id = $product['recurring_id'];
@@ -254,6 +260,7 @@ class Cart {
 						'subtract'        => $product_query->row['subtract'],
 						'stock'           => $stock,
 						'price'           => ($price + $option_price),
+						'test'            => $test,
 						'total'           => ($price + $option_price) * $quantity,
 						'reward'          => $reward * $quantity,
 						'points'          => ($product_query->row['points'] ? ($product_query->row['points'] + $option_points) * $quantity : 0),
@@ -287,7 +294,7 @@ class Cart {
 		return $recurring_products;
 	}
 
-	public function add($product_id, $qty = 1, $option = array(), $recurring_id = 0) {
+	public function add($product_id, $qty = 1, $option = array(), $recurring_id = 0, $test='sample') {
 		$this->data = array();
 
 		$product['product_id'] = (int)$product_id;
@@ -298,6 +305,10 @@ class Cart {
 
 		if ($recurring_id) {
 			$product['recurring_id'] = (int)$recurring_id;
+		}
+
+		if ($test) {
+			$product['test'] = $test;
 		}
 
 		$key = base64_encode(serialize($product));
