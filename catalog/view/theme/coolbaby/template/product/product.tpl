@@ -823,9 +823,10 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
     <br><br>
   <!-- Nav tabs -->
   <ul id="measure-nav" class="nav nav-tabs" role="tablist">
-    <li role="presentation" class="active"><a href="#salwar-tab" aria-controls="home" role="tab" data-toggle="tab">SALWAR KAMEEZ</a></li>
-    <li role="presentation"><a href="#saree-tab" aria-controls="profile" role="tab" data-toggle="tab">SAREE</a></li>
-    <li role="presentation"><a href="#choli-tab" aria-controls="messages" role="tab" data-toggle="tab">LEHENGA CHOLI</a></li>
+    <li id="salwartab" role="presentation" class="active"><a href="#salwar-tab" aria-controls="home" role="tab" data-toggle="tab">SALWAR KAMEEZ</a></li>
+    <li id="sareetab" role="presentation"><a href="#saree-tab" aria-controls="profile" role="tab" data-toggle="tab">SAREE</a></li>
+    <li id="cholitab" role="presentation"><a href="#choli-tab" aria-controls="messages" role="tab" data-toggle="tab">LEHENGA CHOLI</a></li>
+    <li role="presentation"><img style="width: 43px;" src="images/stitch/arrow_left.png"></img></li>
   </ul>
 
   <!-- Tab panes -->
@@ -833,7 +834,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
         <div role="tabpanel" class="tab-pane fade in active" id="salwar-tab">
               <div style="float:left;" class="product-info-cell product-description content_info">
                 <input style="display:none;" type="text" name="test" value="11">
-              <h1 class="product_title" itemprop="name" align="center">MEASUREMENT</h1>
+              <h1 class="product_title" itemprop="name" align="center"><img style="width: 29px;" src="images/stitch/arrow_down.png"> MEASUREMENT</h1>
                 <div class="line-divider"></div>
                 <div class="measure-tab">    
                         <div class="clearfix visible-xs"></div>
@@ -1213,7 +1214,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
     <div role="tabpanel" class="tab-pane fade" id="saree-tab">
 
         <div style="float:left;" class="product-info-cell product-description content_info">
-              <h1 class="product_title" itemprop="name" align="center">MEASUREMENT</h1>
+              <h1 class="product_title" itemprop="name" align="center"><img style="width: 29px;" src="images/stitch/arrow_down.png"> MEASUREMENT</h1>
                 <div class="line-divider"></div>
                 <div class="measure-tab">    
                         <div class="clearfix visible-xs"></div>
@@ -1441,7 +1442,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
 
           <div style="float:left;" class="product-info-cell product-description content_info">
                 <input style="display:none;" type="text" name="test" value="11">
-              <h1 class="product_title" itemprop="name" align="center">MEASUREMENT</h1>
+              <h1 class="product_title" itemprop="name" align="center"><img style="width: 29px;" src="images/stitch/arrow_down.png"> MEASUREMENT</h1>
                 <div class="line-divider"></div>
                 <div class="measure-tab">    
                         <div class="clearfix visible-xs"></div>

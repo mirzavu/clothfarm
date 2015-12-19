@@ -9,6 +9,7 @@ $(function(){
    $(this).parent().find('.imgbox').animate({scrollLeft: '-=888'},1000)
     })
   $('.rgtArr').click(function(){
+
      $(this).parent().find('.imgbox').animate({scrollLeft: '+=888'},1000)
     })
 })
@@ -22,8 +23,15 @@ $(function(){
         $('.DummyImg').attr('src', 'images/stitch/' + imgpath + '.jpg');
 
     }, function() {
+    	var tab = $('ul#measure-nav li.active').attr('id');
+
         $('.howMesure').css({ 'display': 'none' });
+        if(tab == "salwartab")
             $('.DummyImg').attr('src', 'images/stitch/measure-dummy.jpg');
+        else if(tab == "sareetab")
+        	$('.DummyImg').attr('src', 'images/stitch/saree-dummy.jpg');
+        else
+        	$('.DummyImg').attr('src', 'images/stitch/lehenga-dummy.jpg');
     });
 })
 
@@ -40,6 +48,11 @@ $(document).ready(function() {
 	});
 	$('[data-toggle="popover"]').popover();   
 	$('.mam').fancybox({
+		'beforeLoad': function(){
+		 $('html,body').animate({
+        scrollTop: $("#content").offset().top},
+        'slow');
+		  },
 		maxWidth	: 412,
 		maxHeight	: 300,
 		fitToView	: false,

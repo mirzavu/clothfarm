@@ -3279,7 +3279,8 @@ a.sort-icon:before {
 .tab-content {
     border: 1px solid #d0d0d0 !important;
     margin-bottom: 20px;
-    padding: 20px 20px 15px
+    padding: 20px 20px 15px;
+    overflow:auto;
 }
 .label.label-sale, .label.label-hot, .label.label-newl, .label.label-new, .label.label-sale-percent {
     position: absolute;

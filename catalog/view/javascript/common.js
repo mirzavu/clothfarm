@@ -22,35 +22,6 @@ function getURLVar(key) {
 	}
 }
 
-
-$(function(){
-   var  i=0;
-   $('.imgbox ul').each(function(){
-   i=i+1;
-   $(this).css({width:$('#'+i+ ' ul li').length*148});
-   })
-
-   $('.lftArr').click(function(){
-   $(this).parent().find('.imgbox').animate({scrollLeft: '-=888'},1000)
-    })
-  $('.rgtArr').click(function(){
-     $(this).parent().find('.imgbox').animate({scrollLeft: '+=888'},1000)
-    })
-})
-$(function(){
- $('.measure-tab button').hover(function() {
-        var imgpath = $(this).attr('rel');
-        var dummytext = $(this).attr('id');
-        $('.howMesure').css({ 'display': 'none' });
-        $('#' + dummytext + 'text').css({ 'display': 'block' });
-        $('.DummyImg').attr('src', 'images/stitch/' + imgpath + '.jpg');
-
-    }, function() {
-        $('.howMesure').css({ 'display': 'none' });
-            $('.DummyImg').attr('src', 'images/stitch/measure-dummy.jpg');
-    });
-})
-
 $(document).ready(function() {
 
 	// Adding the clear Fix
