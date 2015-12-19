@@ -3239,7 +3239,8 @@ a.sort-icon:before {
     position: relative;
     white-space: nowrap;
     border-bottom: none;
-    margin-bottom: -1px
+    margin-bottom: -1px;
+    margin-left: 35%;
 }
 .nav-tabs>li {
     display: inline-block;
