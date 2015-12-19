@@ -7976,6 +7976,7 @@ opacity: 1.0;
 .btn-measure{
     width: 50%;
     float: left;
+    text-align: left;
 }
 
 .input-measure{

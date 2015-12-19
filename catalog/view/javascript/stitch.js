@@ -37,6 +37,16 @@ $(function(){
 
 $(document).ready(function() {
 
+	$('#measure-nav li').click(function(){
+		var tab = $(this).attr('id');
+        if(tab == "salwartab")
+            $('.DummyImg').attr('src', 'images/stitch/measure-dummy.jpg');
+        else if(tab == "sareetab")
+        	$('.DummyImg').attr('src', 'images/stitch/saree-dummy.jpg');
+        else
+        	$('.DummyImg').attr('src', 'images/stitch/lehenga-dummy.jpg');
+	});
+
 	$('.btn-measure').hover(function(){
 		$(this).next().children('input').focus();
 	});
