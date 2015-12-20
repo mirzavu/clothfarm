@@ -1144,6 +1144,9 @@ class ControllerSaleOrder extends Controller {
 				'href' => $this->url->link('sale/order', 'token=' . $this->session->data['token'] . $url, 'SSL')
 			);
 
+			$this->document->addScript('view/javascript/fancybox/jquery.fancybox.js');
+			$this->document->addStyle('view/javascript/fancybox/jquery.fancybox.css');
+			$this->document->addStyle('view/stylesheet/custom_style.css');
 			$data['shipping'] = $this->url->link('sale/order/shipping', 'token=' . $this->session->data['token'] . '&order_id=' . (int)$this->request->get['order_id'], 'SSL');
 			$data['invoice'] = $this->url->link('sale/order/invoice', 'token=' . $this->session->data['token'] . '&order_id=' . (int)$this->request->get['order_id'], 'SSL');
 			$data['edit'] = $this->url->link('sale/order/edit', 'token=' . $this->session->data['token'] . '&order_id=' . (int)$this->request->get['order_id'], 'SSL');
