@@ -15,7 +15,7 @@ $(function(){
 })
 
 $(function(){
- $('.measure-tab button').hover(function() {
+ $('.measure-tab button.btn-measure').hover(function() {
         var imgpath = $(this).attr('rel');
         var dummytext = $(this).attr('id');
         $('.howMesure').css({ 'display': 'none' });
@@ -37,6 +37,28 @@ $(function(){
 
 $(document).ready(function() {
 
+	//Taking all measurements of Salwar from the input fields
+	$('#measure-done-salwar').click(function(){
+
+		var all_measure = '';
+		$('#salwar-tab .btn-measure').each(function(){
+			var rel = $(this).attr('rel');
+			var measure_input = $(this).next().children('input').val();
+			all_measure += '"'+rel+'":"'+measure_input+'",';
+		});
+		all_measure = all_measure.slice(0,-1);
+		var measure_list = '{"type":"Salwar","data":{'+all_measure+'}}';
+		console.log(measure_list);
+		$('#input-measures').val(measure_list);
+		$('#content-new').hide();
+		$('#content').show();
+		$('html,body').animate({
+        scrollTop: $("#content").offset().top},
+        'slow');
+		$('#button-cart').click();
+	});
+
+	//Changing images on tab change
 	$('#measure-nav li').click(function(){
 		var tab = $(this).attr('id');
         if(tab == "salwartab")

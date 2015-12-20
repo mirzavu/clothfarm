@@ -466,6 +466,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                           <span class="input-group-addon">−</span>
                           <input class="form-control input-quantity" type="text" name="quantity" value="<?php echo $minimum; ?>" />
                           <input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
+                          <input type="hidden" id="input-measures" name="test" value="" />
                           <span class="input-group-addon">+</span>
                       </div>
                   </div>
@@ -482,7 +483,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                               <div style="float:left;padding-left:15px;" id="nostitch"><button class="btn btn-cool btn-lg" id="button-no-stitch"><i class="icon icon"></i>Continue to Checkout</button></div>
                             </div>
                   </div>
-                  <div style="display: none">
+                  <!--<div style="display: none">
                           <div id="measure">
 
                             <div style="float:left;">
@@ -530,7 +531,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                               <img height="500px" width="330px" src="http://localhost/clothfarm/images/images/dummy.jpg">
                             </div>
                           </div>
-                  </div>
+                  </div>-->
                   <button style="display: none" class="btn btn-cool btn-lg" type="submit" id="button-cart" data-loading-text="<?php echo $text_loading; ?>"><i class="icon flaticon-shopping66"></i><?php echo $button_cart; ?></button>
 
                   <?php 
@@ -832,7 +833,6 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
   <div class="tab-content">
         <div role="tabpanel" class="tab-pane fade in active" id="salwar-tab">
               <div style="float:left;" class="product-info-cell product-description content_info">
-                <input style="display:none;" type="text" name="test" value="11">
               <h1 class="product_title" itemprop="name" align="center">MEASUREMENT</h1>
                 <div class="line-divider"></div>
                 <div class="measure-tab">    
@@ -985,6 +985,10 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                         <div class="input-measure">
                             <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
                         </div>
+                </div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button id="measure-done-salwar" style="width:100%" class="btn btn-cool"><i class="icon flaticon-pencil43">  </i> Add to Cart</button>
                 </div>
 
 
@@ -1440,7 +1444,6 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
     <div role="tabpanel" class="tab-pane fade" id="choli-tab">
 
           <div style="float:left;" class="product-info-cell product-description content_info">
-                <input style="display:none;" type="text" name="test" value="11">
               <h1 class="product_title" itemprop="name" align="center">MEASUREMENT</h1>
                 <div class="line-divider"></div>
                 <div class="measure-tab">    
