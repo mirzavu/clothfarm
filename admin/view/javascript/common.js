@@ -23,7 +23,6 @@ function getURLVar(key) {
 }
 
 $(document).ready(function() {
-	$('.popdata').fancybox();
 	//Form Submit for IE Browser
 	$('button[type=\'submit\']').on('click', function() {
 		$("form[id*='form-']").submit();
