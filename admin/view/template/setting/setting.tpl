@@ -105,6 +105,24 @@
                 </div>
               </div>
               <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-salwar-cost">Salwar Stitching Cost</label>
+                <div class="col-sm-10">
+                  <input type="text" name="config_salwar_cost" value="<?php echo $config_salwar_cost; ?>" placeholder="Salwar Stitching Cost" id="input-salwar-cost" class="form-control" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-saree-cost">Saree Stitching Cost</label>
+                <div class="col-sm-10">
+                  <input type="text" name="config_saree_cost" value="<?php echo $config_saree_cost; ?>" placeholder="Saree Stitching Cost" id="input-saree-cost" class="form-control" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-choli-cost">Choli Stitching Cost</label>
+                <div class="col-sm-10">
+                  <input type="text" name="config_choli_cost" value="<?php echo $config_choli_cost; ?>" placeholder="Choli Stitching Cost" id="input-choli-cost" class="form-control" />
+                </div>
+              </div>
+              <div class="form-group">
                 <label class="col-sm-2 control-label" for="input-image"><?php echo $entry_image; ?></label>
                 <div class="col-sm-10"><a href="" id="thumb-image" data-toggle="image" class="img-thumbnail"><img src="<?php echo $thumb; ?>" alt="" title="" data-placeholder="<?php echo $placeholder; ?>" /></a>
                   <input type="hidden" name="config_image" value="<?php echo $config_image; ?>" id="input-image" />

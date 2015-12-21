@@ -715,6 +715,24 @@ class ControllerSettingSetting extends Controller {
 			$data['config_fax'] = $this->config->get('config_fax');
 		}
 
+		if (isset($this->request->post['config_salwar_cost'])) {
+			$data['config_salwar_cost'] = $this->request->post['config_salwar_cost'];
+		} else {
+			$data['config_salwar_cost'] = $this->config->get('config_salwar_cost');
+		}	
+
+		if (isset($this->request->post['config_saree_cost'])) {
+			$data['config_saree_cost'] = $this->request->post['config_saree_cost'];
+		} else {
+			$data['config_saree_cost'] = $this->config->get('config_saree_cost');
+		}
+
+		if (isset($this->request->post['config_choli_cost'])) {
+			$data['config_choli_cost'] = $this->request->post['config_choli_cost'];
+		} else {
+			$data['config_choli_cost'] = $this->config->get('config_choli_cost');
+		}	
+
 		if (isset($this->request->post['config_image'])) {
 			$data['config_image'] = $this->request->post['config_image'];
 		} else {
