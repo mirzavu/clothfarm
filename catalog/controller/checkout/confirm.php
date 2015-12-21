@@ -221,6 +221,7 @@ class ControllerCheckoutConfirm extends Controller {
 					'subtract'   => $product['subtract'],
 					'price'      => $product['price'],
 					'test'       => $product['test'],
+					'stitch_type' => $product['stitch_type'],
 					'total'      => $product['total'],
 					'tax'        => $this->tax->getTax($product['price'], $product['tax_class_id']),
 					'reward'     => $product['reward'],

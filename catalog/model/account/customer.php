@@ -76,7 +76,9 @@ class ModelAccountCustomer extends Model {
 			$mail->smtp_timeout = $this->config->get('config_mail_smtp_timeout');
 			
 			$mail->setSubject($this->language->get('text_new_customer'));
-			$mail->setText($message);
+			$mail->setText($message);      
+			$mail->setFrom($this->config->get('config_email')); 
+			$mail->setSender($this->config->get('config_name'));
 			$mail->send();
 
 			// Send to additional alert emails if new account email is enabled

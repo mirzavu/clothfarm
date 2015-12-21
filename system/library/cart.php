@@ -39,6 +39,12 @@ class Cart {
 					$test = 'testval';
 				}
 
+				if (!empty($product['stitch_type'])) {
+					$stitch_type = $product['stitch_type'];
+				} else {
+					$stitch_type = 'none';
+				}
+
 				// Profile
 				if (!empty($product['recurring_id'])) {
 					$recurring_id = $product['recurring_id'];
@@ -261,6 +267,7 @@ class Cart {
 						'stock'           => $stock,
 						'price'           => ($price + $option_price),
 						'test'            => $test,
+						'stitch_type'     => $stitch_type,
 						'total'           => ($price + $option_price) * $quantity,
 						'reward'          => $reward * $quantity,
 						'points'          => ($product_query->row['points'] ? ($product_query->row['points'] + $option_points) * $quantity : 0),
@@ -294,7 +301,7 @@ class Cart {
 		return $recurring_products;
 	}
 
-	public function add($product_id, $qty = 1, $option = array(), $recurring_id = 0, $test='sample') {
+	public function add($product_id, $qty = 1, $option = array(), $recurring_id = 0, $test='sample', $stitch_type='none') {
 		$this->data = array();
 
 		$product['product_id'] = (int)$product_id;
@@ -309,6 +316,10 @@ class Cart {
 
 		if ($test) {
 			$product['test'] = $test;
+		}
+
+		if ($stitch_type) {
+			$product['stitch_type'] = $stitch_type;
 		}
 
 		$key = base64_encode(serialize($product));

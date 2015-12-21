@@ -309,6 +309,12 @@ class ControllerCheckoutCart extends Controller {
 			} else {
 				$test = 'testval';
 			}
+
+			if (isset($this->request->post['stitch_type'])) {
+				$stitch_type = $this->request->post['stitch_type'];
+			} else {
+				$stitch_type = 'salwar';
+			}
 			
 
 			$product_options = $this->model_catalog_product->getProductOptions($this->request->post['product_id']);
@@ -340,7 +346,7 @@ class ControllerCheckoutCart extends Controller {
 			}
 
 			if (!$json) {
-				$this->cart->add($this->request->post['product_id'], $quantity, $option, $recurring_id, $test);
+				$this->cart->add($this->request->post['product_id'], $quantity, $option, $recurring_id, $test, $stitch_type);
 
 				$json['success'] = sprintf($this->language->get('text_success'), $this->url->link('product/product', 'product_id=' . $this->request->post['product_id']), $product_info['name'], $this->url->link('checkout/cart'));
 

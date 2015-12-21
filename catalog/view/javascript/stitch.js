@@ -50,6 +50,8 @@ $(document).ready(function() {
 		var measure_list = '{"type":"Salwar","data":{'+all_measure+'}}';
 		console.log(measure_list);
 		$('#input-measures').val(measure_list);
+		$('#input-stitch-type').val('salwar');
+		console.log($('#input-stitch-type'));
 		$('#content-new').hide();
 		$('#content').show();
 		$('html,body').animate({

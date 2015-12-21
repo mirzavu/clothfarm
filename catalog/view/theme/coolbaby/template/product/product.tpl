@@ -467,6 +467,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                           <input class="form-control input-quantity" type="text" name="quantity" value="<?php echo $minimum; ?>" />
                           <input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
                           <input type="hidden" id="input-measures" name="test" value="" />
+                          <input type="hidden" id="input-stitch-type" name="stitch_type" value="" />
                           <span class="input-group-addon">+</span>
                       </div>
                   </div>
