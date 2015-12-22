@@ -150,7 +150,10 @@ class ControllerCheckoutCart extends Controller {
 						$recurring .= sprintf($this->language->get('text_payment_cancel'), $this->currency->format($this->tax->calculate($product['recurring']['price'] * $product['quantity'], $product['tax_class_id'], $this->config->get('config_tax'))), $product['recurring']['cycle'], $frequencies[$product['recurring']['frequency']], $product['recurring']['duration']);
 					}
 				}
-
+				if($this->config->get('config_'.$product['stitch_type'].'_cost'))
+					$stitch_cost = $this->config->get('config_'.$product['stitch_type'].'_cost');
+				else
+					$stitch_cost = 0;
 				$data['products'][] = array(
 					'key'       => $product['key'],
 					'thumb'     => $image,
@@ -162,11 +165,12 @@ class ControllerCheckoutCart extends Controller {
 					'stock'     => $product['stock'] ? true : !(!$this->config->get('config_stock_checkout') || $this->config->get('config_stock_warning')),
 					'reward'    => ($product['reward'] ? sprintf($this->language->get('text_points'), $product['reward']) : ''),
 					'price'     => $price,
-					'total'     => $total,
+					'stitch_type' => $product['stitch_type'],
+					'stitch_cost' => $stitch_cost,
+					'total'     => $total+$stitch_cost,
 					'href'      => $this->url->link('product/product', 'product_id=' . $product['product_id'])
 				);
 			}
-
 			// Gift Voucher
 			$data['vouchers'] = array();
 

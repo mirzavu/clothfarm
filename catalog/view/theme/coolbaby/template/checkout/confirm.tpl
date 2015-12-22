@@ -7,6 +7,7 @@
         <th class="text-left"><?php echo $column_model; ?></th>
         <th class="text-right"><?php echo $column_quantity; ?></th>
         <th class="text-right"><?php echo $column_price; ?></th>
+        <th class="text-right">Stitch Cost</th>
         <th class="text-right"><?php echo $column_total; ?></th>
       </tr>
     </thead>
@@ -25,6 +26,7 @@
         <td class="text-left"><div class="th_title visible-xs"><?php echo $column_model; ?>:</div><?php echo $product['model']; ?></td>
         <td class="text-right"><div class="th_title visible-xs"><?php echo $column_quantity; ?>:</div><?php echo $product['quantity']; ?></td>
         <td class="text-right"><div class="th_title visible-xs"><?php echo $column_price; ?>:</div><?php echo $product['price']; ?></td>
+        <td class="text-right"><div class="th_title visible-xs"><?php echo $column_price; ?>:</div><?php echo $product['stitch_cost']; ?></td>
         <td class="text-right"><div class="th_title visible-xs"><?php echo $column_total; ?>:</div><?php echo $product['total']; ?></td>
       </tr>
       <?php } ?>
@@ -41,7 +43,7 @@
     <tfoot>
       <?php foreach ($totals as $total) { ?>
       <tr>
-        <th colspan="4" class="text-right"><strong><?php echo $total['title']; ?>:</strong></th>
+        <th colspan="5" class="text-right"><strong><?php echo $total['title']; ?>:</strong></th>
         <th class="text-right"><?php echo $total['text']; ?></th>
       </tr>
       <?php } ?>

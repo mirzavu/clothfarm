@@ -57,6 +57,7 @@ echo $breadcrumbs;
                             <th class="text-center"><?php echo $column_model; ?></th>
                             <th class="text-center">&nbsp;</th>
                             <th class="text-center product-column-price"><?php echo $column_price; ?></th>
+                            <th class="text-center">Stitch Cost</th>
                             <th class="text-center"><?php echo $column_quantity; ?></th>
                             <th class="text-center"><?php echo $column_total; ?></th>
                             <th class="text-center">&nbsp;</th>
@@ -100,6 +101,22 @@ echo $breadcrumbs;
                                 <div class="th_title visible-xs"><?php echo $column_price; ?>:</div>
                                 <?php echo $product['price']; ?>
                             </td>
+                            <?php
+                            if($product['stitch_type']=="none")
+                            {
+                                echo '<td class="text-center">none</td>';
+                            }
+                            else
+                            {
+                            ?>
+                            <td class="text-center">
+                                <div class="th_title visible-xs"><?php echo $column_price; ?>:</div>
+                                <?php echo $product['stitch_cost']." AED"; ?>
+                            </td>
+                            <?php    
+                            }
+                            ?>
+
                             <td class="text-center">
                                 <div class="th_title visible-xs input-label"><?php echo $column_quantity; ?>:</div>
                                 <input type="text" name="quantity[<?php echo $product['key']; ?>]" value="<?php echo $product['quantity']; ?>" size="1" class="form-control input-quantity" />

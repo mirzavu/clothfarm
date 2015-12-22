@@ -211,6 +211,10 @@ class ControllerCheckoutConfirm extends Controller {
 					);
 				}
 
+				if($this->config->get('config_'.$product['stitch_type'].'_cost'))
+					$stitch_cost = $this->config->get('config_'.$product['stitch_type'].'_cost');
+				else
+					$stitch_cost = 0;
 				$order_data['products'][] = array(
 					'product_id' => $product['product_id'],
 					'name'       => $product['name'],
@@ -222,6 +226,7 @@ class ControllerCheckoutConfirm extends Controller {
 					'price'      => $product['price'],
 					'test'       => $product['test'],
 					'stitch_type' => $product['stitch_type'],
+					'stitch_cost' => $stitch_cost,
 					'total'      => $product['total'],
 					'tax'        => $this->tax->getTax($product['price'], $product['tax_class_id']),
 					'reward'     => $product['reward'],
@@ -378,6 +383,12 @@ class ControllerCheckoutConfirm extends Controller {
 					}
 				}
 
+
+				if($this->config->get('config_'.$product['stitch_type'].'_cost'))
+					$stitch_cost = $this->config->get('config_'.$product['stitch_type'].'_cost');
+				else
+					$stitch_cost = 0;
+
 				$data['products'][] = array(
 					'key'        => $product['key'],
 					'product_id' => $product['product_id'],
@@ -388,7 +399,9 @@ class ControllerCheckoutConfirm extends Controller {
 					'quantity'   => $product['quantity'],
 					'subtract'   => $product['subtract'],
 					'price'      => $this->currency->format($this->tax->calculate($product['price'], $product['tax_class_id'], $this->config->get('config_tax'))),
-					'total'      => $this->currency->format($this->tax->calculate($product['price'], $product['tax_class_id'], $this->config->get('config_tax')) * $product['quantity']),
+					'stitch_type' => $product['stitch_type'],
+					'stitch_cost' => $stitch_cost,
+					'total'      => $this->currency->format($this->tax->calculate($product['price']+$stitch_cost, $product['tax_class_id'], $this->config->get('config_tax')) * $product['quantity']),
 					'href'       => $this->url->link('product/product', 'product_id=' . $product['product_id']),
 				);
 			}
