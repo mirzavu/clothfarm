@@ -162,14 +162,18 @@ final class Tax {
 
 	public function getProductWiseShipping($product_id) {
 		$rate = 0.00; 
+		$vendor = array();
 		if( $this->session->data['shipping_method']['code'] == 'vendor.vendor'){
 			if (isset($this->session->data['shipping_address']) && $product_id) {
 
 				$country_id = $this->session->data['shipping_address']['country_id'];
 		                $zone_id = $this->session->data['shipping_address']['zone_id'];
-				$query = $this->db->query("SELECT vsr.rate, vsr.geo_zone_id FROM " . DB_PREFIX . "product p LEFT JOIN " . DB_PREFIX . "vendor_shipping_rate vsr on p.vendor_shipping_rate_id = vsr.vendor_shipping_rate_id WHERE product_id = '". $product_id ."'");
+						
+			// product shipping cost			
+						
+				$query = $this->db->query("SELECT vsr.rate, vsr.geo_zone_id, product_shipping FROM " . DB_PREFIX . "product p LEFT JOIN " . DB_PREFIX . "vendor_shipping_rate vsr on p.vendor_shipping_rate_id = vsr.vendor_shipping_rate_id WHERE product_id = '". $product_id ."'");
 
-				$zones = $this->db->query("SELECT * FROM " . DB_PREFIX . "zone_to_geo_zone WHERE geo_zone_id = '" . $query->row['geo_zone_id'] . "' AND country_id = '" . (int)$country_id . "' AND (zone_id = '" . (int)$zone_id . "' OR zone_id = '0')");
+				/*$zones = $this->db->query("SELECT * FROM " . DB_PREFIX . "zone_to_geo_zone WHERE geo_zone_id = '" . $query->row['geo_zone_id'] . "' AND country_id = '" . (int)$country_id . "' AND (zone_id = '" . (int)$zone_id . "' OR zone_id = '0')");
 
 				if (!$query->row['geo_zone_id']) {
 					$status = true;
@@ -180,7 +184,32 @@ final class Tax {
 				}
 				if( $query->row['rate'] && $status ){
 					$rate += $query->row['rate'];
+				}*/
+				
+				$store = $this->db->query("SELECT store_id FROM " . DB_PREFIX . "product_to_store WHERE product_id = '" . $product_id . "'");
+			
+			
+			
+			//$gcc = array('17','184','114','173','161');			
+			if(!in_array($store->row['store_id'], $vendor)){
+				$arr = unserialize($query->row['product_shipping']);								
+				if($arr['port'] == 1){
+					if($country_id==221){  // UAE
+						$new_rate = $arr['ship2'];
+					}else{
+						$new_rate =$arr['ship1'];
+					}
+				}else{
+					if($country_id==99){   //IND
+						$new_rate =$arr['ship2'];
+					}else{
+						$new_rate =$arr['ship1'];
+					}
 				}
+					$rate += $new_rate;
+			}
+			array_push($vendor, $store->row['store_id']);
+				
 
 			}
 		}

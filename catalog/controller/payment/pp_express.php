@@ -19,6 +19,41 @@ class ControllerPaymentPPExpress extends Controller {
 	}
 
 	public function express() {
+
+//*******************************************************************************************
+    $currencynotsupported = false;
+    $currencies = array(
+    			'AUD',
+    			'CAD',
+    			'EUR',
+    			'GBP',
+    			'JPY',
+    			'USD',
+    			'NZD',
+    			'CHF',
+    			'HKD',
+    			'SGD',
+    			'SEK',
+    			'DKK',
+    			'PLN',
+    			'NOK',
+    			'HUF',
+    			'CZK',
+    			'ILS',
+    			'MXN',
+    			'MYR',
+    			'BRL',
+    			'PHP',
+    			'TWD',
+    			'THB',
+    			'TRY'
+    	);
+
+    if (!in_array($this->currency->getCode(), $currencies)) {
+    	$currencynotsupported = true;
+    }
+//*******************************************************************************************
+
 		if ((!$this->cart->hasProducts() && empty($this->session->data['vouchers'])) || (!$this->cart->hasStock() && !$this->config->get('config_stock_checkout'))) {
 			$this->log->write('No product redirect');
 
@@ -65,7 +100,21 @@ class ControllerPaymentPPExpress extends Controller {
 		}
 
 		$max_amount = $this->currency->convert($this->cart->getTotal(), $this->config->get('config_currency'), 'USD');
+		//$max_amount = min($max_amount * 1.5, 10000);
+
+
+//*******************************************************************************************
 		$max_amount = min($max_amount * 1.5, 10000);
+        if ($currencynotsupported){
+        $max_amount = $this->currency->format($max_amount, 'USD', false, false);
+        }
+        else 
+        {
+        $max_amount = $this->currency->format($max_amount, $this->currency->getCode(), '', false);
+        }
+//*******************************************************************************************
+
+
 		$max_amount = $this->currency->format($max_amount, $this->currency->getCode(), '', false);
 
 		$data = array(
@@ -1264,6 +1313,41 @@ class ControllerPaymentPPExpress extends Controller {
 	}
 
 	public function checkout() {
+
+//*******************************************************************************************
+    	$currencynotsupported = false;
+    	$currencies = array(
+    			'AUD',
+    			'CAD',
+    			'EUR',
+    			'GBP',
+    			'JPY',
+    			'USD',
+    			'NZD',
+    			'CHF',
+    			'HKD',
+    			'SGD',
+    			'SEK',
+    			'DKK',
+    			'PLN',
+    			'NOK',
+    			'HUF',
+    			'CZK',
+    			'ILS',
+    			'MXN',
+    			'MYR',
+    			'BRL',
+    			'PHP',
+    			'TWD',
+    			'THB',
+    			'TRY'
+    	);
+    	
+    	if (!in_array($this->currency->getCode(), $currencies)) {
+    		$currencynotsupported = true;
+    	}
+//*******************************************************************************************
+
 		if ((!$this->cart->hasProducts() && empty($this->session->data['vouchers'])) || (!$this->cart->hasStock() && !$this->config->get('config_stock_checkout'))) {
 			$this->response->redirect($this->url->link('checkout/cart'));
 		}
@@ -1275,7 +1359,20 @@ class ControllerPaymentPPExpress extends Controller {
 		$order_info = $this->model_checkout_order->getOrder($this->session->data['order_id']);
 
 		$max_amount = $this->currency->convert($order_info['total'], $this->config->get('config_currency'), 'USD');
+		//$max_amount = min($max_amount * 1.25, 10000);
+
+//*******************************************************************************************
 		$max_amount = min($max_amount * 1.25, 10000);
+     
+        if ($currencynotsupported){
+        $max_amount = $this->currency->format($max_amount, 'USD', '', false);
+        }
+        else
+        {
+        $max_amount = $this->currency->format($max_amount, $this->currency->getCode(), '', false);
+        }
+//*******************************************************************************************
+
 		$max_amount = $this->currency->format($max_amount, $this->currency->getCode(), '', false);
 
 		if ($this->cart->hasShipping()) {

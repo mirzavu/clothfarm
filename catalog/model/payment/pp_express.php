@@ -155,7 +155,46 @@ class ModelPaymentPPExpress extends Model {
 	public function paymentRequestInfo() {
 
 		$data['PAYMENTREQUEST_0_SHIPPINGAMT'] = '';
-		$data['PAYMENTREQUEST_0_CURRENCYCODE'] = $this->currency->getCode();
+		//$data['PAYMENTREQUEST_0_CURRENCYCODE'] = $this->currency->getCode();
+
+//*******************************************************************************************
+$currencynotsupported = false;
+$currencies = array(
+'AUD',
+'CAD',
+'EUR',
+'GBP',
+'JPY',
+'USD',
+'NZD',
+'CHF',
+'HKD',
+'SGD',
+'SEK',
+'DKK',
+'PLN',
+'NOK',
+'HUF',
+'CZK',
+'ILS',
+'MXN',
+'MYR',
+'BRL',
+'PHP',
+'TWD',
+'THB',
+'TRY'
+);
+if (!in_array($this->currency->getCode(), $currencies)) {
+$data['PAYMENTREQUEST_0_CURRENCYCODE'] = 'USD';
+$currencynotsupported = true;
+}
+else
+{
+$data['PAYMENTREQUEST_0_CURRENCYCODE'] = $this->currency->getCode();
+}
+//*******************************************************************************************
+
 		$data['PAYMENTREQUEST_0_PAYMENTACTION'] = $this->config->get('pp_express_method');
 
 		$i = 0;
@@ -180,7 +219,17 @@ class ModelPaymentPPExpress extends Model {
 
 			$data['L_PAYMENTREQUEST_0_DESC' . $i] = substr($data['L_PAYMENTREQUEST_0_DESC' . $i], 0, 126);
 
-			$item_price = $this->currency->format($item['price'], false, false, false);
+			//$item_price = $this->currency->format($item['price'], false, false, false);
+
+//*******************************************************************************************	
+if ($currencynotsupported){
+$item_price = $this->currency->format($item['price'], 'USD', false, false);
+}
+else
+{
+$item_price = $this->currency->format($item['price'], false, false, false);
+}
+//*******************************************************************************************
 
 			$data['L_PAYMENTREQUEST_0_NAME' . $i] = $item['name'];
 			$data['L_PAYMENTREQUEST_0_NUMBER' . $i] = $item['model'];
@@ -219,7 +268,18 @@ class ModelPaymentPPExpress extends Model {
 				$data['L_PAYMENTREQUEST_0_NAME' . $i] = $voucher['description'];
 				$data['L_PAYMENTREQUEST_0_NUMBER' . $i] = 'VOUCHER';
 				$data['L_PAYMENTREQUEST_0_QTY' . $i] = 1;
-				$data['L_PAYMENTREQUEST_0_AMT' . $i] = $this->currency->format($voucher['amount'], false, false, false);
+				//$data['L_PAYMENTREQUEST_0_AMT' . $i] = $this->currency->format($voucher['amount'], false, false, false);
+
+//*******************************************************************************************
+if ($currencynotsupported){
+$data['L_PAYMENTREQUEST_0_AMT' . $i] = $this->currency->format($voucher['amount'], 'USD', false, false);
+}
+else
+{
+$data['L_PAYMENTREQUEST_0_AMT' . $i] = $this->currency->format($voucher['amount'], false, false, false);
+}
+//*******************************************************************************************
+
 				$i++;
 			}
 		}
@@ -263,11 +323,32 @@ class ModelPaymentPPExpress extends Model {
 		foreach ($total_data as $total_row) {
 			if (!in_array($total_row['code'], array('total', 'sub_total'))) {
 				if ($total_row['value'] != 0) {
-					$item_price = $this->currency->format($total_row['value'], false, false, false);
+					//$item_price = $this->currency->format($total_row['value'], false, false, false);
+
+//*******************************************************************************************
+if ($currencynotsupported){
+$item_price = $this->currency->format($total_row['value'], 'USD', false, false);
+}
+else
+{
+$item_price = $this->currency->format($total_row['value'], false, false, false);
+}
+//*******************************************************************************************
+
 
 					$data['L_PAYMENTREQUEST_0_NUMBER' . $i] = $total_row['code'];
 					$data['L_PAYMENTREQUEST_0_NAME' . $i] = $total_row['title'];
-					$data['L_PAYMENTREQUEST_0_AMT' . $i] = $this->currency->format($total_row['value'], false, false, false);
+					//$data['L_PAYMENTREQUEST_0_AMT' . $i] = $this->currency->format($total_row['value'], false, false, false);
+
+//*******************************************************************************************
+if ($currencynotsupported){
+$data['L_PAYMENTREQUEST_0_AMT' . $i] = $this->currency->format($total_row['value'], 'USD', false, false);
+}
+else
+{
+$data['L_PAYMENTREQUEST_0_AMT' . $i] = $this->currency->format($total_row['value'], false, false, false);
+}
+//*******************************************************************************************
 					$data['L_PAYMENTREQUEST_0_QTY' . $i] = 1;
 
 					$item_total = $item_total + $item_price;
@@ -290,13 +371,37 @@ class ModelPaymentPPExpress extends Model {
 				$data['L_BILLINGTYPE' . $z] = 'RecurringPayments';
 
 				if ($item['recurring']['trial']) {
-					$trial_amt = $this->currency->format($this->tax->calculate($item['recurring']['trial_price'], $item['tax_class_id'], $this->config->get('config_tax')), false, false, false) * $item['quantity'] . ' ' . $this->currency->getCode();
+					//$trial_amt = $this->currency->format($this->tax->calculate($item['recurring']['trial_price'], $item['tax_class_id'], $this->config->get('config_tax')), false, false, false) * $item['quantity'] . ' ' . $this->currency->getCode();
+
+
+//*******************************************************************************************
+if ($currencynotsupported){
+$trial_amt = $this->currency->format($this->tax->calculate($item['recurring']['trial_price'], $item['tax_class_id'], $this->config->get('config_tax')), 'USD', false, false) * $item['quantity'] . ' ' . 'USD';
+}
+else
+{
+$trial_amt = $this->currency->format($this->tax->calculate($item['recurring']['trial_price'], $item['tax_class_id'], $this->config->get('config_tax')), false, false, false) * $item['quantity'] . ' ' . $this->currency->getCode();
+					}
+//*******************************************************************************************
+
 					$trial_text =  sprintf($this->language->get('text_trial'), $trial_amt, $item['recurring']['trial_cycle'], $item['recurring']['trial_frequency'], $item['recurring']['trial_duration']);
 				} else {
 					$trial_text = '';
 				}
 
-				$recurring_amt = $this->currency->format($this->tax->calculate($item['recurring']['price'], $item['tax_class_id'], $this->config->get('config_tax')), false, false, false)  * $item['quantity'] . ' ' . $this->currency->getCode();
+				//$recurring_amt = $this->currency->format($this->tax->calculate($item['recurring']['price'], $item['tax_class_id'], $this->config->get('config_tax')), false, false, false)  * $item['quantity'] . ' ' . $this->currency->getCode();
+
+//*******************************************************************************************
+if ($currencynotsupported){
+$recurring_amt = $this->currency->format($this->tax->calculate($item['recurring']['price'], $item['tax_class_id'], $this->config->get('config_tax')), 'USD', false, false)  * $item['quantity'] . ' ' . $this->currency->getCode();
+}
+else
+{
+$recurring_amt = $this->currency->format($this->tax->calculate($item['recurring']['price'], $item['tax_class_id'], $this->config->get('config_tax')), false, false, false)  * $item['quantity'] . ' ' . $this->currency->getCode();
+}
+//*******************************************************************************************
+
+
 				$recurring_description = $trial_text . sprintf($this->language->get('text_recurring'), $recurring_amt, $item['recurring']['cycle'], $item['recurring']['frequency']);
 
 				if ($item['recurring']['duration'] > 0) {

@@ -313,6 +313,7 @@
                   <td class="text-left"><?php echo $column_product; ?></td>
                   <td class="text-left"><?php echo $column_model; ?></td>
                   <td class="text-right"><?php echo $column_quantity; ?></td>
+                  <td class="text-right">Measurement</td>
                   <td class="text-right"><?php echo $column_price; ?></td>
 		 <td class="text-right"><b><?php echo $column_shipping; ?></b></td>
                   <td class="text-right"><?php echo $column_total; ?></td>
@@ -328,6 +329,7 @@
 			$sumProductShipping[] = $product_shipping['product_shipping'];
 		}
 		$total_shipping = array_sum($sumProductShipping); 
+    $i=0;
 		foreach ($products as $product) { 
 		$sumProduct[] = $product['new_total'];
 		 
@@ -344,11 +346,37 @@
                     <?php } ?></td>
                   <td class="text-left"><?php echo $product['model']; ?></td>
                   <td class="text-right"><?php echo $product['quantity']; ?></td>
+                  <td class="text-right">
+                    <?php 
+                  if(strlen($product['stitch'])<10)
+                    echo "Not applicable";
+                  else
+                  {
+                    ?>
+                    <a href="#pop_<?= $i?>" data-toggle="tooltip" title="" class="popdata btn btn-primary" data-original-title="Stitch"><i class="fa fa-eye"></i> View</a>
+                    <?php
+                    $measure_all = (array)json_decode(htmlspecialchars_decode($product['stitch'])); 
+                    //echo "<pre>";print_r($measure_all);
+                    echo '<div style="display: none">';
+                      echo '      <div id="pop_'.$i.'">';
+                      echo '        <h2>'.$measure_all['type'].'</h2><table>';
+
+                      foreach($measure_all['data'] as $measure => $val)
+                        {echo "<tr><td>".$measure."</td>";
+                      echo "<td>".$val."</td></tr>";
+                        }        
+                      echo '  </table>    </div>';
+                  echo '    </div>';
+                  }
+                  ?>
+                  </td>
                   <td class="text-right"><?php echo $product['price']; ?></td>
 		<td class="text-right"><?php echo $product['shipping']; ?></td>	
                   <td class="text-right" id="get_total_product" ><?php echo $product['total']; ?></td>
                 </tr>
-                <?php } ?>
+                <?php 
+              $i++;
+            } ?>
                 <?php foreach ($vouchers as $voucher) { ?>
                 <tr>
                   <td class="text-left"><a href="<?php echo $voucher['href']; ?>"><?php echo $voucher['description']; ?></a></td>

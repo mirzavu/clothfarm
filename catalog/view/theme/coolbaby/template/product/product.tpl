@@ -1,4 +1,4 @@
-<?php
+<?php 
     global $config, $loader, $registry;
     $store_id = $config->get('config_store_id');
 $lang = $config->get('config_language_id');
@@ -476,71 +476,22 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                   if($stitch == "yes")
                   {
                   ?>
-                  <a class="mam btn btn-cool btn-lg" href="#stitch-pop"><i class="icon flaticon-shopping66">  </i>Add to Cart</a>
-                  <a style="display: none" id="measure-trigger" class="mam2" href="#measure"></a>
-                  <div style="display: none">
-                            <div id="stitch-pop">
-                              <div style="float:left" id="stitch"><button class="btn btn-cool btn-lg" id="button-stitch"><i class="icon icon flaticon-star129"></i>Stitch Farm</button></div>
-                              <div style="float:left;padding-left:15px;" id="nostitch"><button class="btn btn-cool btn-lg" id="button-no-stitch"><i class="icon icon"></i>Continue to Checkout</button></div>
-                            </div>
-                  </div>
-                  <!--<div style="display: none">
-                          <div id="measure">
-
-                            <div style="float:left;">
-                                    <h2 id="write_review">Measurements</h2>
-                                    <div class="form-group required">
-                                        <div class="col-sm-12">
-                                            <input id="input-name" type="text" name="name" class="form-control" value="Neck" onblur="if (this.value == '') {this.value = 'Neck';}" onfocus="if(this.value == 'Neck') {this.value = '';}">
-                                        </div>
-                                    </div>
-                                    <div class="form-group required">
-                                        <div class="col-sm-12">
-                                            <input id="input-name" type="text" name="name" class="form-control" value="Neck" onblur="if (this.value == '') {this.value = 'Neck';}" onfocus="if(this.value == 'Neck') {this.value = '';}">
-                                        </div>
-                                    </div>
-                                    <div class="form-group required">
-                                        <div class="col-sm-12">
-                                            <input id="input-name" type="text" name="name" class="form-control" value="Neck" onblur="if (this.value == '') {this.value = 'Neck';}" onfocus="if(this.value == 'Neck') {this.value = '';}">
-                                        </div>
-                                    </div>
-                                    <div class="form-group required">
-                                        <div class="col-sm-12">
-                                            <input id="input-name" type="text" name="name" class="form-control" value="Neck" onblur="if (this.value == '') {this.value = 'Neck';}" onfocus="if(this.value == 'Neck') {this.value = '';}">
-                                        </div>
-                                    </div>
-                                    <div class="form-group required">
-                                        <div class="col-sm-12">
-                                            <input id="input-name" type="text" name="name" class="form-control" value="Neck" onblur="if (this.value == '') {this.value = 'Neck';}" onfocus="if(this.value == 'Neck') {this.value = '';}">
-                                        </div>
-                                    </div>
-                                    <div class="form-group required">
-                                        <div class="col-sm-12">
-                                            <input id="input-name" type="text" name="name" class="form-control" value="Neck" onblur="if (this.value == '') {this.value = 'Neck';}" onfocus="if(this.value == 'Neck') {this.value = '';}">
-                                        </div>
-                                    </div>
-                                    <div class="form-group required">
-                                        <div class="col-sm-12">
-                                            <input id="input-name" type="text" name="name" class="form-control" value="Neck" onblur="if (this.value == '') {this.value = 'Neck';}" onfocus="if(this.value == 'Neck') {this.value = '';}">
-                                        </div>
-                                    </div>
-
-                                    <a class="pop" href="#" data-toggle="popover" title="Popover Header" data-trigger="hover" data-content="Some content inside the popover" style="position:absolute;right:50%;top:50%;" ><img src="http://localhost/clothfarm/images/images/dot.png" /></a>
-   
-                                </div>
-                            <div  style="float:left;">
-                              <img height="500px" width="330px" src="http://localhost/clothfarm/images/images/dummy.jpg">
-                            </div>
-                          </div>
-                  </div>-->
-                  <button style="display: none" class="btn btn-cool btn-lg" type="submit" id="button-cart" data-loading-text="<?php echo $text_loading; ?>"><i class="icon flaticon-shopping66"></i><?php echo $button_cart; ?></button>
+                    <a class="mam btn btn-cool btn-lg" href="#stitch-pop"><i class="icon flaticon-shopping66">  </i>Add to Cart</a>
+                    <a style="display: none" id="measure-trigger" class="mam2" href="#measure"></a>
+                    <div style="display: none">
+                              <div id="stitch-pop">
+                                <div style="float:left" id="stitch"><button class="btn btn-cool btn-lg" id="button-stitch"><i class="icon icon flaticon-star129"></i>Stitch Farm</button></div>
+                                <div style="float:left;padding-left:15px;" id="nostitch"><button class="btn btn-cool btn-lg" id="button-no-stitch"><i class="icon icon"></i>Continue to Checkout</button></div>
+                              </div>
+                    </div>
+                    <button style="display: none" class="btn btn-cool btn-lg" type="submit" id="button-cart" data-loading-text="<?php echo $text_loading; ?>"><i class="icon flaticon-shopping66"></i><?php echo $button_cart; ?></button>
 
                   <?php 
                   }
                   else
                   {
                   ?>
-                  <button class="btn btn-cool btn-lg" type="submit" id="button-cart" data-loading-text="<?php echo $text_loading; ?>"><i class="icon flaticon-shopping66"></i><?php echo $button_cart; ?></button>
+                    <button class="btn btn-cool btn-lg" type="submit" id="button-cart" data-loading-text="<?php echo $text_loading; ?>"><i class="icon flaticon-shopping66"></i><?php echo $button_cart; ?></button>
                   <?php
                   }
                   ?>
@@ -557,11 +508,6 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
 
               </div>
               <?php endif; ?>
-
-
-
-
-
           </div>
           <div class="divider divider-xs"></div>
 
@@ -570,7 +516,70 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
         <?php if ($page_type == 0) : ?>
         <div class="panel-group accordion-simple" id="product-accordion">
 
-            <?php if ($description) : ?>
+            <?php if ($review_status) : ?>
+            <div class="panel">
+                <div class="panel-heading">
+                    <a data-toggle="collapse" data-parent="#product-accordion" href="#product-review" class="collapsed">
+                        <span class="arrow-down">+</span>
+                        <span class="arrow-up">-</span> <?php echo $tab_review; ?>
+                    </a>
+                </div>
+                <div id="product-review" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <form class="form-horizontal" id="form-review">
+                                <div id="review" class="rating"></div>
+                                <div>
+                                    <h2 id="seller_write_review"><?php echo $text_write; ?></h2>
+                                    <?php if ($review_guest) { ?>
+                                    <div class="form-group required">
+                                        <div class="col-sm-12">
+                                            <input id="input-name" type="text" name="name" class="form-control" value="<?php echo $entry_name; ?>..." onblur="if (this.value == '') {this.value = '<?php echo $entry_name; ?>...';}" onfocus="if(this.value == '<?php echo $entry_name; ?>...') {this.value = '';}">
+                                        </div>
+                                    </div>
+                                    <div class="form-group required">
+                                        <div class="col-sm-12">
+                                            <textarea id="input-review" class="form-control" rows="5" name="text" onblur="if (this.value == '') {this.value = '<?php echo $entry_review; ?>...';}" onfocus="if(this.value == '<?php echo $entry_review; ?>...') {this.value = '';}"><?php echo $entry_review; ?>...</textarea>
+                                            <div class="help-block"><?php echo $text_note; ?></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group required">
+                                        <div class="col-sm-12">
+                                            <label class="control-label"><?php echo $entry_rating; ?></label>
+                                            &nbsp;&nbsp;&nbsp; <?php echo $entry_bad; ?>&nbsp;
+                                            <input type="radio" name="rating" value="1" />
+                                            &nbsp;
+                                            <input type="radio" name="rating" value="2" />
+                                            &nbsp;
+                                            <input type="radio" name="rating" value="3" />
+                                            &nbsp;
+                                            <input type="radio" name="rating" value="4" />
+                                            &nbsp;
+                                            <input type="radio" name="rating" value="5" />
+                                            &nbsp;<?php echo $entry_good; ?></div>
+                                    </div>
+                                    <!--   <?php if ($site_key) { ?>
+                                    <div class="form-group">
+                                        <div class="col-sm-12">
+                                            <div id="g-recaptcha" data-sitekey="<?php echo $site_key; ?>"></div>
+                                        </div>
+                                    </div>
+                                    <?php } ?> -->
+                                    <div class="buttons clearfix">
+                                        <button class="button btn-cool" type="button" id="button-review" data-loading-text="<?php echo $text_loading; ?>"><span class="icon flaticon-star129"></span><?php echo $button_continue; ?></button>
+
+                                    </div>
+                                    <?php } else { ?>
+                                    <?php echo $text_login; ?>
+                                    <?php } ?>
+
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <?php endif; ?>
+      
+           <?php if ($description) : ?>
                 <div class="panel">
                     <div class="panel-heading">
                         <a data-toggle="collapse" data-parent="#product-accordion" href="#product-description" class="collapsed">
@@ -618,70 +627,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                 </div>
             <?php endif; ?>
 
-            <?php if ($review_status) : ?>
-            <div class="panel">
-                <div class="panel-heading">
-                    <a data-toggle="collapse" data-parent="#product-accordion" href="#product-review" class="collapsed">
-                        <span class="arrow-down">+</span>
-                        <span class="arrow-up">-</span> <?php echo $tab_review; ?>
-                    </a>
-                </div>
-                <div id="product-review" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        <form class="form-horizontal" id="form-review">
-                                <div id="review" class="rating"></div>
-                                <div>
-                                    <h2 id="write_review"><?php echo $text_write; ?></h2>
-                                    <?php if ($review_guest) { ?>
-                                    <div class="form-group required">
-                                        <div class="col-sm-12">
-                                            <input id="input-name" type="text" name="name" class="form-control" value="<?php echo $entry_name; ?>..." onblur="if (this.value == '') {this.value = '<?php echo $entry_name; ?>...';}" onfocus="if(this.value == '<?php echo $entry_name; ?>...') {this.value = '';}">
-                                        </div>
-                                    </div>
-                                    <div class="form-group required">
-                                        <div class="col-sm-12">
-                                            <textarea id="input-review" class="form-control" rows="5" name="text" onblur="if (this.value == '') {this.value = '<?php echo $entry_review; ?>...';}" onfocus="if(this.value == '<?php echo $entry_review; ?>...') {this.value = '';}"><?php echo $entry_review; ?>...</textarea>
-                                            <div class="help-block"><?php echo $text_note; ?></div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group required">
-                                        <div class="col-sm-12">
-                                            <label class="control-label"><?php echo $entry_rating; ?></label>
-                                            &nbsp;&nbsp;&nbsp; <?php echo $entry_bad; ?>&nbsp;
-                                            <input type="radio" name="rating" value="1" />
-                                            &nbsp;
-                                            <input type="radio" name="rating" value="2" />
-                                            &nbsp;
-                                            <input type="radio" name="rating" value="3" />
-                                            &nbsp;
-                                            <input type="radio" name="rating" value="4" />
-                                            &nbsp;
-                                            <input type="radio" name="rating" value="5" />
-                                            &nbsp;<?php echo $entry_good; ?></div>
-                                    </div>
-                                    <?php if ($site_key) { ?>
-                                    <div class="form-group">
-                                        <div class="col-sm-12">
-                                            <div class="g-recaptcha" data-sitekey="<?php echo $site_key; ?>"></div>
-                                        </div>
-                                    </div>
-                                    <?php } ?>
-                                    <div class="buttons clearfix">
-                                        <button class="button btn-cool" type="button" id="button-review" data-loading-text="<?php echo $text_loading; ?>"><span class="icon flaticon-star129"></span><?php echo $button_continue; ?></button>
-
-                                    </div>
-                                    <?php } else { ?>
-                                    <?php echo $text_login; ?>
-                                    <?php } ?>
-
-                                </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <?php endif; ?>
-			
-			<?php if ($seller_review_status) : ?>
+            <?php if ($seller_review_status) : ?>
             <div class="panel">
                 <div class="panel-heading">
                     <a data-toggle="collapse" data-parent="#product-accordion" href="#product-review-seller" class="collapsed">
@@ -689,9 +635,9 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                         <span class="arrow-up">-</span> <?php echo $tab_seller_review; ?>
                     </a>
                 </div>
-                <div id="product-review-seller" class="panel-collapse collapse">
+                <div id="product-seller_review" class="panel-collapse collapse">
                     <div class="panel-body">
-                        <form class="form-horizontal" id="form-review">
+                        <form class="form-horizontal" id="form-seller-review">
                                 <div id="review" class="rating"></div>
                                 <div>
                                     <h2 id="write_review"><?php echo $text_write; ?></h2>
@@ -722,15 +668,15 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                                             <input type="radio" name="rating" value="5" />
                                             &nbsp;<?php echo $entry_good; ?></div>
                                     </div>
-                                    <?php if ($site_key) { ?>
+                                   <!--   <?php if ($site_key) { ?>
                                     <div class="form-group">
                                         <div class="col-sm-12">
-                                            <div class="g-recaptcha" data-sitekey="<?php echo $site_key; ?>"></div>
+                                            <div id="g-recaptcha" data-sitekey="<?php echo $site_key; ?>"></div>
                                         </div>
                                     </div>
-                                    <?php } ?>
+                                    <?php } ?> -->
                                     <div class="buttons clearfix">
-                                        <button class="button btn-cool" type="button" id="button-review" data-loading-text="<?php echo $text_loading; ?>"><span class="icon flaticon-star129"></span><?php echo $button_continue; ?></button>
+                                        <button class="button btn-cool" type="button" id="button-seller_review" data-loading-text="<?php echo $text_loading; ?>"><span class="icon flaticon-star129"></span><?php echo $button_continue; ?></button>
 
                                     </div>
                                     <?php } else { ?>
@@ -1307,6 +1253,10 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                             <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
                         </div>
                 </div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button id="measure-done-saree" style="width:100%" class="btn btn-cool"><i class="icon flaticon-pencil43">  </i> Add to Cart</button>
+                </div>
                 <!--End measure for saree-->
 
               <div class="line-divider"></div>
@@ -1558,6 +1508,10 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                             <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
                         </div>
                 </div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button id="measure-done-choli" style="width:100%" class="btn btn-cool"><i class="icon flaticon-pencil43">  </i> Add to Cart</button>
+                </div>
                       <!--end tabs for creative product view-->
 
               <div class="line-divider"></div>
@@ -1745,8 +1699,9 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
         <?php if ($review_status) { ?>
         <li class="<?php echo (!$description && !$attribute_groups ? 'active' : 'item_nonactive'); ?>"><a href="#tab-review" data-toggle="tab"><?php echo $tab_review; ?></a></li>
         <?php } ?>
-		 <?php if ($seller_review_status) { ?>
-        <li class="<?php echo (!$description && !$attribute_groups && !$review_status ? 'active' : 'item_nonactive'); ?>"><a href="#tab-seller-review" data-toggle="tab"><?php echo $tab_seller_review; ?></a></li>
+      <?php if ($seller_review_status) { ?>
+        <li class="<?php echo (!$description && !$attribute_groups ? 'active' : 'item_nonactive'); ?>"><a href="#tab-review" data-toggle="tab"><?php echo $tab_seller_review; ?></a></li>
+
         <?php } ?>
 
         <?php if ($tags) : ?>
@@ -1784,115 +1739,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
             </table>
         </div>
         <?php } ?>
-        <?php if ($review_status) { ?>
-        <div class="<?php echo (!$description && !$attribute_groups ? 'tab-pane active' : 'tab-pane'); ?>" id="tab-review">
-            <form class="form-horizontal" id="form-review">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <h2 id="write_review"><?php echo $text_write; ?></h2>
-                        <?php if ($review_guest) { ?>
-                        <div class="form-group required">
-                            <div class="col-sm-12">
-                                <input id="input-name" type="text" name="name" class="form-control" value="<?php echo $entry_name; ?>..." onblur="if (this.value == '') {this.value = '<?php echo $entry_name; ?>...';}" onfocus="if(this.value == '<?php echo $entry_name; ?>...') {this.value = '';}">
-                            </div>
-                        </div>
-                        <div class="form-group required">
-                            <div class="col-sm-12">
-                                <textarea id="input-review" class="form-control" rows="5" name="text" onblur="if (this.value == '') {this.value = '<?php echo $entry_review; ?>...';}" onfocus="if(this.value == '<?php echo $entry_review; ?>...') {this.value = '';}"><?php echo $entry_review; ?>...</textarea>
-                                <div class="help-block"><?php echo $text_note; ?></div>
-                            </div>
-                        </div>
-                        <div class="form-group required">
-                            <div class="col-sm-12">
-                                <label class="control-label"><?php echo $entry_rating; ?></label>
-                                &nbsp;&nbsp;&nbsp; <?php echo $entry_bad; ?>&nbsp;
-                                <input type="radio" name="rating" value="1" />
-                                &nbsp;
-                                <input type="radio" name="rating" value="2" />
-                                &nbsp;
-                                <input type="radio" name="rating" value="3" />
-                                &nbsp;
-                                <input type="radio" name="rating" value="4" />
-                                &nbsp;
-                                <input type="radio" name="rating" value="5" />
-                                &nbsp;<?php echo $entry_good; ?></div>
-                        </div>
-                        <?php if ($site_key) { ?>
-                        <div class="form-group">
-                            <div class="col-sm-12">
-                                <div class="g-recaptcha" data-sitekey="<?php echo $site_key; ?>"></div>
-                            </div>
-                        </div>
-                        <?php } ?>
-                        <div class="buttons clearfix">
-                            <button class="button btn-cool" type="button" id="button-review" data-loading-text="<?php echo $text_loading; ?>"><span class="icon flaticon-star129"></span><?php echo $button_continue; ?></button>
-
-                        </div>
-                        <?php } else { ?>
-                        <?php echo $text_login; ?>
-                        <?php } ?>
-
-                    </div>
-                    <div class="col-sm-6"><div id="review" class="rating"></div></div>
-                </div>
-            </form>
-        </div>
-        <?php } ?>
-		
-		 <?php if ($seller_review_status) { ?>
-        <div class="<?php echo (!$description && !$attribute_groups && !$review_status ? 'tab-pane active' : 'tab-pane'); ?>" id="tab-seller-review">
-            <form class="form-horizontal" id="form-seller-review">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <h2 id="write_seller_review"><?php echo $text_write; ?></h2>
-                        <?php if ($seller_review_guest) { ?>
-                        <div class="form-group required">
-                            <div class="col-sm-12">
-                                <input id="input-name" type="text" name="name_seller" class="form-control" value="<?php echo $entry_name; ?>..." onblur="if (this.value == '') {this.value = '<?php echo $entry_name; ?>...';}" onfocus="if(this.value == '<?php echo $entry_name; ?>...') {this.value = '';}">
-                            </div>
-                        </div>
-                        <div class="form-group required">
-                            <div class="col-sm-12">
-                                <textarea id="input-review" class="form-control" rows="5" name="text_seller" onblur="if (this.value == '') {this.value = '<?php echo $entry_review; ?>...';}" onfocus="if(this.value == '<?php echo $entry_review; ?>...') {this.value = '';}"><?php echo $entry_review; ?>...</textarea>
-                                <div class="help-block"><?php echo $text_note; ?></div>
-                            </div>
-                        </div>
-                        <div class="form-group required">
-                            <div class="col-sm-12">
-                                <label class="control-label"><?php echo $entry_rating; ?></label>
-                                &nbsp;&nbsp;&nbsp; <?php echo $entry_bad; ?>&nbsp;
-                                <input type="radio" name="rating_seller" value="1" />
-                                &nbsp;
-                                <input type="radio" name="rating_seller" value="2" />
-                                &nbsp;
-                                <input type="radio" name="rating_seller" value="3" />
-                                &nbsp;
-                                <input type="radio" name="rating_seller" value="4" />
-                                &nbsp;
-                                <input type="radio" name="rating_seller" value="5" />
-                                &nbsp;<?php echo $entry_good; ?></div>
-                        </div>
-                        <?php if ($site_key) { ?>
-                        <div class="form-group">
-                            <div class="col-sm-12">
-                                <div class="g-recaptcha" data-sitekey="<?php echo $site_key; ?>"></div>
-                            </div>
-                        </div>
-                        <?php } ?>
-                        <div class="buttons clearfix">
-                            <button class="button btn-cool" type="button" id="button-seller_review" data-loading-text="<?php echo $text_loading; ?>"><span class="icon flaticon-star129"></span><?php echo $button_continue; ?></button>
-
-                        </div>
-                        <?php } else { ?>
-                        <?php echo $text_login; ?>
-                        <?php } ?>
-
-                    </div>
-                    <div class="col-sm-6"><div id="seller_review" class="rating"></div></div>
-                </div>
-            </form>
-        </div>
-        <?php } ?>
+  
 
         <?php if ($tags) : ?>
         <div id="tab-tags" class="<?php echo (!$description && !$attribute_groups && !$review_status ? 'tab-pane active ' : 'tab-pane'); ?>">
@@ -1977,48 +1824,48 @@ $('select[name=\'recurring_id\'], input[name="quantity"]').change(function(){
 <script type="text/javascript"><!--
 $('#button-cart').on('click', function() {
   console.log('sdf');
-	$.ajax({
-		url: 'index.php?route=checkout/cart/add',
-		type: 'post',
-		data: $('#content-new input[type=\'text\'], #product input[type=\'text\'], #product input[type=\'hidden\'], #product input[type=\'radio\']:checked, #product input[type=\'checkbox\']:checked, #product select, #product textarea'),
-		dataType: 'json',
-		beforeSend: function() {
-			$('#button-cart').button('loading');
-		},
-		complete: function() {
-			$('#button-cart').button('reset');
-		},
-		success: function(json) {
+  $.ajax({
+    url: 'index.php?route=checkout/cart/add',
+    type: 'post',
+    data: $('#content-new input[type=\'text\'], #product input[type=\'text\'], #product input[type=\'hidden\'], #product input[type=\'radio\']:checked, #product input[type=\'checkbox\']:checked, #product select, #product textarea'),
+    dataType: 'json',
+    beforeSend: function() {
+      $('#button-cart').button('loading');
+    },
+    complete: function() {
+      $('#button-cart').button('reset');
+    },
+    success: function(json) {
       //console.log(json);return;
-			$('.alert, .text-danger').remove();
-			$('.form-group').removeClass('has-error');
+      $('.alert, .text-danger').remove();
+      $('.form-group').removeClass('has-error');
 
-			if (json['error']) {
-				if (json['error']['option']) {
-					for (i in json['error']['option']) {
-						var element = $('#input-option' + i.replace('_', '-'));
+      if (json['error']) {
+        if (json['error']['option']) {
+          for (i in json['error']['option']) {
+            var element = $('#input-option' + i.replace('_', '-'));
 
-						if (element.parent().hasClass('input-group')) {
-							element.parent().after('<div class="text-danger">' + json['error']['option'][i] + '</div>');
-						} else {
-							element.after('<div class="text-danger">' + json['error']['option'][i] + '</div>');
-						}
+            if (element.parent().hasClass('input-group')) {
+              element.parent().after('<div class="text-danger">' + json['error']['option'][i] + '</div>');
+            } else {
+              element.after('<div class="text-danger">' + json['error']['option'][i] + '</div>');
+            }
                         /* Validate color option */
                         if(typeof(colorOptionId) != "undefined" && colorOptionId !== null && colorOptionId!=undefined && colorOptionId==i.replace('_', '-')){
                             $('.prp-colorswatch-productpage-icons').after('<div class="text-danger">' + json['error']['option'][i] + '</div>');
                         }
-					}
-				}
+          }
+        }
 
-				if (json['error']['recurring']) {
-					$('select[name=\'recurring_id\']').after('<div class="text-danger">' + json['error']['recurring'] + '</div>');
-				}
+        if (json['error']['recurring']) {
+          $('select[name=\'recurring_id\']').after('<div class="text-danger">' + json['error']['recurring'] + '</div>');
+        }
 
-				// Highlight any found errors
-				$('.text-danger').parent().addClass('has-error');
-			}
+        // Highlight any found errors
+        $('.text-danger').parent().addClass('has-error');
+      }
 
-			if (json['success']) {
+      if (json['success']) {
 
                 var str=json['total'];
                 var myArray = str.split(' ');
@@ -2038,163 +1885,137 @@ $('#button-cart').on('click', function() {
                 //$('#open-cart').click();
 
             }
-		}
-	});
+    }
+  });
 });
 //--></script>
 <script type="text/javascript"><!--
 $('.date').datetimepicker({
-	pickTime: false
+  pickTime: false
 });
 
 $('.datetime').datetimepicker({
-	pickDate: true,
-	pickTime: true
+  pickDate: true,
+  pickTime: true
 });
 
 $('.time').datetimepicker({
-	pickDate: false
+  pickDate: false
 });
 
 $('button[id^=\'button-upload\']').on('click', function() {
-	var node = this;
+  var node = this;
 
-	$('#form-upload').remove();
+  $('#form-upload').remove();
 
-	$('body').prepend('<form enctype="multipart/form-data" id="form-upload" style="display: none;"><input type="file" name="file" /></form>');
+  $('body').prepend('<form enctype="multipart/form-data" id="form-upload" style="display: none;"><input type="file" name="file" /></form>');
 
-	$('#form-upload input[name=\'file\']').trigger('click');
+  $('#form-upload input[name=\'file\']').trigger('click');
 
-	if (typeof timer != 'undefined') {
-    	clearInterval(timer);
-	}
+  if (typeof timer != 'undefined') {
+      clearInterval(timer);
+  }
 
-	timer = setInterval(function() {
-		if ($('#form-upload input[name=\'file\']').val() != '') {
-			clearInterval(timer);
+  timer = setInterval(function() {
+    if ($('#form-upload input[name=\'file\']').val() != '') {
+      clearInterval(timer);
 
-			$.ajax({
-				url: 'index.php?route=tool/upload',
-				type: 'post',
-				dataType: 'json',
-				data: new FormData($('#form-upload')[0]),
-				cache: false,
-				contentType: false,
-				processData: false,
-				beforeSend: function() {
-					$(node).button('loading');
-				},
-				complete: function() {
-					$(node).button('reset');
-				},
-				success: function(json) {
-					$('.text-danger').remove();
+      $.ajax({
+        url: 'index.php?route=tool/upload',
+        type: 'post',
+        dataType: 'json',
+        data: new FormData($('#form-upload')[0]),
+        cache: false,
+        contentType: false,
+        processData: false,
+        beforeSend: function() {
+          $(node).button('loading');
+        },
+        complete: function() {
+          $(node).button('reset');
+        },
+        success: function(json) {
+          $('.text-danger').remove();
 
-					if (json['error']) {
-						$(node).parent().find('input').after('<div class="text-danger">' + json['error'] + '</div>');
-					}
+          if (json['error']) {
+            $(node).parent().find('input').after('<div class="text-danger">' + json['error'] + '</div>');
+          }
 
-					if (json['success']) {
-						alert(json['success']);
+          if (json['success']) {
+            alert(json['success']);
 
-						$(node).parent().find('input').attr('value', json['code']);
-					}
-				},
-				error: function(xhr, ajaxOptions, thrownError) {
-					alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
-				}
-			});
-		}
-	}, 500);
+            $(node).parent().find('input').attr('value', json['code']);
+          }
+        },
+        error: function(xhr, ajaxOptions, thrownError) {
+          alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+        }
+      });
+    }
+  }, 500);
 });
 //--></script>
 <script type="text/javascript"><!--
-$('#review').delegate('.pagination a', 'click', function(e) {
-  e.preventDefault();
-
-    $('#review').fadeOut('slow');
-
-    $('#review').load(this.href);
-
-    $('#review').fadeIn('slow');
-});
-
-$('#review').load('index.php?route=product/product/review&product_id=<?php echo $product_id; ?>');
-
 $('#button-review').on('click', function() {
-	$.ajax({
-		url: 'index.php?route=product/product/write&product_id=<?php echo $product_id; ?>',
-		type: 'post',
-		dataType: 'json',
+  $.ajax({
+    url: 'index.php?route=product/product/write&product_id=<?php echo $product_id; ?>',
+    type: 'post',
+    dataType: 'json',
         data: $("#form-review").serialize(),
         beforeSend: function() {
-			$('#button-review').button('loading');
-		},
-		complete: function() {
-			$('#button-review').button('reset');
-		},
-		success: function(json) {
-			$('.alert-success, .alert-danger').remove();
+      $('#button-review').button('loading');
+    },
+    complete: function() {
+      $('#button-review').button('reset');
+    },
+    success: function(json) {
+      $('.alert-success, .alert-danger').remove();
 
-			if (json['error']) {
-				$('#write_review').before('<div class="alert alert-danger"><i class="fa fa-exclamation-circle"></i> ' + json['error'] + '</div>');
-			}
+      if (json['error']) {
+        $('#seller_write_review').before('<div class="alert alert-danger"><i class="fa fa-exclamation-circle"></i> ' + json['error'] + '</div>');
+      }
 
-			if (json['success']) {
-				$('#write_review').before('<div class="alert alert-success"><i class="fa fa-check-circle"></i> ' + json['success'] + '</div>');
+      if (json['success']) {
+        $('#seller_write_review').before('<div class="alert alert-success"><i class="fa fa-check-circle"></i> ' + json['success'] + '</div>');
 
-				$('input[name=\'name\']').val('');
-				$('textarea[name=\'text\']').val('');
-				$('input[name=\'rating\']:checked').prop('checked', false);
-			}
-		}
-	});
-});
-
-$('#seller_review').delegate('.pagination a', 'click', function(e) {
-  e.preventDefault();
-
-    $('#seller_review').fadeOut('slow');
-
-    $('#seller_review').load(this.href);
-
-    $('#seller_review').fadeIn('slow');
+        $('input[name=\'name\']').val('');
+        $('textarea[name=\'text\']').val('');
+        $('input[name=\'rating\']:checked').prop('checked', false);
+      }
+    }
+  });
 });
 
 $('#seller_review').load('index.php?route=product/product/seller_review&product_id=<?php echo $product_id; ?>');
 
 $('#button-seller_review').on('click', function() {
-	$.ajax({
-		url: 'index.php?route=product/product/seller_write&product_id=<?php echo $product_id; ?>',
-		type: 'post',
-		dataType: 'json',
-		data: 'name=' + encodeURIComponent($('input[name=\'name_seller\']').val()) + '&text=' + encodeURIComponent($('textarea[name=\'text_seller\']').val()) + '&rating=' + encodeURIComponent($('input[name=\'rating_seller\']:checked').val() ? $('input[name=\'rating_seller\']:checked').val() : '') + '&captcha=' + encodeURIComponent($('input[name=\'captcha_seller\']').val()),
-		beforeSend: function() {
-			$('#button-seller_review').button('loading');
-		},
-		complete: function() {
-			$('#button-seller_review').button('reset');
-			$('#captcha').attr('src', 'index.php?route=tool/captcha#'+new Date().getTime());
-			$('input[name=\'captcha_seller\']').val('');
-		},
-		success: function(json) {
-			$('.alert-success, .alert-danger').remove();
+  $.ajax({
+    url: 'index.php?route=product/product/seller_write&product_id=<?php echo $product_id; ?>',
+    type: 'post',
+    dataType: 'json',
+        data: $("#form-seller-review").serialize(),
+        beforeSend: function() {
+      $('#button-seller_review').button('loading');
+    },
+    complete: function() {
+      $('#button-seller_review').button('reset');
+    },
+    success: function(json) {
+      $('.alert-success, .alert-danger').remove();
 
-			if (json['error']) {
-				$('#write_seller_review').before('<div class="alert alert-danger"><i class="fa fa-exclamation-circle"></i> ' + json['error'] + '</div>');
-			}
+      if (json['error']) {
+        $('#write_review').before('<div class="alert alert-danger"><i class="fa fa-exclamation-circle"></i> ' + json['error'] + '</div>');
+      }
 
-			if (json['success']) {
-			    $('#write_seller_review').before('<div class="alert alert-success"><i class="fa fa-check-circle"></i> ' + json['success'] + '</div>');
-				
+      if (json['success']) {
+        $('#write_review').before('<div class="alert alert-success"><i class="fa fa-check-circle"></i> ' + json['success'] + '</div>');
 
-				$('input[name=\'name_seller\']').val('');
-				$('textarea[name=\'text_seller\']').val('');
-				$('input[name=\'rating_seller\']:checked').prop('checked', false);
-				$('input[name=\'captcha_seller\']').val('');
-			}
-		}
-	});
+        $('input[name=\'name\']').val('');
+        $('textarea[name=\'text\']').val('');
+        $('input[name=\'rating\']:checked').prop('checked', false);
+      }
+    }
+  });
 });
 
 

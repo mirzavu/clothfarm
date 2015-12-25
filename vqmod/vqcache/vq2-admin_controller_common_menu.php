@@ -157,7 +157,6 @@ class ControllerCommonMenu extends Controller {
 		$data['backup'] = $this->url->link('tool/backup', 'token=' . $this->session->data['token'], 'SSL');
 		$data['banner'] = $this->url->link('design/banner', 'token=' . $this->session->data['token'], 'SSL');
 		$data['category'] = $this->url->link('catalog/category', 'token=' . $this->session->data['token'], 'SSL');
-$data['category'] = $this->url->link('catalog/mcategory', 'token=' . $this->session->data['token'], 'SSL');			
 		$data['country'] = $this->url->link('localisation/country', 'token=' . $this->session->data['token'], 'SSL');
 		$data['contact'] = $this->url->link('marketing/contact', 'token=' . $this->session->data['token'], 'SSL');
 		$data['coupon'] = $this->url->link('marketing/coupon', 'token=' . $this->session->data['token'], 'SSL');
@@ -193,7 +192,6 @@ $data['category'] = $this->url->link('catalog/mcategory', 'token=' . $this->sess
 		$data['payment'] = $this->url->link('extension/payment', 'token=' . $this->session->data['token'], 'SSL');
 		$data['paypal_search'] = $this->url->link('payment/pp_express/search', 'token=' . $this->session->data['token'], 'SSL');
 		$data['product'] = $this->url->link('catalog/product', 'token=' . $this->session->data['token'], 'SSL');
-$data['product'] = $this->url->link('catalog/mproduct', 'token=' . $this->session->data['token'], 'SSL');
 		$data['report_sale_order'] = $this->url->link('report/sale_order', 'token=' . $this->session->data['token'], 'SSL');
 		$data['report_sale_tax'] = $this->url->link('report/sale_tax', 'token=' . $this->session->data['token'], 'SSL');
 		$data['report_sale_shipping'] = $this->url->link('report/sale_shipping', 'token=' . $this->session->data['token'], 'SSL');

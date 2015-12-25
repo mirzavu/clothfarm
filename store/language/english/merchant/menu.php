@@ -108,12 +108,3 @@ $_['text_marketing']                   = 'Marketing';
 $_['text_product']                     = 'Products';
 $_['text_manage_product']              = 'Manage Products';
 $_['vendor_ticket']                    = 'Tickets';
-$_['text_bank_details']                = 'Manage Bank Details';
-
-$_['renew_subscribe']                  = 'Renew';
-$_['subscriber']                       = 'Subscribe';
-$_['prev_subscriber']                  = 'Archieve';
-
-$_['renew_autopost']                  = 'Renew Autopost';
-$_['autoposter']                       = 'Autopost';
-$_['prev_autoposter']                  = 'Archieve Autopost';

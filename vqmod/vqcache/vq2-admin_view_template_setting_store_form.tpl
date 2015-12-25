@@ -53,6 +53,7 @@
                         */
                     -->
                 
+						
 	    <li><a href="#tab-commission" data-toggle="tab"><?php echo $tab_commission; ?></a></li>	
           </ul>
           <div class="tab-content">
@@ -630,7 +631,18 @@
                 </div>
               </fieldset>
             </div>
-            <div class="tab-pane" id="tab-image">
+            
+    <div class="tab-pane" id="tab-image">
+      <div class="form-group">
+        <label class="col-sm-2 control-label" for="input-logo-admin"><?php echo $entry_logo_admin; ?></label>
+        <div class="col-sm-10">
+          <a href="" id="thumb-logo-admin" data-toggle="image" class="img-thumbnail">
+            <img src="<?php echo $logo_admin; ?>" alt="" title="" data-placeholder="<?php echo $placeholder; ?>" />
+          </a>
+          <input type="hidden" name="config_logo_admin" value="<?php echo $config_logo_admin; ?>" id="logo_admin" />
+        </div>
+      </div>
+    
               <div class="form-group">
                 <label class="col-sm-2 control-label" for="input-logo"><?php echo $entry_logo; ?></label>
                 <div class="col-sm-10"><a href="" id="thumb-logo" data-toggle="image" class="img-thumbnail"><img src="<?php echo $logo; ?>" alt="" title="" data-placeholder="<?php echo $placeholder; ?>" /></a>
@@ -804,6 +816,9 @@
                 </div>
               </div>
             </div>
+			
+					
+			
 
                     <!--
                     /**
@@ -1339,6 +1354,10 @@ $('select[name=\'config_country_id\']').on('change', function() {
 
 $('select[name=\'config_country_id\']').trigger('change');
 //--></script></div>
+
+
+
+
 
                     <!--
                     /**

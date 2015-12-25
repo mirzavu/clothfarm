@@ -1,5 +1,5 @@
 <?php if (!isset($redirect)) { ?>
-<div> 
+<div>
   <table class="table-shop">
     <thead>
       <tr>

@@ -114,20 +114,7 @@ class ControllerMerchantMenu extends Controller {
 		$data['ticket'] = $this->language->get('ticket');
 		$data['vendor_ticket'] = $this->language->get('vendor_ticket');
 		$data['text_manage_product'] = $this->language->get('text_manage_product');	
-		$data['text_bank_details'] = $this->language->get('text_bank_details');
-		$data['renew_subscribe'] = $this->language->get('renew_subscribe');	
-		$data['subscriber'] = $this->language->get('subscriber');
-		$data['prev_subscriber'] = $this->language->get('prev_subscriber');
-		
-		$data['renew_autopost'] = $this->language->get('renew_autopost');	
-		$data['autoposter'] = $this->language->get('autoposter');
-		$data['prev_autoposter'] = $this->language->get('prev_autoposter');
 
-        $data['subscribe'] = $this->url->link('subscribe/plan', 'token=' . $this->session->data['mtoken'], 'SSL');
-		$data['prev_subscribe'] = $this->url->link('subscribe/plan/prev_subscribe', 'token=' . $this->session->data['mtoken'], 'SSL');
-		$data['autopost'] = $this->url->link('autopost/plan', 'token=' . $this->session->data['mtoken'], 'SSL');
-		$data['prev_autopost'] = $this->url->link('autopost/plan/prev_subscribe', 'token=' . $this->session->data['mtoken'], 'SSL');
-        $data['bank_details'] = $this->url->link('catalog/bank_details', 'token=' . $this->session->data['mtoken'], 'SSL');
 		$data['home'] = $this->url->link('merchant/dashboard', 'token=' . $this->session->data['mtoken'], 'SSL');
 		$data['affiliate'] = $this->url->link('marketing/affiliate', 'token=' . $this->session->data['mtoken'], 'SSL');
 		$data['api'] = $this->url->link('user/api', 'token=' . $this->session->data['mtoken'], 'SSL');

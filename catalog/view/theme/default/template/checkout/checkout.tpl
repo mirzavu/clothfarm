@@ -710,7 +710,7 @@ $(document).delegate('#button-shipping-method', 'click', function() {
                 }
             } else {
                 $.ajax({
-                    url: 'index.php?route=checkout/payment_method', 
+                    url: 'index.php?route=checkout/payment_method',
                     dataType: 'html',
                     success: function(html) {
                         $('#collapse-payment-method .panel-body').html(html);

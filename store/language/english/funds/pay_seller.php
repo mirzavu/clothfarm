@@ -35,3 +35,4 @@ $_['error_debit']       = 'Either refund or dispute amount required!';
 $_['error_store']       = 'Required : Choose any seller to pay';
 $_['error_payment']     = 'Warning: Invalid Payment';
 $_['error_payment_high']= 'Warning: Payment is higher than total due';
+

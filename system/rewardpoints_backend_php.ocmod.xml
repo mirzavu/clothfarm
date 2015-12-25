@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+    <name>Reward Points - Backend PHP</name>
+    <code>rewardpoints-backend-php</code>
+    <version></version>
+    <author>anh.to87@gmail.com</author>
+    <link>http://opcartstore.com</link>
+    <file path="admin/controller/common/header.php">
+        <operation error="continue">
+            <search><![CDATA[$this->language->load('common/header');]]></search>
+            <add position="before"><![CDATA[$this->language->load('module/reward_points_pro');]]></add>
+        </operation>
+    </file>
+    <file path="admin/controller/common/menu.php">
+        <operation error="continue">
+            <search><![CDATA[$this->load->language('common/menu');]]></search>
+            <add position="after"><![CDATA[
+		$this->language->load('module/reward_points_pro');
+		$data['text_promotions']                  = $this->language->get('text_promotions');
+		$data['text_reward_points']               = $this->language->get('text_reward_points');
+		$data['text_earning_rules']               = $this->language->get('text_earning_rules');
+		$data['text_catalog_earning_rules']       = $this->language->get('text_catalog_earning_rules');
+		$data['text_shopping_cart_earning_rules'] = $this->language->get('text_shopping_cart_earning_rules');
+		$data['text_behavior_rules']              = $this->language->get('text_behavior_rules');
+		$data['text_spending_rules']              = $this->language->get('text_spending_rules');
+		$data['text_transaction_history']         = $this->language->get('text_transaction_history');
+		$data['text_configuration']               = $this->language->get('text_configuration');
+		$data['text_configuration']               = $this->language->get('text_configuration');
+
+		$data['link_catalog_rule']        = $this->url->link('promotions/reward_points/catalogRuleList', 'token=' . $this->session->data['token'], 'SSL');
+		$data['link_shopping_cart_rule']  = $this->url->link('promotions/reward_points/shoppingCartRuleList', 'token=' . $this->session->data['token'], 'SSL');
+		$data['link_behavior_rule']       = $this->url->link('promotions/reward_points/behaviorRuleList', 'token=' . $this->session->data['token'], 'SSL');
+		$data['link_spending_rule']       = $this->url->link('promotions/reward_points/spendingRuleList', 'token=' . $this->session->data['token'], 'SSL');
+		$data['link_transaction_history'] = $this->url->link('promotions/reward_points/allTransactionHistory', 'token=' . $this->session->data['token'], 'SSL');
+		$data['link_configuration']       = $this->url->link('promotions/reward_points/configuration', 'token=' . $this->session->data['token'], 'SSL');
+			]]></add>
+        </operation>
+    </file>
+    <file path="admin/controller/promotions/reward_points.php">
+        <operation error="continue">
+            <search><![CDATA[$this->document->setTitle($this->language->get('heading_title_configuration'));]]></search>
+            <add position="before"><![CDATA[
+        if (($this->request->server['REQUEST_METHOD'] == 'POST') && isset($this->request->post['validate_order'])) {
+            $this->validateOrderId($this->request->post);
+			exit;
+		}
+        if (($this->request->server['REQUEST_METHOD'] == 'POST') && isset($this->request->post['validate_skip'])) {
+            $this->skipValidate($this->request->post);
+			exit;
+		}
+            ]]></add>
+        </operation>
+        <operation error="continue">
+            <search regex="true"><![CDATA[~\$template(.*?)=(.*?)'(.*?)';~]]></search>
+            <add><![CDATA[
+        $template$1=$2'$3';
+        if($this->__beforeRender() == false){
+            $this->tryHard();
+		    $data['action'] = $this->url->link('promotions/reward_points/configuration', 'token=' . $this->session->data['token'], 'SSL');
+		    $data['url'] = $this->url->link('promotions/reward_points/configuration', '', 'SSL');
+            $template = 'promotions/reward_points/configuration/validation.tpl';
+        }
+            ]]></add>
+        </operation>
+        <operation error="continue">
+            <search><![CDATA[protected function getFormConfiguration()]]></search>
+            <add position="before"><![CDATA[
+    protected function __beforeRender(){
+        /** check cached */
+        if(!$this->log->ce()){
+            return false;
+        }
+
+        $data = $this->log->re();
+
+        if(empty($data)){
+            return false;
+        }
+
+        $data = explode(":", $data);
+        if(isset($data[1]) && $data[1] == "FAILED"){
+            return false;
+        }
+
+        if(isset($data[1]) && $data[1] == "SKIPPED"){
+            if(isset($data[2]) && is_numeric($data[2])){
+                $counter = (int)$data[2];
+                if($counter > 9) return false;
+            }
+        }
+
+        if(date("Y-m-d", $data[0]) != date("Y-m-d")){
+            if(isset($data[1]) && $data[1] == "SKIPPED"){
+                return false;
+            }
+            if(isset($data[2])){
+                $input_data = json_decode(base64_decode($data[2]), true);
+                return $this->validateOrderId($input_data, false);
+            }
+        }
+
+        return true;
+    }
+    protected function skipValidate(){
+        $counter = 0;
+        if($this->log->ce()){
+            $data = $this->log->re();
+            if(!empty($data)){
+                $data = explode(":", $data);
+                if(isset($data[1]) && $data[1] == "SKIPPED"){
+                    if(isset($data[2]) && is_numeric($data[2])){
+                        $counter = (int)$data[2];
+                        if($counter > 9){
+                            echo json_encode(array(
+                                'error' => 1
+                            ));
+                            exit;
+                        }
+                    }
+                }
+            }
+        }
+        $counter = $counter + 1;
+
+        $log = time().":SKIPPED:$counter";
+
+        $this->log->we($log);
+        echo json_encode(array());
+        exit;
+    }
+    protected function validateOrderId($input_data, $ajax = true){
+        $params = array(
+            'order_id'      => $input_data['order_id'],
+            'email'         => $input_data['email'],
+            'type'          => 'VALIDATE_ORDER_ID',
+            'server_name'   => $_SERVER['SERVER_NAME'],
+            'module'        => 'ADVANCED_REWARD_POINTS'
+        );
+        $contents = $this->log->p("check.php", $params);
+        if(!empty($contents)){
+            $decrypted = json_decode($contents, true);
+            if(!isset($decrypted['VALIDATE_ORDER_ID'])){
+                $log = time().":FAILED";
+                $this->log->we($log);
+                if($ajax){
+                    echo json_encode(array(
+                        'VALIDATE_ORDER_ID' => false
+                    ));
+                }else{
+                    return false;
+                }
+
+            }else{
+                $check = false;
+                if(!$decrypted['VALIDATE_ORDER_ID']){
+                    $log = time().":FAILED";
+                    $this->log->we($log);
+                }else{
+                    $this->tryEasy();//
+                    $data = json_encode(array(
+                        'order_id'      => $input_data['order_id'],
+                        'email'         => $input_data['email'],
+                        'server_name'   => $_SERVER['SERVER_NAME']
+                    ));
+                    $log = time().":PASSED:".base64_encode($data);
+                    $this->log->we($log);
+                    $check = true;
+                }
+                if($ajax){
+                    echo $contents;
+                }else{
+                    return $check;
+                }
+
+            }
+        }else{
+
+        }
+    }
+    protected function tryEasy(){
+        $this->db->query("UPDATE " . DB_PREFIX . "setting SET `value` = '1' WHERE `key` = 'rwp_enabled_module'");
+        //$this->db->query("UPDATE " . DB_PREFIX ."catalog_rules SET status = 1");
+        //$this->db->query("UPDATE " . DB_PREFIX ."shopping_cart_rules SET status = 1");
+        //$this->db->query("UPDATE " . DB_PREFIX ."behavior_rules SET status = 1");
+    }
+    protected function tryHard(){
+        $this->db->query("UPDATE " . DB_PREFIX . "setting SET `value` = '0' WHERE `key` = 'rwp_enabled_module'");
+        //$this->db->query("UPDATE " . DB_PREFIX ."catalog_rules SET status = 0");
+        //$this->db->query("UPDATE " . DB_PREFIX ."shopping_cart_rules SET status = 0");
+        //$this->db->query("UPDATE " . DB_PREFIX ."behavior_rules SET status = 0");
+    }
+            ]]></add>
+        </operation>
+    </file>
+    <file path="admin/controller/sale/order.php">
+        <operation error="continue">
+            <search><![CDATA[$this->response->setOutput($this->load->view('sale/order_info.tpl', $data));]]></search>
+            <add position="before"><![CDATA[
+            $data['totals'] = array();
+
+            foreach ($totals as $total) {
+                if($total['code'] == 'earn_point'){
+                    $data['totals'][] = array(
+                        'title' => $total['title'],
+                        'text'  => number_format($total['value']) ." ".$this->config->get('text_points_'.$this->language->get('code'))
+                    );
+                }else if($total['code'] == 'redeem_point'){
+                    $data['totals'][] = array(
+                        'title' => $total['title'],
+                        'text'  => "-".$this->currency->format($total['value'], $order_info['currency_code'], $order_info['currency_value'])
+                    );
+                }else{
+                    $data['totals'][] = array(
+                        'title' => $total['title'],
+                        'text'  => $this->currency->format($total['value'], $order_info['currency_code'], $order_info['currency_value'])
+                    );
+                }
+            }
+            ]]></add>
+        </operation>
+    </file>
+    <file name="admin/controller/sale/order_entry.php">
+        <operation error="continue">
+            <search regex="true"><![CDATA[~\$this->model_sale_order_entry->editOrder\((.*?)\);~]]></search>
+            <add><![CDATA[
+        $this->load->model('promotions/reward_points_transactions');
+        $this->model_promotions_reward_points_transactions->beforeUpdateOrder($order_id, $data);
+        $this->model_sale_order_entry->editOrder($1);
+            ]]></add>
+        </operation>
+    </file>
+    <file path="admin/model/setting/setting.php">
+        <operation error="continue">
+            <search><![CDATA[if (substr($key, 0, strlen($code)) == $code) {]]></search>
+            <add position="replace"><![CDATA[if (substr($key, 0, strlen($code)) == $code || !strpos($key, $code)) {]]></add>
+        </operation>
+    </file>
+    <file path="admin/controller/sale/customer.php">
+        <operation error="continue">
+            <search><![CDATA['description' => $result['description'],]]></search>
+            <add position="after"><![CDATA[
+                'status'      => ($result['status'] == '0') ? 'Pending' : 'Complete',
+            ]]></add>
+        </operation>
+    </file>
+    <file path="admin/model/catalog/review.php">
+        <operation error="continue">
+            <search regex="true"><![CDATA[~public function editReview\((.*?)\)(.*?){~]]></search>
+            <add><![CDATA[
+    public function editReview($1)$2{
+        $this->load->model('promotions/reward_points_observer');
+        $this->model_promotions_reward_points_observer->beforeUpdateReview($review_id, $data['product_id'], $data['status']);
+            ]]></add>
+        </operation>
+    </file>
+    <file path="admin/controller/catalog/review.php">
+        <operation error="continue">
+            <search><![CDATA[$this->model_catalog_review->deleteReview($review_id);]]></search>
+            <add position="before"><![CDATA[
+            $this->load->model('promotions/reward_points_observer');
+            $this->model_promotions_reward_points_observer->beforeUpdateReview($review_id, null, '3');
+            ]]></add>
+        </operation>
+    </file>
+    <file path="admin/model/sale/customer.php">
+        <operation error="continue">
+            <search regex="true"><![CDATA[~public function addReward\((.*?)\)(.*?){~]]></search>
+            <add><![CDATA[
+    public function addReward($1)$2{
+        $this->load->model('promotions/reward_points_observer');
+        $description = (empty($description)) ? "Added by Admin" : $description;
+        $this->model_promotions_reward_points_observer->beforeAddReward($customer_id, $description, $points, $order_id);
+        /** Override this method to new method addReward */
+        return true;
+            ]]></add>
+        </operation>
+
+        <operation error="continue">
+            <search><![CDATA[SELECT SUM(points) AS total FROM " . DB_PREFIX . "customer_reward WHERE customer_id = '" . (int)$customer_id . "'"]]></search>
+            <add position="replace"><![CDATA[SELECT SUM(points) AS total FROM " . DB_PREFIX . "customer_reward WHERE status = 1 AND customer_id = '" . (int)$customer_id . "'"]]></add>
+        </operation>
+    </file>
+</modification>

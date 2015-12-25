@@ -22,11 +22,12 @@
 		 </div>
 		  <?php } ?>		
 		<div class="col-sm-3"><h2><?php echo $heading_title; ?></h2>
-		<ul>
+		<?php /*<ul>
 			<li><?php echo $data['address'];?> </li> 
 		 	<li><?php echo $data['telephone'];?></li>
 			<li><?php echo ucfirst($data['country']);?> </li>
 			<li><?php echo ucfirst($data['zone']); ?></li>
+</ul> */ ?>
 		</div>
 	</div>
       <?php if ($products) { ?>

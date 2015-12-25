@@ -120,7 +120,7 @@ class ControllerSaleOrder extends Controller {
 	}
 
 	public function delete() {
-		$vendor_id = $this->session->data['storeID']; 	
+			$vendor_id = $this->session->data['storeID']; 	
 		$this->load->language('sale/order');
 
 		$this->document->setTitle($this->language->get('heading_title'));
@@ -1221,6 +1221,10 @@ class ControllerSaleOrder extends Controller {
 				'href' => $this->url->link('sale/order', 'token=' . $this->session->data['mtoken'] . $url, 'SSL')
 			);
 
+			$this->document->addScript('view/javascript/fancybox/jquery.fancybox.js');
+			$this->document->addStyle('view/javascript/fancybox/jquery.fancybox.css');
+			$this->document->addStyle('view/stylesheet/custom_style.css');
+			$this->document->addScript('view/javascript/customjs.js');
 			$data['shipping'] = $this->url->link('sale/order/shipping', 'token=' . $this->session->data['mtoken'] . '&order_id=' . (int)$this->request->get['order_id'], 'SSL');
 			$data['invoice'] = $this->url->link('sale/order/invoice', 'token=' . $this->session->data['mtoken'] . '&order_id=' . (int)$this->request->get['order_id'], 'SSL');
 			$data['edit'] = $this->url->link('sale/order/edit', 'token=' . $this->session->data['mtoken'] . '&order_id=' . (int)$this->request->get['order_id'], 'SSL');
@@ -1519,6 +1523,7 @@ class ControllerSaleOrder extends Controller {
 					'model'    		   => $product['model'],
 					'option'   		   => $option_data,
 					'quantity'		   => $product['quantity'],
+					'stitch'		   => $product['stitch'],
 					'price'    		   => $this->currency->format($product['price'] + ($this->config->get('config_tax') ? $product['tax'] : 0), $order_info['currency_code'], $order_info['currency_value']),
 					'shipping'                 => $this->currency->format( $product['shipping'] , $order_info['currency_code'], $order_info['currency_value']),
 					'total'    		   => $this->currency->format($product['total'] + $product['shipping'] + ($this->config->get('config_tax') ? ($product['tax'] * $product['quantity']) : 0), $order_info['currency_code'], $order_info['currency_value']),

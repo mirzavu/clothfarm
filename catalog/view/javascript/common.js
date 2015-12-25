@@ -23,7 +23,6 @@ function getURLVar(key) {
 }
 
 $(document).ready(function() {
-
 	// Adding the clear Fix
 	cols1 = $('#column-right, #column-left').length;
 	

@@ -29,7 +29,6 @@
 				<li><a href="<?php echo $attribute_group; ?>"><?php echo $text_attribute_group; ?></a></li>
 			</ul>
 		</li>
-		<li><a href="<?php echo $bank_details; ?>"><?php echo $text_bank_details; ?></a></li>
 		<li><a href="<?php echo $manufacturer; ?>"><?php echo $text_manufacturer; ?></a></li>
 		<li><a href="<?php echo $review; ?>"><?php echo $text_review; ?></a></li>
 <?php /*
@@ -70,7 +69,7 @@
 			<ul>
 				<li><a href="<?php echo $report_sale_order; ?>"><?php echo $text_report_sale_order; ?></a></li>
 				<li><a href="<?php echo $report_sale_tax; ?>"><?php echo $text_report_sale_tax; ?></a></li>
-                               <li><a href="<?php echo $report_sale_shipping; ?>"><?php echo $text_report_sale_shipping; ?></a></li>
+				<li><a href="<?php echo $report_sale_shipping; ?>"><?php echo $text_report_sale_shipping; ?></a></li>
 				<li><a href="<?php echo $report_sale_return; ?>"><?php echo $text_report_sale_return; ?></a></li>
 				<li><a href="<?php echo $report_sale_coupon; ?>"><?php echo $text_report_sale_coupon; ?></a></li>
 			</ul>
@@ -82,18 +81,6 @@
 			</ul>
 		</li>
 			
-	</ul>
-</li>
-<li id="subscribe"><a class="parent"><i class="fa fa-bank fa-fw"></i> <span><?php echo $subscriber; ?></span></a>
-	<ul>
-		<li><a href="<?php echo $subscribe; ?>"><?php echo $renew_subscribe; ?></a></li>		
-		<li><a href="<?php echo $prev_subscribe; ?>"><?php echo $prev_subscriber; ?></a></li>		
-	</ul>
-</li>
-<li id="autopost"><a class="parent"><i class="fa fa-bank fa-fw"></i> <span><?php echo $autoposter; ?></span></a>
-	<ul>
-		<li><a href="<?php echo $autopost; ?>"><?php echo $renew_autopost; ?></a></li>		
-		<li><a href="<?php echo $prev_autopost; ?>"><?php echo $prev_autoposter; ?></a></li>		
 	</ul>
 </li>
   

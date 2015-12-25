@@ -250,6 +250,10 @@ class Cart {
 					} else {
 						$recurring = false;
 					}
+					if($this->config->get('config_'.$product['stitch_type'].'_cost'))
+					$stitch_cost = $this->config->get('config_'.$product['stitch_type'].'_cost');
+					else
+					$stitch_cost = 0;
 
 					$this->data[$key] = array(
 						'key'             => $key,
@@ -268,7 +272,7 @@ class Cart {
 						'price'           => ($price + $option_price),
 						'test'            => $test,
 						'stitch_type'     => $stitch_type,
-						'total'           => ($price + $option_price) * $quantity,
+						'total'           => ($price + $option_price + $stitch_cost) * $quantity,
 						'reward'          => $reward * $quantity,
 						'points'          => ($product_query->row['points'] ? ($product_query->row['points'] + $option_points) * $quantity : 0),
 						'tax_class_id'    => $product_query->row['tax_class_id'],

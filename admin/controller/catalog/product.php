@@ -620,7 +620,7 @@ class ControllerCatalogProduct extends Controller {
 		$data['entry_reward'] = $this->language->get('entry_reward');
 		$data['entry_layout'] = $this->language->get('entry_layout');
 		$data['entry_recurring'] = $this->language->get('entry_recurring');
-
+		$data['entry_stitch'] = $this->language->get('entry_stitch');
 		$data['help_keyword'] = $this->language->get('help_keyword');
 		$data['help_sku'] = $this->language->get('help_sku');
 		$data['help_upc'] = $this->language->get('help_upc');
@@ -672,6 +672,12 @@ class ControllerCatalogProduct extends Controller {
 			$data['error_name'] = $this->error['name'];
 		} else {
 			$data['error_name'] = array();
+		}
+
+		if (isset($this->error['shipping_port'])) {
+			$data['error_shipping_port'] = $this->error['shipping_port'];
+		} else {
+			$data['error_shipping_port'] = '';
 		}
 
 		if (isset($this->error['meta_title'])) {
@@ -891,6 +897,25 @@ class ControllerCatalogProduct extends Controller {
 			$data['price'] = '';
 		}
 
+		
+		if (isset($this->request->post['shipping_port'])) {
+			
+			$data['shipping_port']['port'] = $this->request->post['shipping_port'];
+			$data['shipping_port']['ship1'] = $this->request->post['ship1'];
+			$data['shipping_port']['ship2'] = $this->request->post['ship2'];
+			
+		} elseif (!empty($product_info) && $product_info['product_shipping'] !='' ) {
+			$arr = unserialize($product_info['product_shipping']);
+								
+			$data['shipping_port']['port'] = $arr['port'];
+			$data['shipping_port']['ship1'] = $arr['ship1'];
+			$data['shipping_port']['ship2'] = $arr['ship2'];
+			
+		} else {
+			$data['shipping_port'] = array();
+		}
+		
+
 		$this->load->model('catalog/recurring');
 
 		$data['recurrings'] = $this->model_catalog_recurring->getRecurrings();
@@ -937,6 +962,14 @@ class ControllerCatalogProduct extends Controller {
 			$data['minimum'] = $product_info['minimum'];
 		} else {
 			$data['minimum'] = 1;
+		}
+
+		if (isset($this->request->post['stitch'])) {
+			$data['stitch'] = $this->request->post['stitch'];
+		} elseif (!empty($product_info['stitch'])) {
+			$data['stitch'] = $product_info['stitch'];
+		} else {
+			$data['stitch'] = 'no';
 		}
 
 		if (isset($this->request->post['subtract'])) {
@@ -1145,7 +1178,7 @@ class ControllerCatalogProduct extends Controller {
 			$product_option_value_data = array();
 
 			if (isset($product_option['product_option_value'])) {
-				foreach ($product_option['product_option_value'] as $product_option_value) {
+				foreach ($product_option['product_option_value'] as $product_option_value){
 					$product_option_value_data[] = array(
 						'product_option_value_id' => $product_option_value['product_option_value_id'],
 						'option_value_id'         => $product_option_value['option_value_id'],
@@ -1352,6 +1385,11 @@ class ControllerCatalogProduct extends Controller {
 		if ((utf8_strlen($this->request->post['model']) < 1) || (utf8_strlen($this->request->post['model']) > 64)) {
 			$this->error['model'] = $this->language->get('error_model');
 		}
+
+		if (utf8_strlen($this->request->post['shipping_port']) < 1) {
+			$this->error['shipping_port'] = 'Please select the shipping port';
+		}
+
 
 		if (utf8_strlen($this->request->post['keyword']) > 0) {
 			$this->load->model('catalog/url_alias');

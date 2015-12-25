@@ -170,6 +170,9 @@ $_['entry_affiliate']                  = 'Affiliate Terms';
 $_['entry_affiliate_mail']             = 'New Affiliate Alert Mail';
 $_['entry_return']                     = 'Return Terms';
 $_['entry_return_status']              = 'Return Status';
+
+      $_['entry_logo_admin'] = 'Store Admin Logo:';
+      
 $_['entry_logo']                       = 'Store Logo';
 $_['entry_icon']                       = 'Icon';
 $_['entry_image_category']             = 'Category Image Size';

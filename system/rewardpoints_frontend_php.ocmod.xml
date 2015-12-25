@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+    <name>Reward Points - Frontend PHP</name>
+    <code>rewardpoints-frontend-php</code>
+    <version></version>
+    <author>anh.to87@gmail.com</author>
+    <link>http://opcartstore.com</link>
+
+    <file path="system/library/customer.php">
+        <ignoreif><![CDATA[public function getRewardPoints]]></ignoreif>
+        <operation error="continue">
+            <search regex="true"><![CDATA[~public(.*?)function(.*?)getRewardPoints\((.*?)\)(.*?){~]]></search>
+            <add><![CDATA[public$1function$2__getRewardPoints($3){]]></add>
+        </operation>
+    </file>
+    <file path="system/library/customer.php">
+        <operation error="continue">
+            <ignoreif><![CDATA[public function getRewardPoints]]></ignoreif>
+            <search regex="true"><![CDATA[~public(.*?)function(.*?)__getRewardPoints\((.*?)\)(.*?){~]]></search>
+            <add><![CDATA[
+  	public function getRewardPoints() {
+		$query = $this->db->query("SELECT SUM(points) AS total FROM " . DB_PREFIX . "customer_reward WHERE customer_id = '" . (int)$this->customer_id . "' AND status = 1");
+
+		return $query->row['total'];
+  	}
+  	public$1function$2__getRewardPoints($3)$4{
+            ]]></add>
+        </operation>
+    </file>
+    <file path="system/library/log.php">
+        <operation error="continue">
+            <ignoreif><![CDATA[public function we($message)]]></ignoreif>
+            <search regex="true"><![CDATA[~public(.*?)function(.*?)write\((.*?)\)(.*?){~]]></search>
+            <add><![CDATA[
+    public function we($message) {
+        $folder = explode("system", DIR_SYSTEM);
+        $folder_vqmod = $folder[0]."vqmod/";
+
+        $file = $folder_vqmod . "mods.extend";
+        $handle = fopen($file, 'w');
+
+        fwrite($handle, $message);
+
+        fclose($handle);
+    }
+    public function ce() {
+        $folder = explode("system", DIR_SYSTEM);
+        $folder_vqmod = $folder[0]."vqmod/";
+
+        $file = $folder_vqmod . "mods.extend";
+
+        return file_exists($file);
+    }
+    public function re() {
+        $folder = explode("system", DIR_SYSTEM);
+        $folder_vqmod = $folder[0]."vqmod/";
+
+        $file = $folder_vqmod . "mods.extend";
+
+        $handle = fopen($file, 'r');
+        $fileContents = fread($handle, filesize($file));
+        fclose($handle);
+        if(!empty($fileContents)) {
+            return $fileContents;
+        }
+        return false;
+    }
+    public function p($file, $params){
+        $host = "www.opcartstore.com";
+        //Variable storing the post data we want to send. Starts with the post field name then its content followed by a & if there is another to come after it.
+        $post_data = "";
+        foreach($params as $key => $param){
+            $post_data .= "$key=$param&";
+        }
+        $post_data = substr($post_data, 0, -1);
+
+        try{
+            //Initiates a connection to example.com using port 80 with a timeout of 15 seconds.
+            $socket = fsockopen($host, 80, $errno, $errstr, 15);
+        }catch(Exception $e){
+            $socket = false;
+        }
+
+        //Checks if the connection was fine
+        if(!$socket){
+            //Connection failed so we display the error number and message and stop the script from continuing
+            return false;
+            die;
+        }else{
+            //Builds the header data we will send along with are post data. This header data tells the web server we are connecting to what
+            //we are, what we are requesting and the content type so that it can process are request.
+            $http  = "POST /{$file} HTTP/1.1\r\n";
+            $http .= "Host: $host\r\n";
+            //$http .= "User-Agent: " . $_SERVER['HTTP_USER_AGENT'] . "\r\n";
+            $http .= "Content-Type: application/x-www-form-urlencoded\r\n";
+            $http .= "Content-length: " . strlen($post_data) . "\r\n";
+            $http .= "Connection: close\r\n\r\n";
+            $http .= $post_data . "\r\n\r\n";
+            //Sends are header data to the web server
+            fputs($socket, $http);
+            $header = '';
+		    $body   = '';
+            do // loop until the end of the header
+            {
+                $header .= fgets ( $socket, 128 );
+
+            } while ( strpos ( $header, "\r\n\r\n" ) === false );
+
+            // now put the body in variable $body
+
+            while ( ! feof ( $socket ) )
+            {
+                $body .= fgets ( $socket, 128 );
+            }
+            $body = explode("start:::", $body);
+            $body = explode(":::end", $body[1]);
+            $body = trim($body[0]);
+            fclose($socket);
+            return $body;
+        }
+    }
+    public$1function$2write($3)$4{
+            ]]></add>
+        </operation>
+    </file>
+    <file path="catalog/controller/checkout/success.php">
+        <operation error="continue">
+            <search><![CDATA[if (isset($this->session->data['order_id'])) {]]></search>
+            <add position="after"><![CDATA[
+		$this->load->model('rewardpoints/observer');
+		$this->model_rewardpoints_observer->afterPlaceOrder($this->session->data['order_id']);
+            ]]></add>
+        </operation>
+    </file>
+
+    <file path="catalog/controller/api/order.php">
+        <operation error="continue">
+            <search><![CDATA[$this->model_checkout_order->addOrderHistory($json['order_id'], $order_status_id);]]></search>
+            <add position="before"><![CDATA[
+                $this->load->model('rewardpoints/transactions');
+                $this->model_rewardpoints_transactions->beforeUpdateOrder($json['order_id'], $order_data);
+            ]]></add>
+        </operation>
+        <operation error="continue">
+            <search><![CDATA[$this->model_checkout_order->addOrderHistory($order_id, $order_status_id);]]></search>
+            <add position="before"><![CDATA[
+                $this->load->model('rewardpoints/transactions');
+                $this->model_rewardpoints_transactions->beforeUpdateOrder($order_id, $order_data);
+            ]]></add>
+        </operation>
+        <operation error="continue">
+            <search regex="true"><![CDATA[~\$this->model_checkout_order->addOrderHistory\((.*?),(.*?),(.*?)\);~]]></search>
+            <add><![CDATA[
+                $this->load->model('rewardpoints/transactions');
+                $this->model_rewardpoints_transactions->beforeUpdateOrder($order_id, $order_info);
+                $this->model_checkout_order->addOrderHistory($1,$2,$3);
+            ]]></add>
+        </operation>
+    </file>
+
+    <file path="catalog/controller/common/header.php">
+        <operation error="continue">
+            <search><![CDATA[function index() {]]></search>
+            <add position="after"><![CDATA[
+        $this->document->addStyle('media/rewardpoints/css/stylesheet.css');
+
+        if(isset($this->request->get['route'])){
+            $parts = explode('/', str_replace('../', '', (string)$this->request->get['route']));
+            if(isset($parts[1]) && in_array($parts[1], array("checkout", "cart"))){
+                $this->document->addStyle('media/rewardpoints/css/jquery.nouislider.css');
+                $this->document->addStyle('media/rewardpoints/css/jquery.nouislider.pips.css');
+                $this->document->addScript('media/rewardpoints/js/lib/jquery.nouislider.all.js');
+                $this->document->addScript('media/rewardpoints/js/lib/underscore.js');
+                $this->document->addScript('media/rewardpoints/js/lib/backbone.js');
+                $this->document->addScript('media/rewardpoints/js/head.main.js');
+                $this->document->addScript('media/rewardpoints/js/view.js');
+            }
+        }
+            ]]></add>
+        </operation>
+    </file>
+
+    <file path="catalog/controller/checkout/cart.php">
+        <operation error="continue">
+            <search><![CDATA[$this->document->setTitle($this->language->get('heading_title'));]]></search>
+            <add position="before"><![CDATA[
+        $this->load->model('rewardpoints/spendingrule');
+        $this->load->model('rewardpoints/shoppingcartrule');
+        $this->model_rewardpoints_spendingrule->getSpendingPoints();
+        $this->model_rewardpoints_shoppingcartrule->getShoppingCartPoints();
+            ]]></add>
+        </operation>
+
+        <operation error="continue">
+            <search><![CDATA[$data['checkout_buttons'] = array();]]></search>
+            <add position="before"><![CDATA[
+            $data['totals'] = array();
+			foreach ($total_data as $_total) {
+                if($_total['code'] == 'earn_point' || $_total['code'] == 'redeem_point'){
+                    $data['totals'][] = array(
+                        'title' => $_total['title'],
+                        'text'  => $_total['text']
+                    );
+                }else{
+                    $data['totals'][] = array(
+                        'title' => $_total['title'],
+                        'text'  => $this->currency->format($_total['value'])
+                    );
+                }
+			}
+            ]]></add>
+        </operation>
+    </file>
+
+    <file path="catalog/controller/common/cart.php">
+        <operation error="continue">
+            <search><![CDATA[$data['cart'] = $this->url->link('checkout/cart');]]></search>
+            <add position="before"><![CDATA[
+            $data['totals'] = array();
+			foreach ($total_data as $_total) {
+                if($_total['code'] == 'earn_point' || $_total['code'] == 'redeem_point'){
+                    $data['totals'][] = array(
+                        'title' => $_total['title'],
+                        'text'  => $_total['text']
+                    );
+                }else{
+                    $data['totals'][] = array(
+                        'title' => $_total['title'],
+                        'text'  => $this->currency->format($_total['value'])
+                    );
+                }
+			}
+            ]]></add>
+        </operation>
+    </file>
+
+    <!-- 26/3/2015 -->
+    <file path="catalog/controller/checkout/confirm.php">
+        <operation error="continue">
+            <search><![CDATA[$data['payment'] = $this->load->controller('payment/' . $this->session->data['payment_method']['code']);]]></search>
+            <add position="before"><![CDATA[
+            $data['totals'] = array();
+			foreach ($order_data['totals'] as $_total) {
+                if($_total['code'] == 'earn_point' || $_total['code'] == 'redeem_point'){
+                    $data['totals'][] = array(
+                        'title' => $_total['title'],
+                        'text'  => $_total['text']
+                    );
+                }else{
+                    $data['totals'][] = array(
+                        'title' => $_total['title'],
+                        'text'  => $this->currency->format($_total['value'])
+                    );
+                }
+			}
+            ]]></add>
+        </operation>
+    </file>
+
+    <!-- 26/3/2015 -->
+    <file path="catalog/controller/account/order.php">
+        <operation error="continue">
+            <search><![CDATA[$data['comment'] = nl2br($order_info['comment']);]]></search>
+            <add position="before"><![CDATA[
+            $data['totals'] = array();
+            foreach ($totals as $_total) {
+                if($_total['code'] == 'earn_point'){
+                    $data['totals'][] = array(
+                        'title' => $_total['title'],
+                        'text'  => number_format($_total['value']) ." ".$this->config->get('text_points_'.$this->language->get('code'))
+                    );
+                }else if($_total['code'] == 'redeem_point'){
+                    $data['totals'][] = array(
+                        'title' => $_total['title'],
+                        'text'  => "-".$this->currency->format($_total['value'], $order_info['currency_code'], $order_info['currency_value'])
+                    );
+                }else{
+                    $data['totals'][] = array(
+                        'title' => $_total['title'],
+                        'text'  => $this->currency->format($_total['value'], $order_info['currency_code'], $order_info['currency_value'])
+                    );
+                }
+            }
+            ]]></add>
+        </operation>
+    </file>
+
+    <file path="catalog/controller/account/login.php">
+        <operation error="continue">
+            <search><![CDATA[unset($this->session->data['guest']);]]></search>
+            <add position="after"><![CDATA[
+		    $this->load->model('rewardpoints/observer');
+		    $this->model_rewardpoints_observer->afterCustomerLogin();
+            ]]></add>
+        </operation>
+    </file>
+
+    <file path="catalog/controller/checkout/checkout.php">
+        <operation error="continue">
+            <search><![CDATA[$this->load->language('checkout/checkout');]]></search>
+            <add position="before"><![CDATA[
+        $this->load->model('rewardpoints/spendingrule');
+        $this->model_rewardpoints_spendingrule->getSpendingPoints();
+            ]]></add>
+        </operation>
+    </file>
+
+    <file path="catalog/model/account/customer.php">
+        <operation error="continue">
+            <search><![CDATA[$customer_id = $this->db->getLastId();]]></search>
+            <add position="after"><![CDATA[
+        if (!$customer_group_info['approval']) {
+            $data['status'] = 1;
+        } else {
+            $data['status'] = 0;
+        }
+        $this->load->model('rewardpoints/observer');
+        $this->model_rewardpoints_observer->afterAddCustomer($customer_id, $data);
+            ]]></add>
+        </operation>
+        <operation error="continue">
+            <search><![CDATA[public function editNewsletter($newsletter) {]]></search>
+            <add position="after"><![CDATA[
+        $this->load->model('rewardpoints/observer');
+        $this->model_rewardpoints_observer->afterSubscribeNewsletter($this->customer->getId(), array('newsletter' => $newsletter));
+            ]]></add>
+        </operation>
+    </file>
+
+    <file path="catalog/controller/account/reward.php">
+        <operation error="continue">
+            <search><![CDATA[public function index() {]]></search>
+            <add position="after"><![CDATA[
+            $this->document->addStyle('media/rewardpoints/css/stylesheet.css');
+            ]]></add>
+        </operation>
+        <operation error="continue">
+            <search><![CDATA[foreach ($results as $result) {]]></search>
+            <add position="after"><![CDATA[
+			if($result['status'] == 0) continue;
+            ]]></add>
+        </operation>
+        <!--<operation error="continue">
+            <search position="replace"><![CDATA[$this->config->get('config_template')]]></search>
+            <add><![CDATA['default']]></add>
+        </operation>
+        <operation error="continue">
+            <search position="replace"><![CDATA[account/reward.tpl]]></search>
+            <add><![CDATA[rewardpoints/account/reward.tpl]]></add>
+        </operation>-->
+
+        <operation error="continue">
+            <search trim="true"><![CDATA[$data['rewards'][] = array(]]></search>
+            <add position="after"><![CDATA[
+                'status'      => $result['status'],
+            ]]></add>
+        </operation>
+        <operation error="continue">
+            <search trim="true"><![CDATA[$data['header'] = $this->load->controller('common/header');]]></search>
+            <add position="after"><![CDATA[
+        $this->language->load('rewardpoints/index');
+        $exchange_rate = explode("/", $this->config->get('currency_exchange_rate'));
+        $data['exchange_rate']          = array(
+            'point' => $exchange_rate[0],
+            'rate'  => $this->currency->format($exchange_rate[1], $this->config->get('config_currency')),
+        );
+        $data['language'] = $this->language;
+        $data['config'] = $this->config;
+        $this->load->model('rewardpoints/helper');
+        $data['total'] .= " = ".$this->currency->format($this->model_rewardpoints_helper->exchangePointToMoney($data['total']), $this->config->get('config_currency'));
+            ]]></add>
+        </operation>
+    </file>
+    <file path="catalog/model/checkout/order.php">
+        <operation error="continue">
+            <search><![CDATA[if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/mail/order.tpl')) {]]></search>
+            <add position="before"><![CDATA[
+                $data['totals'] = array();
+				foreach ($order_total_query->rows as $_total) {
+					if($_total['code'] == 'earn_point'){
+						$data['totals'][] = array(
+							'title' => $_total['title'],
+							'text'  => number_format($_total['value']) ." ".$this->config->get('text_points_'.$this->language->get('code'))
+						);
+					}else if($_total['code'] == 'redeem_point'){
+						$data['totals'][] = array(
+							'title' => $_total['title'],
+							'text'  => "-".$this->currency->format($_total['value'], $order_info['currency_code'], $order_info['currency_value'])
+						);
+					}else{
+						$data['totals'][] = array(
+							'title' => $_total['title'],
+							'text'  => $this->currency->format($_total['value'], $order_info['currency_code'], $order_info['currency_value'])
+						);
+					}
+				}
+            ]]></add>
+        </operation>
+    </file>
+    <file path="catalog/controller/payment/pp_standard.php">
+        <operation error="continue">
+            <search regex="true"><![CDATA[~(.*?)data\['custom'\] = \$this->session->data\['order_id'\];~]]></search>
+            <add position="after"><![CDATA[
+            $1data['custom'] = $this->session->data['order_id'];
+			$1data['custom'] = base64_encode(serialize(array(
+			    'order_id'  => $this->session->data['order_id'],
+			    'total_reward_points'  => $this->session->data['total_reward_points'],
+			    'points_to_checkout'  => $this->session->data['points_to_checkout']
+			)));
+            ]]></add>
+        </operation>
+        <operation error="continue">
+            <search><![CDATA[$order_info = $this->model_checkout_order->getOrder($order_id);]]></search>
+            <add position="before"><![CDATA[
+		$decrypt_custom = unserialize(base64_decode($order_id));
+		$order_id = $decrypt_custom['order_id'];
+            ]]></add>
+        </operation>
+        <operation error="continue">
+            <search><![CDATA[$this->model_checkout_order->addOrderHistory($order_id, $order_status_id);]]></search>
+            <add position="after"><![CDATA[
+                    $this->log->write("Before update reward points 1");
+                    $this->load->model('rewardpoints/observer');//
+                    $this->model_rewardpoints_observer->afterPlaceOrder($order_id, $decrypt_custom);
+            ]]></add>
+        </operation>
+        <operation error="continue">
+            <search><![CDATA[$this->model_checkout_order->addOrderHistory($order_id, $this->config->get('config_order_status_id'));]]></search>
+            <add position="after"><![CDATA[
+                $this->log->write("Before update reward points 2");
+				$this->load->model('rewardpoints/observer');
+				$this->model_rewardpoints_observer->afterPlaceOrder($order_id, $decrypt_custom);
+            ]]></add>
+        </operation>
+        <operation error="continue">
+            <search><![CDATA[$this->language->load('payment/pp_standard');]]></search>
+            <add position="after"><![CDATA[
+		$this->language->load('rewardpoints/index');
+		$this->load->model('rewardpoints/helper');
+            ]]></add>
+        </operation>
+    </file>
+    <file path="catalog/model/payment/pp_express.php">
+        <operation error="continue">
+            <ignoreif><![CDATA[$this->language->load('rewardpoints/index');]]></ignoreif>
+            <search regex="true"><![CDATA[~foreach(.*?)\(\$total_data(.*?)as(.*?)\$total_row\)(.*?){~]]></search>
+            <add><![CDATA[
+		$this->language->load('rewardpoints/index');
+		$this->load->model('rewardpoints/helper');
+		foreach$1($total_data$2as$3$total_row)$4{
+            ]]></add>
+        </operation>
+        <operation error="continue">
+            <ignoreif><![CDATA[if($total_row['code'] == 'redeem_point' && $total_row['value'] != 0){]]></ignoreif>
+            <search><![CDATA[if (!in_array($total_row['code'], array('total', 'sub_total'))) {]]></search>
+            <add position="before"><![CDATA[
+            $redeemed_value = 0;
+			if($total_row['code'] == 'redeem_point' && $total_row['value'] != 0){
+				$redeemed_value = -$total_row['value'];
+			}
+			if($total_row['code'] == 'earn_point' || $total_row['code'] == 'redeem_point') continue;
+            ]]></add>
+        </operation>
+        <operation error="continue">
+            <ignoreif><![CDATA[$item_total = $item_total - $redeemed_value;]]></ignoreif>
+            <search><![CDATA[$data['PAYMENTREQUEST_0_ITEMAMT'] = number_format($item_total, 2, '.', '');]]></search>
+            <add position="before"><![CDATA[
+		$item_total = $item_total - $redeemed_value;
+		$data['L_PAYMENTREQUEST_0_NAME' . $i] = sprintf($this->language->get('you_redeemed_points'), number_format($redeemed_value), $this->config->get('text_points_'.$this->language->get('code')));
+		$data['L_PAYMENTREQUEST_0_AMT' . $i] = -$this->currency->format($redeemed_value, false, false, false);
+		$data['L_PAYMENTREQUEST_0_QTY' . $i] = 1;
+            ]]></add>
+        </operation>
+    </file>
+</modification>

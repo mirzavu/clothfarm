@@ -710,6 +710,12 @@ class ControllerCatalogMproduct extends Controller {
 			$data['error_name'] = array();
 		}
 
+		if (isset($this->error['shipping_port'])) {
+			$data['error_shipping_port'] = $this->error['shipping_port'];
+		} else {
+			$data['error_shipping_port'] = '';
+		}
+
 		if (isset($this->error['meta_title'])) {
 			$data['error_meta_title'] = $this->error['meta_title'];
 		} else {
@@ -972,6 +978,21 @@ class ControllerCatalogMproduct extends Controller {
 			$data['price'] = $product_info['price'];
 		} else {
 			$data['price'] = '';
+		}
+
+		if (isset($this->request->post['shipping_port'])) {			
+			$data['shipping_port']['port'] = $this->request->post['shipping_port'];
+			$data['shipping_port']['ship1'] = $this->request->post['ship1'];
+			$data['shipping_port']['ship2'] = $this->request->post['ship2'];			
+		} elseif (!empty($product_info) && $product_info['product_shipping'] !='' ) {
+			$arr = unserialize($product_info['product_shipping']);
+								
+			$data['shipping_port']['port'] = $arr['port'];
+			$data['shipping_port']['ship1'] = $arr['ship1'];
+			$data['shipping_port']['ship2'] = $arr['ship2'];
+			
+		} else {
+			$data['shipping_port'] = array();
 		}
 
 		$this->load->model('catalog/recurring');

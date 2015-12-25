@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+    <name>Reward Points - Backend TPL</name>
+    <code>rewardpoints-backend-tpl</code>
+    <version></version>
+    <author>anh.to87@gmail.com</author>
+    <link>http://opcartstore.com</link>
+    <file path="admin/view/template/common/menu.tpl">
+        <operation error="continue">
+            <search><![CDATA[<li id="sale">]]></search>
+            <add position="before"><![CDATA[
+  <li id="promotions"><a class="parent"><i class="fa fa-rocket fa-fw"></i> <span><?php echo $text_promotions; ?></span></a>
+    <ul>
+      <li><a class="parent"><?php echo $text_reward_points; ?></a>
+        <ul>
+          <li><a class="parent"><?php echo $text_earning_rules; ?></a>
+	          <ul>
+					<li><a href="<?php echo $link_catalog_rule?>"><?php echo $text_catalog_earning_rules?></a></li>
+                    <li><a href="<?php echo $link_shopping_cart_rule?>"><?php echo $text_shopping_cart_earning_rules?></a></li>
+                    <li><a href="<?php echo $link_behavior_rule?>"><?php echo $text_behavior_rules?></a></li>
+	          </ul>
+          </li>
+          <li><a href="<?php echo $link_spending_rule?>"><?php echo $text_spending_rules; ?></a></li>
+          <li><a href="<?php echo $link_transaction_history?>"><?php echo $text_transaction_history; ?></a></li>
+          <li><a href="<?php echo $link_configuration?>"><?php echo $text_configuration; ?></a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+            ]]></add>
+        </operation>
+    </file>
+    <file path="admin/view/template/sale/customer_reward.tpl">
+        <operation error="continue">
+            <search><![CDATA[<td class="text-left"><?php echo $column_description; ?></td>]]></search>
+            <add position="after"><![CDATA[
+      <td class="text-right"><?php echo 'Status'; ?></td>
+            ]]></add>
+        </operation>
+
+        <operation error="continue">
+            <search><![CDATA[<td class="text-left"><?php echo $reward['description']; ?></td>]]></search>
+            <add position="after"><![CDATA[
+      <td class="text-right"><?php echo $reward['status']; ?></td>
+            ]]></add>
+        </operation>
+
+        <operation error="continue">
+            <search><![CDATA[<td class="text-right"><b><?php echo $text_balance; ?></b></td>]]></search>
+            <add position="replace"><![CDATA[<td></td><td class="text-right"><b><?php echo $text_balance; ?></b></td>]]></add>
+        </operation>
+    </file>
+</modification>

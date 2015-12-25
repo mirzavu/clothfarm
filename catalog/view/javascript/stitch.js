@@ -1,4 +1,4 @@
-$(function(){
+$(function(){ 
    var  i=0;
    $('.imgbox ul').each(function(){
    i=i+1;
@@ -51,6 +51,50 @@ $(document).ready(function() {
 		console.log(measure_list);
 		$('#input-measures').val(measure_list);
 		$('#input-stitch-type').val('salwar');
+		console.log($('#input-stitch-type'));
+		$('#content-new').hide();
+		$('#content').show();
+		$('html,body').animate({
+        scrollTop: $("#content").offset().top},
+        'slow');
+		$('#button-cart').click();
+	});
+
+	$('#measure-done-saree').click(function(){
+		console.log('asdasd');
+		var all_measure = '';
+		$('#saree-tab .btn-measure').each(function(){
+			var rel = $(this).attr('rel');
+			var measure_input = $(this).next().children('input').val();
+			all_measure += '"'+rel+'":"'+measure_input+'",';
+		});
+		all_measure = all_measure.slice(0,-1);
+		var measure_list = '{"type":"Saree","data":{'+all_measure+'}}';
+		console.log(measure_list);
+		$('#input-measures').val(measure_list);
+		$('#input-stitch-type').val('saree');
+		console.log($('#input-stitch-type'));
+		$('#content-new').hide();
+		$('#content').show();
+		$('html,body').animate({
+        scrollTop: $("#content").offset().top},
+        'slow');
+		$('#button-cart').click();
+	});
+
+	$('#measure-done-choli').click(function(){
+
+		var all_measure = '';
+		$('#choli-tab .btn-measure').each(function(){
+			var rel = $(this).attr('rel');
+			var measure_input = $(this).next().children('input').val();
+			all_measure += '"'+rel+'":"'+measure_input+'",';
+		});
+		all_measure = all_measure.slice(0,-1);
+		var measure_list = '{"type":"Choli","data":{'+all_measure+'}}';
+		console.log(measure_list);
+		$('#input-measures').val(measure_list);
+		$('#input-stitch-type').val('choli');
 		console.log($('#input-stitch-type'));
 		$('#content-new').hide();
 		$('#content').show();

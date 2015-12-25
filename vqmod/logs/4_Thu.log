@@ -1,5 +1,85 @@
----------- Date: 2015-12-10 09:32:43 ~ IP : 122.178.93.95 ----------
-REQUEST URI : /admin/index.php?route=common/dashboard&token=6311e8dc81d906163e735e371e54d553
+---------- Date: 2015-12-17 10:16:03 ~ IP : 2.49.250.190 ----------
+REQUEST URI : /index.php?route=common/home
+MOD DETAILS:
+   modFile   : /home/clothfarm/public_html/vqmod/xml/socl_login.xml
+   id        : Social Login
+   version   : 1.1
+   vqmver    : 2.4.1
+   author    : Sandklock
+
+File Name    : system/startup.php(0)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): // Common
+
+MOD DETAILS:
+   modFile   : /home/clothfarm/public_html/vqmod/xml/news.xml
+   id        : Offers
+   version   : OC 2.x
+   vqmver    : 2.0.0
+   author    : Equotix
+
+File Name    : catalog/view/theme/*/template/common/footer.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><a href="<?php echo $voucher; ?>"><?php echo $text_voucher; ?></a></li>
+
+MOD DETAILS:
+   modFile   : /home/clothfarm/public_html/vqmod/xml/brainyfilter.xml
+   id        : Brainy Filter
+   version   : Ultimate 4.6.1
+   vqmver    : 2.4.1
+   author    : Giant Leap Lab
+
+File Name    : catalog/controller/common/header.php(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): $product_total = $this->model_catalog_product->getTotalProducts($data);
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2015-12-17 10:18:00 ~ IP : 2.49.250.190 ----------
+REQUEST URI : /index.php?route=information/news/news&news_id=1
+MOD DETAILS:
+   modFile   : /home/clothfarm/public_html/vqmod/xml/socl_login.xml
+   id        : Social Login
+   version   : 1.1
+   vqmver    : 2.4.1
+   author    : Sandklock
+
+File Name    : system/startup.php(0)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): // Common
+
+MOD DETAILS:
+   modFile   : /home/clothfarm/public_html/vqmod/xml/news.xml
+   id        : News
+   version   : OC 2.x
+   vqmver    : 2.0.0
+   author    : Equotix
+
+File Name    : catalog/view/theme/*/template/common/footer.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><a href="<?php echo $voucher; ?>"><?php echo $text_voucher; ?></a></li>
+
+MOD DETAILS:
+   modFile   : /home/clothfarm/public_html/vqmod/xml/brainyfilter.xml
+   id        : Brainy Filter
+   version   : Ultimate 4.6.1
+   vqmver    : 2.4.1
+   author    : Giant Leap Lab
+
+File Name    : catalog/controller/common/header.php(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): $product_total = $this->model_catalog_product->getTotalProducts($data);
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2015-12-17 10:18:29 ~ IP : 2.49.250.190 ----------
+REQUEST URI : /admin/index.php?route=extension/news&token=02c9b5955d42b0868ee9fe247eed756d
+MOD DETAILS:
+   modFile   : /home/clothfarm/public_html/vqmod/xml/Administrator-logo-editor.xml
+   id        : Administrator Logo Editor
+   version   : 1.0
+   vqmver    : 2.5.1
+   author    : Andreas Kondylis (http://akondylis.techmind.gr)
+
+File Name    : admin/view/template/common/header.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <img src="view/image/logo.png" alt="<?php echo $heading_title; ?>" title="<?php echo $heading_title; ?>" />
+
 MOD DETAILS:
    modFile   : /home/clothfarm/public_html/vqmod/xml/news.xml
    id        : News
@@ -9,6 +89,36 @@ MOD DETAILS:
 
 File Name    : admin/view/template/common/menu.tpl(0)
 VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <li><a href="<?php echo $feed; ?>"><?php echo $text_feed; ?></a></li>
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2015-12-17 10:59:47 ~ IP : 2.49.250.190 ----------
+REQUEST URI : /index.php?route=product/search&search=Search
+MOD DETAILS:
+   modFile   : /home/clothfarm/public_html/vqmod/xml/brainyfilter.xml
+   id        : Brainy Filter
+   version   : Ultimate 4.6.1
+   vqmver    : 2.4.1
+   author    : Giant Leap Lab
+
+File Name    : catalog/controller/product/search.php(1)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): $this->data['sorts'] = array();
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2015-12-17 16:29:39 ~ IP : 104.236.225.99 ----------
+REQUEST URI : /index.php?route=product/category&path=73_74_77
+MOD DETAILS:
+   modFile   : /home/clothfarm/public_html/vqmod/xml/brainyfilter.xml
+   id        : Brainy Filter
+   version   : Ultimate 4.6.1
+   vqmver    : 2.4.1
+   author    : Giant Leap Lab
+
+File Name    : catalog/controller/product/category.php(1)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): $this->data['sorts'] = array();
 
 ----------------------------------------------------------------------
 

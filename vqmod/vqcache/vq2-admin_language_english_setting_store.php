@@ -151,6 +151,9 @@ $_['entry_checkout']                   = 'Checkout Terms';
 $_['entry_order_status']               = 'Order Status';
 $_['entry_stock_display']              = 'Display Stock';
 $_['entry_stock_checkout']             = 'Stock Checkout';
+
+      $_['entry_logo_admin'] = 'Store Admin Logo:';
+      
 $_['entry_logo']                       = 'Store Logo';
 $_['entry_icon']                       = 'Icon';
 $_['entry_image_category']             = 'Category Image Size';

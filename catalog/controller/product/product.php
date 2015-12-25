@@ -197,7 +197,7 @@ class ControllerProductProduct extends Controller {
 
 		$product_info = $this->model_catalog_product->getProduct($product_id);
 		$seller_name = $this->model_catalog_seller->getSellerName($product_id);
-		//echo "<pre>";print_r($product_info);exit;
+		$data['shipping'] = $product_info['product_shipping'];
 		if ($product_info) {
 			$url = '';
 
@@ -366,7 +366,7 @@ class ControllerProductProduct extends Controller {
 				);
 			}
 
-			if (($this->config->get('config_customer_price')) || !$this->config->get('config_customer_price')) {
+			if (($this->config->get('config_customer_price') && $this->customer->isLogged()) || !$this->config->get('config_customer_price')) {
 				$data['price'] = $this->currency->format($this->tax->calculate($product_info['price'], $product_info['tax_class_id'], $this->config->get('config_tax')));
 			} else {
 				$data['price'] = false;
@@ -542,13 +542,13 @@ class ControllerProductProduct extends Controller {
 
 			$this->model_catalog_product->updateViewed($this->request->get['product_id']);
 
-			if ($this->config->get('config_google_captcha_status')) {
+			/*if ($this->config->get('config_google_captcha_status')) {
 				$this->document->addScript('https://www.google.com/recaptcha/api.js');
 
 				$data['site_key'] = $this->config->get('config_google_captcha_public');
 			} else {
 				$data['site_key'] = '';
-			}
+			}*/
 
 			$data['column_left'] = $this->load->controller('common/column_left');
 			$data['column_right'] = $this->load->controller('common/column_right');
@@ -713,7 +713,7 @@ class ControllerProductProduct extends Controller {
 				$json['error'] = $this->language->get('error_rating');
 			}
 
-			if ($this->config->get('config_google_captcha_status')) {
+			/*if ($this->config->get('config_google_captcha_status')) {
 				$recaptcha = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=' . urlencode($this->config->get('config_google_captcha_secret')) . '&response=' . $this->request->post['g-recaptcha-response'] . '&remoteip=' . $this->request->server['REMOTE_ADDR']);
 
 				$recaptcha = json_decode($recaptcha, true);
@@ -721,7 +721,7 @@ class ControllerProductProduct extends Controller {
 				if (!$recaptcha['success']) {
 					$json['error'] = $this->language->get('error_captcha');
 				}
-			}
+			}*/
 
 			if (!isset($json['error'])) {
 				$this->load->model('catalog/review');
@@ -800,7 +800,7 @@ class ControllerProductProduct extends Controller {
 				$json['error'] = $this->language->get('error_rating');
 			}
 
-			if ($this->config->get('config_google_captcha_status')) {
+			/*if ($this->config->get('config_google_captcha_status')) {
 				$recaptcha = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=' . urlencode($this->config->get('config_google_captcha_secret')) . '&response=' . $this->request->post['g-recaptcha-response'] . '&remoteip=' . $this->request->server['REMOTE_ADDR']);
 
 				$recaptcha = json_decode($recaptcha, true);
@@ -808,7 +808,7 @@ class ControllerProductProduct extends Controller {
 				if (!$recaptcha['success']) {
 					$json['error'] = $this->language->get('error_captcha');
 				}
-			}
+			}*/
 
 			if (!isset($json['error'])) {
 				$this->load->model('catalog/seller_review');

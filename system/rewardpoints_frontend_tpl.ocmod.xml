@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+    <name>Reward Points - Frontend TPL</name>
+    <code>rewardpoints-frontend-tpl</code>
+    <version></version>
+    <author>anh.to87@gmail.com</author>
+    <link>http://opcartstore.com</link>
+    <file path="catalog/view/theme/*/template/product/category.tpl" keep="true">
+        <operation error="continue">
+            <search><![CDATA[<?php echo $product['name']; ?></a>]]></search>
+            <add position="replace"><![CDATA[<?php $loader = new Loader($this->registry);$loader->model('rewardpoints/helper');?><?php echo $product['name']; ?></a><?php echo $this->registry->get('model_rewardpoints_helper')->displayRewardPointProductListing($product, '', 'text_category_earn_point')?>]]></add>
+        </operation>
+    </file>
+
+    <file path="catalog/view/theme/*/template/module/{latest,bestseller,special,featured}*.tpl" name="" keep="true">
+        <operation error="continue">
+            <search position="replace"><![CDATA[<?php echo $product['name']; ?></a>]]></search>
+            <add><![CDATA[
+            <?php $loader = new Loader($this->registry);$loader->model('rewardpoints/helper');?>
+            <?php echo $product['name']; ?></a>
+            <?php echo $this->registry->get('model_rewardpoints_helper')->displayRewardPointProductListing($product, '', 'text_category_earn_point')?>
+            ]]></add>
+        </operation>
+    </file>
+
+    <file path="catalog/view/theme/*/template/checkout/cart.tpl">
+        <operation error="continue">
+            <search><![CDATA[<small><?php echo $product['reward']; ?></small>]]></search>
+            <add position="replace"><![CDATA[]]></add>
+        </operation>
+        <operation error="continue">
+            <search><![CDATA[<?php echo $shipping; ?>]]></search>
+            <add position="after"><![CDATA[<div class="cart-total"></div>]]></add>
+        </operation>
+        <operation error="continue">
+            <search><![CDATA[<div class="col-sm-4 col-sm-offset-8">]]></search>
+            <add position="replace"><![CDATA[<div class="col-sm-4 col-sm-offset-8" id="box_cart_total">]]></add>
+        </operation>
+    </file>
+
+    <file path="catalog/view/theme/*/template/product/product.tpl">
+        <operation error="continue">
+            <search><![CDATA[<div id="product">]]></search>
+            <add position="before"><![CDATA[<?php $loader = new Loader($this->registry);$loader->model('rewardpoints/helper');?><?php echo $this->registry->get('model_rewardpoints_helper')->displayRewardPointProductListing(array('product_id' => $product_id), "product-detail", 'text_product_earn_point')?>]]></add>
+        </operation>
+    </file>
+</modification>

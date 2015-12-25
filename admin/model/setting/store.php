@@ -36,7 +36,34 @@ class ModelSettingStore extends Model {
 		if ($data['password']) {
 			$this->db->query("UPDATE `" . DB_PREFIX . "merchant` SET salt = '" . $this->db->escape($salt = substr(md5(uniqid(rand(), true)), 0, 9)) . "', password = '" . $this->db->escape(sha1($salt . sha1($salt . sha1($data['password'])))) . "' WHERE store_ids = '" . (int)$store_id . "' AND user_id = '" . (int)$data['user_id'] . "' AND parent = 0 ");
 		}
-
+                if($data['status'] == 1)
+		{
+			$this->load->language('mail/vendor');	   
+			$subject = sprintf($this->language->get('text_subject'), $this->config->get('config_name'));
+			$path = HTTP_CATALOG."store/index.php?route=merchant/login";
+			$message = sprintf($this->language->get('text_welcome'), $this->config->get('config_name')) . "\n\n";
+		         $message .= $this->language->get('text_login') . "\n";
+			$message .= $path. "\n\n";
+			$message .= $this->language->get('text_services') . "\n\n";
+			$message .= $this->language->get('text_thanks') . "\n";
+			$message .= $this->config->get('config_name');
+	
+			$mail = new Mail();
+			$mail->protocol = $this->config->get('config_mail_protocol');
+			$mail->parameter = $this->config->get('config_mail_parameter');
+			$mail->smtp_hostname = $this->config->get('config_mail_smtp_host');
+			$mail->smtp_username = $this->config->get('config_mail_smtp_username');
+			$mail->smtp_password = html_entity_decode($this->config->get('config_mail_smtp_password'), ENT_QUOTES, 'UTF-8');
+			$mail->smtp_port = $this->config->get('config_mail_smtp_port');
+			$mail->smtp_timeout = $this->config->get('config_mail_smtp_timeout');
+				
+			$mail->setTo($data['config_email']);
+			$mail->setFrom($this->config->get('config_email'));
+			$mail->setSender($this->config->get('config_name'));
+			$mail->setSubject($subject);
+			$mail->setText($message);
+			$mail->send();
+		}
 		$this->cache->delete('store');
 
 		$this->event->trigger('post.admin.store.edit', $store_id);

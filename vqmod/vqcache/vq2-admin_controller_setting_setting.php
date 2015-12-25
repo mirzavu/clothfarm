@@ -232,6 +232,9 @@ class ControllerSettingSetting extends Controller {
 		$data['entry_captcha'] = $this->language->get('entry_captcha');
 		$data['entry_captcha_page'] = $this->language->get('entry_captcha_page');
 		$data['entry_logo'] = $this->language->get('entry_logo');
+
+      $data['entry_logo_admin'] = $this->language->get('entry_logo_admin');
+      
 		$data['entry_icon'] = $this->language->get('entry_icon');
 		$data['entry_image_category'] = $this->language->get('entry_image_category');
 		$data['entry_image_thumb'] = $this->language->get('entry_image_thumb');
@@ -1342,6 +1345,19 @@ class ControllerSettingSetting extends Controller {
 			$data['logo'] = $this->model_tool_image->resize('no_image.png', 100, 100);
 		}
 
+
+    if (isset($this->request->post['config_logo_admin'])) {
+      $data['config_logo_admin'] = $this->request->post['config_logo_admin'];
+    } else {
+      $data['config_logo_admin'] = $this->config->get('config_logo_admin');     
+    }
+
+    if ($this->config->get('config_logo_admin') && file_exists(DIR_IMAGE . $this->config->get('config_logo_admin')) && is_file(DIR_IMAGE . $this->config->get('config_logo_admin'))) {
+      $data['logo_admin'] = $this->model_tool_image->resize($this->config->get('config_logo_admin'), 100, 100);   
+    } else {
+      $data['logo_admin'] = $this->model_tool_image->resize('no_image.jpg', 100, 100);
+    }
+    
 		if (isset($this->request->post['config_icon'])) {
 			$data['config_icon'] = $this->request->post['config_icon'];
 		} else {

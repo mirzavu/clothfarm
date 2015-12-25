@@ -40,6 +40,7 @@
             <li><a href="#tab-option" data-toggle="tab"><?php echo $tab_option; ?></a></li>
             <li><a href="#tab-image" data-toggle="tab"><?php echo $tab_image; ?></a></li>
             <li><a href="#tab-server" data-toggle="tab"><?php echo $tab_server; ?></a></li>
+						
 	    <li><a href="#tab-commission" data-toggle="tab"><?php echo $tab_commission; ?></a></li>	
           </ul>
           <div class="tab-content">
@@ -791,6 +792,9 @@
                 </div>
               </div>
             </div>
+			
+					
+			
             <div class="tab-pane" id="tab-server">
               <div class="form-group">
                 <label class="col-sm-2 control-label"><span data-toggle="tooltip" title="<?php echo $help_secure; ?>"><?php echo $entry_secure; ?></span></label>
@@ -900,4 +904,8 @@ $('select[name=\'config_country_id\']').on('change', function() {
 
 $('select[name=\'config_country_id\']').trigger('change');
 //--></script></div>
+
+
+
+
 <?php echo $footer; ?>

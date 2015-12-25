@@ -1,0 +1,86 @@
+.entry-head{
+    background: #6f8992;
+    padding: 3px 10px;
+}
+ul, ol {
+    list-style: none;
+}
+.entry-head h4{
+    margin: 0;
+    color: white;
+}
+#rule_conditions_fieldset{
+    border: 1px solid #d6d6d6;
+    padding: 10px 15px;
+    margin: 0px 0;
+    font-size: 15px;
+}
+.rule-param a:hover{
+    text-decoration: underline !important;
+    color: #000000 !important;
+}
+.rule-param .element {
+    display: none;
+}
+.rule-tree ul {
+    padding-left: 16px !important;
+    border-left: dotted 1px #888;
+}
+.rule-param .label {
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+}
+#rule_conditions_fieldset li {
+    margin: 8px 0;
+}
+.rule-param-wait {
+    padding-left: 20px;
+    background-image: url(../../image/rewardpoints/rule-ajax-loader.gif);
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+}
+#rule_actions_fieldset{
+    border: 1px solid #d6d6d6;
+    background: #fafafa;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+}
+td p.note {
+    margin: 0;
+    padding: 0 0 0 13px;
+    background: url(../../image/rewardpoints/note_bg.gif) 1px 6px no-repeat;
+    font-size: 11px;
+}
+.catalog-rules input,
+.catalog-rules textarea{
+    width: 242px;
+}
+a.button.primary{
+    background: #F09000;
+}
+
+a.button.red{
+    background: #BD1E00;
+}
+
+.behavior-customer-label{
+    background: #1467B8;
+    padding: 6px 16px;
+    color: #FFF;
+    border-radius: 18px;
+    font-size: 10px;
+}
+.statistic{
+    float: left;
+}
+.statistic input.button{
+    border: 1px solid #5A5959;
+    width: 56px;
+    background: #C7C5C5;
+}
+
+.transactions .transaction_status .action_status,
+.transactions .transaction_status .selection_status{
+    display: none;
+}

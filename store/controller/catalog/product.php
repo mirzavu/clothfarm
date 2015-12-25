@@ -593,7 +593,7 @@ class ControllerCatalogProduct extends Controller {
 		$data['entry_reward'] = $this->language->get('entry_reward');
 		$data['entry_layout'] = $this->language->get('entry_layout');
 		$data['entry_recurring'] = $this->language->get('entry_recurring');
-
+		$data['entry_stitch'] = $this->language->get('entry_stitch');
 		$data['help_keyword'] = $this->language->get('help_keyword');
 		$data['help_sku'] = $this->language->get('help_sku');
 		$data['help_upc'] = $this->language->get('help_upc');
@@ -646,6 +646,13 @@ class ControllerCatalogProduct extends Controller {
 		} else {
 			$data['error_name'] = array();
 		}
+
+if (isset($this->error['shipping_port'])) {
+			$data['error_shipping_port'] = $this->error['shipping_port'];
+		} else {
+			$data['error_shipping_port'] = '';
+		}
+
 
 		if (isset($this->error['meta_title'])) {
 			$data['error_meta_title'] = $this->error['meta_title'];
@@ -869,6 +876,24 @@ class ControllerCatalogProduct extends Controller {
 			$data['price'] = '';
 		}
 
+
+if (isset($this->request->post['shipping_port'])) {
+			
+			$data['shipping_port']['port'] = $this->request->post['shipping_port'];
+			$data['shipping_port']['ship1'] = $this->request->post['ship1'];
+			$data['shipping_port']['ship2'] = $this->request->post['ship2'];
+			
+		} elseif (!empty($product_info) && $product_info['product_shipping'] !='' ) {
+			$arr = unserialize($product_info['product_shipping']);
+								
+			$data['shipping_port']['port'] = $arr['port'];
+			$data['shipping_port']['ship1'] = $arr['ship1'];
+			$data['shipping_port']['ship2'] = $arr['ship2'];
+			
+		} else {
+			$data['shipping_port'] = array();
+		}
+
 		$this->load->model('catalog/recurring');
 
 		$data['recurrings'] = $this->model_catalog_recurring->getRecurrings();
@@ -927,6 +952,14 @@ class ControllerCatalogProduct extends Controller {
 			$data['minimum'] = $product_info['minimum'];
 		} else {
 			$data['minimum'] = 1;
+		}
+
+		if (isset($this->request->post['stitch'])) {
+			$data['stitch'] = $this->request->post['stitch'];
+		} elseif (!empty($product_info['stitch'])) {
+			$data['stitch'] = $product_info['stitch'];
+		} else {
+			$data['stitch'] = 'no';
 		}
 
 		if (isset($this->request->post['subtract'])) {

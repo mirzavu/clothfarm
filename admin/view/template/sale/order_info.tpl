@@ -332,7 +332,7 @@
                   <td class="text-right"><?php echo $product['quantity']; ?></td>
                   <td class="text-right">
                     <?php 
-                  if($product['stitch']=="no")
+                  if(strlen($product['stitch'])<10)
                     echo "Not applicable";
                   else
                   {

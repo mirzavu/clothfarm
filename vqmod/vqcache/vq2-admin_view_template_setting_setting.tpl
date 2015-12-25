@@ -1039,7 +1039,18 @@
                 </div>
               </fieldset>
             </div>
-            <div class="tab-pane" id="tab-image">
+            
+    <div class="tab-pane" id="tab-image">
+      <div class="form-group">
+        <label class="col-sm-2 control-label" for="thumb-logo_admin"><?php echo $entry_logo_admin; ?></label>
+        <div class="col-sm-10">
+          <a href="" id="thumb-logo_admin" data-toggle="image" class="img-thumbnail">
+            <img src="<?php echo $logo_admin; ?>" alt="" title="" data-placeholder="<?php echo $placeholder; ?>" />
+          </a>
+          <input type="hidden" name="config_logo_admin" value="<?php echo $config_logo_admin; ?>" id="logo_admin" />
+        </div>
+      </div>
+    
               <div class="form-group">
                 <label class="col-sm-2 control-label" for="input-logo"><?php echo $entry_logo; ?></label>
                 <div class="col-sm-10"><a href="" id="thumb-logo" data-toggle="image" class="img-thumbnail"><img src="<?php echo $logo; ?>" alt="" title="" data-placeholder="<?php echo $placeholder; ?>" /></a>

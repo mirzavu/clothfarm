@@ -39,6 +39,8 @@
             <li><a href="#tab-special" data-toggle="tab"><?php echo $tab_special; ?></a></li>
             <li><a href="#tab-image" data-toggle="tab"><?php echo $tab_image; ?></a></li>
             <li><a href="#tab-reward" data-toggle="tab"><?php echo $tab_reward; ?></a></li>
+			
+			<li><a href="#tab-shipping" data-toggle="tab"><?php echo 'Shipping'; ?></a></li>
 
           </ul>
           <div class="tab-content">
@@ -1125,13 +1127,132 @@
                 </table>
               </div>
             </div>
+			
+			
+			<div class="tab-pane" id="tab-shipping">
+              <div class="table-responsive">
+                
+				
+				<div class="form-group  required">
+				<label class="col-lg-2 control-label" for="input-points">
+					<span data-toggle="tooltip" title="Select the shiping port from where the product will be shipped">
+					Shipping Port</span>
+				</label>
+				
+				<div class="col-lg-10">
+												 
+				 <select name="shipping_port" id="selectport" class="form-control">
+				  <option value="">Select port</option>
+				  
+				  <option value="1" <?php if(count($shipping_port)>0){if($shipping_port['port']=='1'){ echo 'Selected="selected"';  } }?>  >India</option>
+				  <option value="2" <?php if(count($shipping_port)>0){if($shipping_port['port']=='2'){ echo 'Selected="selected"';  } }?> >UAE</option>
+				</select>
+				 
+												 
+				 <?php if ($error_shipping_port) { ?>
+				  <div class="text-danger"><?php echo $error_shipping_port; ?></div>
+				  <?php } ?>
+				 
+				</div>
+			  </div>
+							  
+							  
+							  
+				<div class="table-responsive">
+				
+				<table class="table table-bordered table-hover" id='ship_cost'>
+				  <thead>
+					<tr>
+					  <td class="text-left">Shipping Option</td>
+					  <td class="text-left">Cost (AED)</td>
+					</tr>
+				  </thead>
+				  <tbody>				
+					
+					<?php 
+					
+	if(count($shipping_port)>0){
+		if($shipping_port['port']=='1'){ ?>
+					
+					<tr>				
+					    <td class="text-left" >India -> Other GCC</td>
+					    <td class="text-right"><input type="text" name="shipcost1" placeholder="Value in AED" value="<?php echo $shipping_port['ship1']; ?>" class="form-control" /></td>
+					  </tr>					
+					  <tr>					
+					    <td class="text-left" >India -> UAE</td>
+					    <td class="text-right"><input type="text" name="shipcost2" placeholder="Value in AED" value="<?php echo $shipping_port['ship2']; ?>" class="form-control" /></td>
+					  </tr>			
+		<?php }else{ ?>
+					<tr>					
+					    <td class="text-left" >UAE -> Other GCC</td>
+					    <td class="text-right"><input type="text" name="shipcost1" placeholder="Value in AED" value="<?php echo $shipping_port['ship1']; ?>" class="form-control" /></td>
+					  </tr>
+					
+					  <tr>					
+					    <td class="text-left" >UAE -> India</td>
+					    <td class="text-right"><input type="text" name="shipcost2" placeholder="Value in AED" value="<?php echo $shipping_port['ship2']; ?>" class="form-control" /></td>
+					  </tr>
+		<?php } 
+		
+   }				
+					?>
+					
+				  </tbody>
+				</table>
+				</div>
+				
+				
+              </div>
+            </div>
+			
           </div>
         </form>
       </div>
     </div>
   </div>
 
-  <script type="text/javascript" src="view/javascript/theme/summernote.js"></script>
+
+
+<script type="text/javascript"><!--
+
+$('#selectport').on('change', function(e) {
+   var sel = $( "#selectport option:selected" ).val();
+   
+   $("#ship_cost tbody").empty();
+   
+   if(sel!=''){
+		if(sel=='1'){		
+					
+					html  = '  <tr>';
+					//html += '    <input type="hidden" value="" id="ship1" name="ship1" />';
+					html += '    <td class="text-left" >India -> Other GCC</td>';
+					html += '    <td class="text-right"><input type="text" name="shipcost1" placeholder="Value in AED" value="0" class="form-control" /></td>';
+					html += '  </tr>';
+					
+					html += '  <tr>';
+					//html += '  <input type="hidden" value="" id="ship1" name="ship2" />';
+					html += '    <td class="text-left" >India -> UAE</td>';
+					html += '    <td class="text-right"><input type="text" name="shipcost2" placeholder="Value in AED" value="0" class="form-control" /></td>';
+					html += '  </tr>';			
+					//alert(html);	
+		}else{
+					html  = '  <tr>';
+					//html += '     <input type="hidden" value="" id="ship1" name="ship1" />';
+					html += '    <td class="text-left" >UAE -> Other GCC</td>';
+					html += '    <td class="text-right"><input type="text" name="shipcost1" placeholder="Value in AED" value="0" class="form-control" /></td>';
+					html += '  </tr>';
+					
+					html += '  <tr>';
+					//html += '  <input type="hidden" value="" id="ship1" name="ship2" />';
+					html += '    <td class="text-left" >UAE -> India</td>';
+					html += '    <td class="text-right"><input type="text" name="shipcost2" placeholder="Value in AED" value="0" class="form-control" /></td>';
+					html += '  </tr>'; //alert(html);
+		}
+		$('#ship_cost tbody').append(html);
+   }
+});
+
+//--></script>  <script type="text/javascript" src="view/javascript/theme/summernote.js"></script>
 
   <script type="text/javascript"><!--
 <?php foreach ($languages as $language) { ?>

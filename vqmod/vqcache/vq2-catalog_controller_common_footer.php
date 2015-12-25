@@ -51,6 +51,47 @@ class ControllerCommonFooter extends Controller {
 		$data['wishlist'] = $this->url->link('account/wishlist', '', 'SSL');
 		$data['newsletter'] = $this->url->link('account/newsletter', '', 'SSL');
 
+
+		if($this->customer->isLogged() &&  ($this->config->get('advancedlogin_customer_require_enable'))){
+		$data['hideadl']=1;
+		}
+ 		else{
+		$data['hideadl']=0;
+		}
+		
+		$data['customcss']=$this->config->get('advancedlogin_customcss');
+		
+		$this->language->load('account/register');
+		$data['entry_company']= $this->language->get('entry_company');
+        $data['entry_firstname']= $this->language->get('entry_firstname');	
+        $data['entry_lastname']= $this->language->get('entry_lastname');			
+		
+		
+    	$data['entry_address_1']= $this->language->get('entry_address_1');
+    	$data['entry_address_2']= $this->language->get('entry_address_2');
+    	$data['entry_postcode']= $this->language->get('entry_postcode');
+    	$data['entry_city']= $this->language->get('entry_city');
+    	$data['entry_country']= $this->language->get('entry_country');
+    	$data['entry_zone']= $this->language->get('entry_zone');
+	
+		$data['text_none']= $this->language->get('text_none');
+		$data['error_country']= $this->language->get('error_country');
+		$data['error_zone']= $this->language->get('error_zone');
+		$data['error_postcode']= $this->language->get('error_postcode');
+			
+		$data['entry_telephone']= $this->language->get('entry_telephone');
+    	$data['entry_fax']= $this->language->get('entry_fax');
+		$this->load->model('localisation/country');
+		$data['usecountry']=0;
+		
+		$this->language->load('module/advancedlogin');
+		$data['text_select']= $this->language->get('text_select');
+		
+    	$data['countries']= $this->model_localisation_country->getCountries();
+		$data['popupheading']=html_entity_decode($this->config->get('advancedlogin_fieldpopup_'.$this->config->get('config_language_id')));
+	
+		
+			
 		$data['powered'] = sprintf($this->language->get('text_powered'), $this->config->get('config_name'), date('Y', time()));
 
 				if(($this->config->has('simple_blog_status')) && ($this->config->get('simple_blog_status'))) {

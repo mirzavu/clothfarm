@@ -39,7 +39,7 @@
 <header id="header" class="navbar navbar-static-top">
   <div class="navbar-header">
    <div class="logopanel" >
-    <h1 class="logotitle"><a href="<?php echo $home; ?>" class="">Clothfarm</a></h1>
+    <h1 class="logotitle"><a href="<?php echo $home; ?>" class="">Exlcart</a></h1>
    </div>	
  <?php if ($logged) { ?>
     <a type="button" id="button-menu" class="pull-left"></a>
