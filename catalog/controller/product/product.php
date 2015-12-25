@@ -196,7 +196,6 @@ class ControllerProductProduct extends Controller {
 		$this->load->model('catalog/product');
 
 		$product_info = $this->model_catalog_product->getProduct($product_id);
-		echo "<pre>";print_r($product_info);exit;
 		$seller_name = $this->model_catalog_seller->getSellerName($product_id);
 		$data['shipping'] = $product_info['product_shipping'];
 		if ($product_info) {
@@ -436,7 +435,7 @@ class ControllerProductProduct extends Controller {
 			} else {
 				$data['minimum'] = 1;
 			}
-
+			echo "<pre>";print_r($product_info);exit;
 			if ($product_info['stitch']) {
 				$data['stitch'] = $product_info['stitch'];
 			} else {
