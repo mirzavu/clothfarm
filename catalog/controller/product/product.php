@@ -435,7 +435,7 @@ class ControllerProductProduct extends Controller {
 			} else {
 				$data['minimum'] = 1;
 			}
-			echo "<pre>";print_r($product_info);exit;
+
 			if ($product_info['stitch']) {
 				$data['stitch'] = $product_info['stitch'];
 			} else {
