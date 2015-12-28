@@ -473,7 +473,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                   </div>
                   <div class="clearfix visible-xs"></div>
                   <?php 
-                  if($stitch == "yes")
+                  if($stitch == "ready")
                   {
                   ?>
                     <a class="mam btn btn-cool btn-lg" href="#stitch-pop"><i class="icon flaticon-shopping66">  </i>Add to Cart</a>
@@ -487,6 +487,9 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                     <button style="display: none" class="btn btn-cool btn-lg" type="submit" id="button-cart" data-loading-text="<?php echo $text_loading; ?>"><i class="icon flaticon-shopping66"></i><?php echo $button_cart; ?></button>
 
                   <?php 
+                  }
+                  else if($stitch == "material")
+                  {
                   }
                   else
                   {
@@ -551,7 +554,8 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                                             <input type="radio" name="rating" value="2" />
                                             &nbsp;
                                             <input type="radio" name="rating" value="3" />
-                                            &nbsp;
+                       ?>
+                     &nbsp;
                                             <input type="radio" name="rating" value="4" />
                                             &nbsp;
                                             <input type="radio" name="rating" value="5" />
@@ -765,6 +769,10 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
 
 </div>
 
+<?php
+if($stitch=="ready")
+{
+?>
 <div id="content-new" style="display:none" class="product-view product-info row <?php echo ($option_color ? 'content' : ''); ?>">
 
   <div>
@@ -1685,8 +1693,12 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
 
 
   </div><!--content-new-->
+<?php
+}
 
-
+if($stitch=="material")
+{
+?>
   <div id="content-dress" style="display:none" class="product-view product-info row <?php echo ($option_color ? 'content' : ''); ?>">
 
   <div>
@@ -2978,6 +2990,10 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
 
 
 </div> <!--content-dress-->
+
+<?php
+}
+?>
 
 
 <!--tabs for classic product view-->
