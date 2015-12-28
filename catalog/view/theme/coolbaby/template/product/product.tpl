@@ -787,7 +787,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                         <button rel="around-bust" id="txtbust" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Bust</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
                         </div>
                 </div>
                 
@@ -798,7 +798,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                         <button rel="around-above-waist" id="txtawaist" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Above Waist</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
                         </div>
                 </div>
                 <div class="line-divider"></div>
@@ -808,7 +808,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                         <button rel="shoulder" id="txtshoulder" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Shoulder</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
                         </div>
                 </div>
                 <div class="line-divider"></div>
@@ -818,7 +818,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                         <button rel="around-arm-hole" id="txtarmhole" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Arm Hole</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
                         </div>
                 </div>
                 <div class="measure-tab">    
@@ -826,7 +826,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                         <button rel="around-arm" id="txtarm" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Arm</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
                         </div>
                 </div>
                 <div class="measure-tab">    
@@ -834,7 +834,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                         <button id="txtheight" rel="skd-height" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Your Height</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
                         </div>
                 </div>
                 <div class="measure-tab">    
@@ -842,7 +842,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                         <button id="txtfrontneckdepth" rel="frontneckdepth" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Front Neck Depth</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
                         </div>
                 </div>
                 <div class="measure-tab">    
@@ -850,7 +850,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                         <button id="txtbackneckdepth" rel="backneckdepth" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Back Neck Depth</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
                         </div>
                 </div>
                 <div class="measure-tab">    
@@ -858,7 +858,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                         <button id="txtsleevelength" rel="sleevelength" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Sleeve Length</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
                         </div>
                 </div>
                 <div class="measure-tab">    
@@ -866,7 +866,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                         <button id="txtuppertoplength" rel="uppertoplength" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Kameez Length</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
                         </div>
                 </div>
                 <div class="measure-tab">    
@@ -874,7 +874,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                         <button rel="around-waist" id="txtwaist" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Waist</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
                         </div>
                 </div>
                 <div class="measure-tab">    
@@ -882,7 +882,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                         <button rel="around-hips" id="txthips" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Hips</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
                         </div>
                 </div>
                 <div class="measure-tab">    
@@ -890,7 +890,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                         <button id="txtbottomlength" rel="salwarlength" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Salwar Length</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
                         </div>
                 </div>
                 <div class="measure-tab">    
@@ -898,7 +898,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                         <button id="txtknee" rel="knee" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Knee</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
                         </div>
                 </div>
                 <div class="measure-tab">    
@@ -906,7 +906,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                         <button id="txtthigh" rel="thigh" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Thigh</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
                         </div>
                 </div>
                 <div class="measure-tab">    
@@ -914,7 +914,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                         <button id="txtankle" rel="ankle" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Ankle</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
                         </div>
                 </div>
                 <div class="measure-tab">    
@@ -922,7 +922,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                         <button id="txtcalf" rel="calf" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Calf</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
                         </div>
                 </div>
                 <div class="measure-tab">    
@@ -930,7 +930,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                         <button id="txtbottom" rel="bottom" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Bottom</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
                         </div>
                 </div>
                 <div class="measure-tab">    
@@ -1171,7 +1171,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                         <button rel="saree-aroundbust" id="stxtbust" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Bust</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
                         </div>
                 </div>
                 
@@ -1182,7 +1182,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                         <button rel="saree-around-above-waist" id="stxtawaist" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Above Waist</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
                         </div>
                 </div>
                 <div class="line-divider"></div>
@@ -1192,7 +1192,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                         <button rel="saree-shoulder" id="stxtshoulder" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Shoulder</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
                         </div>
                 </div>
                 <div class="line-divider"></div>
@@ -1202,7 +1202,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                         <button rel="saree-around-arm-hole" id="stxtarmhole" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Arm Hole</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
                         </div>
                 </div>
                 <div class="measure-tab">    
@@ -1210,7 +1210,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                         <button rel="saree-around-arm" id="stxtarm" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Arm</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
                         </div>
                 </div>
                 <div class="measure-tab">    
@@ -1218,7 +1218,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                         <button id="stxtheight" rel="saree-height" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Your Height</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
                         </div>
                 </div>
                 <div class="measure-tab">    
@@ -1226,7 +1226,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                         <button id="txtfrontneckdepth" rel="saree-frontneck-depth" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Front Neck Depth</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
                         </div>
                 </div>
                 <div class="measure-tab">    
@@ -1234,7 +1234,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                         <button id="stxtbackneckdepth" rel="saree-backneck-depth" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Back Neck Depth</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
                         </div>
                 </div>
                 <div class="measure-tab">    
@@ -1242,7 +1242,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                         <button id="stxtsleevelength" rel="saree-sleeve-length" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Sleeve Length</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
                         </div>
                 </div>
                 <div class="measure-tab">    
@@ -1250,7 +1250,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                         <button rel="saree-blouse-length" id="stxtuppertoplength" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Blouse Length</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
                         </div>
                 </div>
                 <div class="measure-tab">    
@@ -1402,7 +1402,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                         <button rel="lehenga-bust" id="ctxtbust" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Bust</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
                         </div>
                 </div>
                 
@@ -1413,7 +1413,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                         <button rel="lehenga-around_above_waist" id="ctxtawaist" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Above Waist</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
                         </div>
                 </div>
                 <div class="line-divider"></div>
@@ -1423,7 +1423,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                         <button rel="lehenga-shoulder" id="ctxtshoulder" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Shoulder</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
                         </div>
                 </div>
                 <div class="line-divider"></div>
@@ -1433,7 +1433,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                         <button rel="lehenga-around_arm" id="ctxtarmhole" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Arm Hole</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
                         </div>
                 </div>
                 <div class="measure-tab">    
@@ -1441,7 +1441,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                         <button rel="lehenga-arm" id="ctxtarm" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Arm</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
                         </div>
                 </div>
                 <div class="measure-tab">    
@@ -1449,7 +1449,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                         <button id="ctxtheight" rel="lgn-height" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Your Height</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
                         </div>
                 </div>
                 <div class="measure-tab">    
@@ -1457,7 +1457,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                         <button id="ctxtfrontneckdepth" rel="lehenga-front_neck_depth" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Front Neck Depth</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
                         </div>
                 </div>
                 <div class="measure-tab">    
@@ -1465,7 +1465,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                         <button id="ctxtbackneckdepth" rel="lehenga-back_neck" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Back Neck Depth</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
                         </div>
                 </div>
                 <div class="measure-tab">    
@@ -1473,7 +1473,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                         <button id="ctxtsleevelength" rel="lehenga-sleeves_length" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Sleeve Length</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
                         </div>
                 </div>
                 <div class="measure-tab">    
@@ -1481,7 +1481,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                         <button id="ctxtuppertoplength" rel="lehenga-top_length" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Choli Length</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
                         </div>
                 </div>
                 <div class="measure-tab">    
@@ -1489,7 +1489,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                         <button rel="lehenga-waist" id="ctxtwaist" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Waist</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
                         </div>
                 </div>
                 <div class="measure-tab">    
@@ -1497,7 +1497,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                         <button rel="lehenga-hips" id="ctxthips" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Hips</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
                         </div>
                 </div>
                 <div class="measure-tab">    
@@ -1505,7 +1505,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                         <button id="txtbottomlength" rel="lehenga_length" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Lehenga Length</button>
 
                         <div class="input-measure">
-                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" value="Enter in Inches" onblur="if (this.value == '') {this.value = 'Enter in Inches';}" onfocus="if(this.value == 'Enter in Inches') {this.value = '';}">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
                         </div>
                 </div>
                 <div class="measure-tab">    
@@ -1677,11 +1677,1307 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
 
   </div>
 
-</div>
 
 
+</div> 
+
+
+
+
+  </div><!--content-new-->
+
+
+  <div id="content-dress" style="display:none" class="product-view product-info row <?php echo ($option_color ? 'content' : ''); ?>">
+
+  <div>
+    <br><br>
+  <!-- Nav tabs -->
+  <ul id="measure-nav" class="nav nav-tabs" role="tablist">
+    <li id="salwartab" role="presentation" class="active"><a href="#salwar-tab" aria-controls="home" role="tab" data-toggle="tab">SALWAR KAMEEZ</a></li>
+    <li id="sareetab" role="presentation"><a href="#saree-tab" aria-controls="profile" role="tab" data-toggle="tab">SAREE</a></li>
+    <li id="cholitab" role="presentation"><a href="#choli-tab" aria-controls="messages" role="tab" data-toggle="tab">LEHENGA CHOLI</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+        <div role="tabpanel" class="tab-pane fade in active" id="salwar-tab">
+              <div style="float:left;" class="product-info-cell product-description content_info">
+              <h1 class="product_title" itemprop="name" align="center">MEASUREMENT</h1>
+                <div class="line-divider"></div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button rel="around-bust" id="txtbust" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Bust</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
+                        </div>
+                </div>
+                
+                <div class="line-divider"></div>
+
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button rel="around-above-waist" id="txtawaist" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Above Waist</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
+                        </div>
+                </div>
+                <div class="line-divider"></div>
+
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button rel="shoulder" id="txtshoulder" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Shoulder</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
+                        </div>
+                </div>
+                <div class="line-divider"></div>
+
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button rel="around-arm-hole" id="txtarmhole" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Arm Hole</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
+                        </div>
+                </div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button rel="around-arm" id="txtarm" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Arm</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
+                        </div>
+                </div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button id="txtheight" rel="skd-height" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Your Height</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
+                        </div>
+                </div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button id="txtfrontneckdepth" rel="frontneckdepth" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Front Neck Depth</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
+                        </div>
+                </div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button id="txtbackneckdepth" rel="backneckdepth" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Back Neck Depth</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
+                        </div>
+                </div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button id="txtsleevelength" rel="sleevelength" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Sleeve Length</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
+                        </div>
+                </div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button id="txtuppertoplength" rel="uppertoplength" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Kameez Length</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
+                        </div>
+                </div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button rel="around-waist" id="txtwaist" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Waist</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
+                        </div>
+                </div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button rel="around-hips" id="txthips" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Hips</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
+                        </div>
+                </div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button id="txtbottomlength" rel="salwarlength" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Salwar Length</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
+                        </div>
+                </div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button id="txtknee" rel="knee" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Knee</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
+                        </div>
+                </div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button id="txtthigh" rel="thigh" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Thigh</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
+                        </div>
+                </div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button id="txtankle" rel="ankle" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Ankle</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
+                        </div>
+                </div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button id="txtcalf" rel="calf" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Calf</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
+                        </div>
+                </div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button id="txtbottom" rel="bottom" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Bottom</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
+                        </div>
+                </div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button id="measure-done-salwar" style="width:100%" class="btn btn-cool"><i class="icon flaticon-pencil43">  </i> Add to Cart</button>
+                </div>
+
+
+                      <!--end tabs for creative product view-->
+
+              <div class="line-divider"></div>
+         </div>
+
+         <!-- images-->
+
+
+          <!-- popup div-->
+         <div class="demoRgt demoWidth rgt">
+                                    <div class="lft mesureUnit">
+                                        <div class="clr">
+                                        </div>
+                                        <div id="txtbusttext" class="howMesure fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Around Bust</strong></h3>
+                                            <p>
+                                               Measure under arms around the fullest part of the bust. Be sure to keep tape level across back and comfortably loose as per your wearing habits. 
+                                            </p>
+                                        </div>
+                                        <div id="txtawaisttext" class="howMesure fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Around Above Waist</strong></h3>
+                                            <p>
+                                                
+                                                Place the tape just under the mid-section below the bust, where the blouse will
+                                                end. Take the measurement from just under the bust and just above the waist.
+                                            </p>
+                                        </div>
+                                        <div id="txtshouldertext" class="howMesure  fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Shoulder</strong></h3>
+                                            <p>
+                                                Measure shoulder from one shoulder point to other shoulder point horizontally from
+                                                back.
+                                            </p>
+                                        </div>
+                                        <div id="txtarmholetext" class="howMesure fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Around Arm Hole</strong></h3>
+                                            <p>
+                                                From the highest point on the shoulder measure around arm hole with your arm hanging
+                                                down.
+                                            </p>
+                                        </div>
+                                        <div id="txtarmtext" class="howMesure fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Around Arm</strong></h3>
+                                            <p>
+                                                Measure the middle of bisceps level of your arm keeping the hand relaxed.
+                                            </p>
+                                        </div>
+                                        <div id="txtheighttext" class="howMesure fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Your Height</strong></h3>
+                                            <p>
+                                                Stand in your stocking feet with your feet slightly apart and your back to a wall.
+                                                Measure from the floor to the top of your head.
+                                            </p>
+                                        </div>
+                                        <div id="txtheightCmtext" class="howMesure fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Your Height</strong></h3>
+                                            <p>
+                                                Stand in your stocking feet with your feet slightly apart and your back to a wall.
+                                                Measure from the floor to the top of your head.
+                                            </p>
+                                        </div>
+                                        <div id="txtfrontneckdepthtext" class="howMesure fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Front Neck Depth</strong></h3>
+                                            <p>
+                                                Measuring from the front neck point to your desired depth diagonally.
+                                            </p>
+                                        </div>
+                                        <div id="txtbackneckdepthtext" class="howMesure fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Back Neck Depth</strong></h3>
+                                            <p>
+                                                Measuring from the back neck point to your desired depth diagonally.
+                                            </p>
+                                        </div>
+                                        <div id="txtsleevelengthtext" class="howMesure fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Sleeve Length</strong></h3>
+                                            <p>
+                                                Starting from the outside edge of the shoulder bone, measure upto the desired length.
+                                            </p>
+                                        </div>
+                                        <div id="txtuppertoplengthtext" class="howMesure fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Kameez Length</strong></h3>
+                                            <p>
+                                                Measure length from the shoulder point to your desired length like shown in the image.
+                                            </p>
+                                        </div>
+
+                                        <div id="txtwaisttext" class="howMesure fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Around Waist</strong></h3>
+                                            <p>
+                                                Measure around waist keeping the tape straight from back.
+                                            </p>
+                                        </div>
+                                        <div id="txthipstext" class="howMesure fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Around Hips</strong></h3>
+                                            <p>
+                                                Measure around the upper part of the hip, keeping the tape straight from the back
+                                                and front.
+                                            </p>
+                                        </div>
+                                        <div id="txtbottomlengthtext" class="howMesure fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Salwar Length</strong></h3>
+                                            <p>
+                                                Measuring from the waist, measuring upto the desired length.
+                                            </p>
+                                        </div>
+                                        <div class="howMesure fit" id="txtkneetext" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Around Knee</strong></h3>
+                                            <p>
+                                                Measure around the knee, while keeping your posture straight.
+                                            </p>
+                                        </div>                                        <div class="howMesure fit" id="txtthightext" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Around Thigh</strong></h3>
+                                            <p>
+                                                Measure around thigh of the leg, while keeping your posture straight.
+                                            </p>
+                                        </div>
+                                        <div class="howMesure fit" id="txtankletext" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Around Ankle</strong></h3>
+                                            <p>
+                                                Measure around ankle of the foot, while keeping your posture straight
+                                            </p>
+                                        </div>
+                                        <div class="howMesure fit" id="txtcalftext" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Around Calf</strong></h3>
+                                            <p>
+                                                Measure around calf of the leg, while keeping your posture straight.
+                                            </p>
+                                        </div>
+                                        <div class="howMesure fit" id="txtbottomtext" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Around Bottom</strong></h3>
+                                            <p>
+                                                Measure around bottom of the salwar.
+                                            </p>
+                                        </div>
+                                        <div class="clr">
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="rgt">
+                                        <img alt="" src="images/stitch/measure-dummy.jpg" class="DummyImg" id="fitdummy"></div>
+                                </div> 
+                                                      <div class="bottomStyle mrgTop">
+                      <span>Front Neck Style</span>
+                      <p>Pep up your Salwar Kameez with fancy and elegant front neck styles. </p>
+                      <div class="lftArr"></div>
+                      <div class="imgbox" id="1">
+                      <ul style="width: 4440px;">
+                      <li><img src="images/stitch/asymmetrical-slanting-v.jpg" alt="Asymmetrical Slanting V"><span>Asymmetrical Slanting V</span></li>
+                      <li><img src="images/stitch/scalloped-with-v-neck.jpg" alt="Scalloped with V Neck"><span>Scalloped with V Neck</span></li>
+                      <li><img src="images/stitch/inverted-paisley.jpg" alt="Inverted Paisley"><span>Inverted Paisley</span></li>
+                      <li><img src="images/stitch/scalloped-u.jpg" alt="Scalloped U"><span>Scalloped U</span></li>
+                      <li><img src="images/stitch/curved-square.jpg" alt="Curved Square"><span>Curved Square</span></li>
+                      <li><img src="images/stitch/bateau-or-boat.jpg" alt="Bateau or Boat"><span>Bateau or Boat</span></li>
+                      <li><img src="images/stitch/decollate.jpg" alt="Decollate"><span>Decollate</span></li>
+                      <li><img src="images/stitch/key-hole.jpg" alt="Key Hole"><span>Key Hole</span></li>
+                      <li><img src="images/stitch/deep-round.jpg" alt="Deep Round"><span>Deep Round</span></li>
+                      <li><img src="images/stitch/horse-shoe.jpg" alt="Horse Shoe"><span>Horse Shoe</span></li>
+                      <li><img src="images/stitch/square.jpg" alt="Square"><span>Square</span></li>
+                      <li><img src="images/stitch/sweet-heart-neck.jpg" alt="Sweetheart Neck"><span>Sweetheart Neck</span></li>
+                      <li><img src="images/stitch/simple-u.jpg" alt="Simple U"><span>Simple U</span></li>
+                      <li><img src="images/stitch/simple-v.jpg" alt="Simple V"><span>Simple V</span></li>
+                      <li><img src="images/stitch/chinese-collar.jpg" alt="Chinese Collar"><span>Chinese Collar</span></li>
+                      <li><img src="images/stitch/asymmetrical-with-string.jpg" alt="Asymmetrical with String"><span>Asymmetrical with String</span></li>
+                      <li><img src="images/stitch/asymmetrical-u.jpg" alt="Asymmetrical U"><span>Asymmetrical U</span></li>
+                      <li><img src="images/stitch/asymmetrical-v.jpg" alt="Asymmetrical V"><span>Asymmetrical V</span></li>
+                      <li><img src="images/stitch/deep-v-with-patch.jpg" alt="Deep V with Patch"><span>Deep V with Patch</span></li>
+                      <li><img src="images/stitch/temple-shape.jpg" alt="Temple Shape"><span>Temple Shape</span></li>
+                      <li><img src="images/stitch/star-neck.jpg" alt="Star Neck"><span>Star Neck</span></li>
+                      <li><img src="images/stitch/temple-neck.jpg" alt="Temple Neck"><span>Temple Neck</span></li>
+                      <li><img src="images/stitch/glass-with-string.jpg" alt="Glass with String"><span>Glass with String</span></li>
+                      <li><img src="images/stitch/boat-string.jpg" alt="Boat String"><span>Boat String</span></li>
+                      <li><img src="images/stitch/petal-neck.jpg" alt="Petal Neck"><span>Petal Neck</span></li>
+                      <li><img src="images/stitch/string-style.jpg" alt="String Style"><span>String Style</span></li>
+                      <li><img src="images/stitch/opposite-collar.jpg" alt="Opposite Collar"><span>Opposite Collar</span></li>
+                      <li><img src="images/stitch/two-string.jpg" alt="Two String"><span>Two String</span></li>
+                      <li><img src="images/stitch/kite-neck.jpg" alt="Kite Neck"><span>Kite Neck</span></li>
+                      <li><img src="images/stitch/inverted-tomb.jpg" alt="Inverted Tomb"><span>Inverted Tomb</span></li>
+                      </ul>
+                      </div>
+                      <div class="rgtArr"></div>
+                      </div>
+
+                      <div class="bottomStyle mrgTop">
+                      <span>Back Neck Style</span>
+                      <p>Let the bold be beautiful, with a variety of back neck styles.</p>
+                      <div class="lftArr"></div>
+                      <div class="imgbox" id="2">
+                      <ul style="width: 3848px;">
+                      <li><img src="images/stitch/glass-neck.jpg" alt="Glass Neck"><span>Glass Neck</span></li>
+                      <li><img src="images/stitch/kurti-neck.jpg" alt="Kurti Neck"><span>Kurti Neck</span></li>
+                      <li><img src="images/stitch/back-star.jpg" alt="Back Star"><span>Back Star</span></li>
+                      <li><img src="images/stitch/glass-with-string.jpg" alt="Glass with String"><span>Glass with String</span></li>
+                      <li><img src="images/stitch/piggy-neck.jpg" alt="Piggy Neck"><span>Piggy Neck</span></li>
+                      <li><img src="images/stitch/twisted-back.jpg" alt="Twisted Back"><span>Twisted Back</span></li>
+                      <li><img src="images/stitch/pot-neck.jpg" alt="Pot Neck"><span>Pot Neck</span></li>
+                      <li><img src="images/stitch/polygon-neck.jpg" alt="Polygon Neck"><span>Polygon Neck</span></li>
+                      <li><img src="images/stitch/bottom-glass.jpg" alt="Bottom Glass"><span>Bottom Glass</span></li>
+                      <li><img src="images/stitch/key-hole.jpg" alt="Key Hole"><span>Key Hole</span></li>
+                      <li><img src="images/stitch/bateau-or-boat.jpg" alt="Bateau or Boat"><span>Bateau or Boat</span></li>
+                      <li><img src="images/stitch/round-with-string.jpg" alt="Round with String"><span>Round with String</span></li>
+                      <li><img src="images/stitch/horse-shoe.jpg" alt="Horse Shoe"><span>Horse Shoe</span></li>
+                      <li><img src="images/stitch/pointed.jpg" alt="Pointed"><span>Pointed</span></li>
+                      <li><img src="images/stitch/round.jpg" alt="Round"><span>Round</span></li>
+                      <li><img src="images/stitch/square.jpg" alt="Square"><span>Square</span></li>
+                      <li><img src="images/stitch/sweet-heart.jpg" alt="Sweet Heart"><span>Sweet Heart</span></li>
+                      <li><img src="images/stitch/back-chinese-collar.jpg" alt="Back Chinese Collar"><span>Back Chinese Collar</span></li>
+                      <li><img src="images/stitch/simply-u.jpg" alt="Simply U"><span>Simply U</span></li>
+                      <li><img src="images/stitch/tree-string.jpg" alt="Tree String"><span>Tree String</span></li>
+                      <li><img src="images/stitch/step-neck.jpg" alt="Step Neck"><span>Step Neck</span></li>
+                      <li><img src="images/stitch/block-neck.jpg" alt="Block Neck"><span>Block Neck</span></li>
+                      <li><img src="images/stitch/asymmetrical-strings.jpg" alt="Asymmetrical Strings"><span>Asymmetrical Strings</span></li>
+                      <li><img src="images/stitch/back-kite.jpg" alt="Back Kite"><span>Back Kite</span></li>
+                      <li><img src="images/stitch/triple-thread.jpg" alt="Triple Thread"><span>Triple Thread</span></li>
+                      <li><img src="images/stitch/fish-tail.jpg" alt="Fish Tail"><span>Fish Tail</span></li>
+                      </ul>
+                      </div>
+                      <div class="rgtArr"></div>
+                      </div>
+
+                      <div class="bottomStyle mrgTop">
+                      <span>Sleeve Style</span>
+                      <p>Define your Salwar Kameez with these contemporary yet traditional sleeve styles.</p>
+                      <div class="lftArr"></div>
+                      <div class="imgbox" id="3">
+                      <ul style="width: 2812px;">
+                      <li><img src="images/stitch/cap-sleeves.jpg" alt="Cap Sleeves"><span>Cap Sleeves</span></li>
+                      <li><img src="images/stitch/half-sleeves.jpg" alt="Half Sleeves"><span>Half Sleeves</span></li>
+                      <li><img src="images/stitch/megan-sleeves.jpg" alt="Megan Sleeves"><span>Megan Sleeves</span></li>
+                      <li><img src="images/stitch/pointed.jpg" alt="Pointed"><span>Pointed</span></li>
+                      <li><img src="images/stitch/sleeveless.jpg" alt="Sleeveless"><span>Sleeveless</span></li>
+                      <li><img src="images/stitch/tailored-sleeves.jpg" alt="Tailored Sleeves"><span>Tailored Sleeves</span></li>
+                      <li><img src="images/stitch/elbow-sleeves.jpg" alt="Elbow Sleeves"><span>Elbow Sleeves</span></li>
+                      <li><img src="images/stitch/angel-sleeves.jpg" alt="Angel Sleeves"><span>Angel Sleeves</span></li>
+                      <li><img src="images/stitch/heart-shape.jpg" alt="Heart Shape"><span>Heart Shape</span></li>
+                      <li><img src="images/stitch/v-cut.jpg" alt="V Cut"><span>V Cut</span></li>
+                      <li><img src="images/stitch/bell-sleeves.jpg" alt="Bell Sleeves"><span>Bell Sleeves</span></li>
+                      <li><img src="images/stitch/flutter.jpg" alt="Flutter"><span>Flutter</span></li>
+                      <li><img src="images/stitch/laces.jpg" alt="Laces"><span>Laces</span></li>
+                      <li><img src="images/stitch/lantern-sleeves.jpg" alt="Lantern Sleeves"><span>Lantern Sleeves</span></li>
+                      <li><img src="images/stitch/puff-sleeves.jpg" alt="Puff Sleeves"><span>Puff Sleeves</span></li>
+                      <li><img src="images/stitch/roll-up-sleeves.jpg" alt="Roll Up Sleeves"><span>Roll Up Sleeves</span></li>
+                      <li><img src="images/stitch/bishop-sleeves.jpg" alt="Bishop Sleeves"><span>Bishop Sleeves</span></li>
+                      <li><img src="images/stitch/trumpet-1.jpg" alt="Trumpet"><span>Trumpet 1</span></li>
+                      <li><img src="images/stitch/trumpet-2.jpg" alt="Trumpet"><span>Trumpet 2</span></li>
+
+                      </ul>
+                      </div>
+                      <div class="rgtArr"></div>
+                      </div>
+
+
+                      <div class="bottomStyle mrgTop">
+                      <span>Bottom Style</span>
+                      <p>Enhance your ethnic look by selecting a design from our plethora of bottom style options.</p>
+                      <div class="lftArr"></div>
+                      <div class="imgbox" id="4">
+                      <ul style="width: 1480px;">
+                      <li><img src="images/stitch/bootcut-pant-1.jpg" alt="Bootcut Pant"><span>Bootcut Pant</span></li>
+                      <li><img src="images/stitch/bootcut-pant-with-slit.jpg" alt="Bootcut Pant with Slit"><span>Bootcut Pant with Slit</span></li>
+                      <li><img src="images/stitch/capri-pant.jpg" alt="Capri Pant"><span>Capri Pant</span></li>
+                      <li><img src="images/stitch/capri-pant-with-string.jpg" alt="Capri Pant with String"><span>Capri Pant with String</span></li>
+                      <li><img src="images/stitch/churidar-with-string.jpg" alt="Churidar with Shirring"><span>Churidar with Shirring</span></li>
+                      <li><img src="images/stitch/heavy-churidar.jpg" alt="Heavy Churidar"><span>Heavy Churidar</span></li>
+                      <li><img src="images/stitch/patialla-salwar.jpg" alt="Patialla Salwar"><span>Patialla Salwar</span></li>
+                      <li><img src="images/stitch/salwar-punjabi.jpg" alt="Salwar Punjabi"><span>Salwar Punjabi</span></li>
+                      <li><img src="images/stitch/straight-pant.jpg" alt="Straight Pant"><span>Straight Pant</span></li>
+                      <li><img src="images/stitch/churidar.jpg" alt="Churidar"><span>Churidar</span></li>
+
+                      </ul>
+                      </div>
+                      <div class="rgtArr"></div>
+                      </div>
+
+    </div>
+
+    <!--  SAREE TAB-->
+    <div role="tabpanel" class="tab-pane fade" id="saree-tab">
+
+        <div style="float:left;" class="product-info-cell product-description content_info">
+              <h1 class="product_title" itemprop="name" align="center">MEASUREMENT</h1>
+                <div class="line-divider"></div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button rel="saree-aroundbust" id="stxtbust" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Bust</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
+                        </div>
+                </div>
+                
+                <div class="line-divider"></div>
+
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button rel="saree-around-above-waist" id="stxtawaist" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Above Waist</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
+                        </div>
+                </div>
+                <div class="line-divider"></div>
+
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button rel="saree-shoulder" id="stxtshoulder" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Shoulder</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
+                        </div>
+                </div>
+                <div class="line-divider"></div>
+
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button rel="saree-around-arm-hole" id="stxtarmhole" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Arm Hole</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
+                        </div>
+                </div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button rel="saree-around-arm" id="stxtarm" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Arm</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
+                        </div>
+                </div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button id="stxtheight" rel="saree-height" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Your Height</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
+                        </div>
+                </div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button id="txtfrontneckdepth" rel="saree-frontneck-depth" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Front Neck Depth</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
+                        </div>
+                </div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button id="stxtbackneckdepth" rel="saree-backneck-depth" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Back Neck Depth</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
+                        </div>
+                </div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button id="stxtsleevelength" rel="saree-sleeve-length" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Sleeve Length</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
+                        </div>
+                </div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button rel="saree-blouse-length" id="stxtuppertoplength" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Blouse Length</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
+                        </div>
+                </div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button id="measure-done-saree" style="width:100%" class="btn btn-cool"><i class="icon flaticon-pencil43">  </i> Add to Cart</button>
+                </div>
+                <!--End measure for saree-->
+
+              <div class="line-divider"></div>
+         </div>
+
+        <div class="demoRgt demoWidth rgt">
+                                    <div class="lft mesureUnit">
+                                        <div class="clr">
+                                        </div>
+                                        <div id="stxtbusttext" class="howMesure fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Around Bust</strong></h3>
+                                            <p>
+                                                Measure under arms around the fullest part of the bust. Be sure to keep tape level across back and comfortably loose as per your wearing habits. 
+                                            </p>
+                                        </div>
+                                        <div id="stxtawaisttext" class="howMesure fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Around Above Waist</strong></h3>
+                                            <p>
+                                                Place the tape well under arms, straight across the back and measure this from just
+                                                under the bust and just above the waist.
+                                            </p>
+                                        </div>
+                                        <div id="stxtshouldertext" class="howMesure  fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Shoulder</strong></h3>
+                                            <p>
+                                                Measure shoulder from one shoulder point to other shoulder point horizontally from
+                                                back.
+                                            </p>
+                                        </div>
+                                        <div id="stxtarmholetext" class="howMesure fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Around Arm Hole</strong></h3>
+                                            <p>
+                                                From the highest point on the shoulder measure around arm hole with your arm hanging
+                                                down.
+                                            </p>
+                                        </div>
+                                        <div id="stxtarmtext" class="howMesure fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Around Arm</strong></h3>
+                                            <p>
+                                                Measure the middle of bisceps level of your arm keeping the hand relaxed.
+                                            </p>
+                                        </div>
+                                        <div id="stxtheighttext" class="howMesure fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Your Height</strong></h3>
+                                            <p>
+                                                Stand in your stocking feet with your feet slightly apart and your back to a wall.
+                                                Measure from the floor to the top of your head.
+                                            </p>
+                                        </div>
+                                        <div id="stxtheightCmtext" class="howMesure fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Your Height</strong></h3>
+                                            <p>
+                                                Stand in your stocking feet with your feet slightly apart and your back to a wall.
+                                                Measure from the floor to the top of your head.
+                                            </p>
+                                        </div>
+                                        <div id="stxtfrontneckdepthtext" class="howMesure fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Front Neck Depth</strong></h3>
+                                            <p>
+                                                Measuring from the neck to your desired depth diagonally back neck point.
+                                            </p>
+                                        </div>
+                                        <div id="stxtbackneckdepthtext" class="howMesure fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Back Neck Depth</strong></h3>
+                                            <p>
+                                                Measuring from the back neck point to your desired depth diagonally.
+                                            </p>
+                                        </div>
+                                        <div id="stxtsleevelengthtext" class="howMesure fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Sleeve Length</strong></h3>
+                                            <p>
+                                                Starting from the outside edge of the shoulder bone and measure upto the desired
+                                                length.
+                                            </p>
+                                        </div>
+                                        <div id="stxtuppertoplengthtext" class="howMesure fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Blouse Length</strong></h3>
+                                            <p>
+                                                Measure length from to point of your shoulder to desired length like show in the
+                                                how to measure image.
+                                            </p>
+                                        </div>
+                                        <div class="clr">
+                                        </div>
+                                        
+                                    </div>                                    <div class="rgt">
+                                        <img alt="" src="images/stitch/saree-dummy.jpg" class="DummyImg" id="fitdummy"></div>
+                                </div>
+
+                                <div class="bottomStyle">
+
+
+                                <span>Front Neck Style</span>
+                                <p>Optimize your design with classy and chic front neck styles for your blouse.</p>
+                                <div class="lftArr"></div>
+                                <div class="imgbox" id="1">
+                                <ul style="width: 5476px;">
+                                <li><img src="images/stitch/saree/chinese-collar.jpg" alt="Chinese Collar"><span>Chinese Collar</span></li>
+                                <li><img src="images/stitch/saree/décolleté.jpg" alt="Décolleté"><span>Décolleté</span></li>
+                                <li><img src="images/stitch/saree/round-with-oval.jpg" alt="Round with Oval"><span>Round with Oval</span></li>
+                                <li><img src="images/stitch/saree/round-with-v.jpg" alt="Round with V"><span>Round with V</span></li>
+                                <li><img src="images/stitch/saree/kurti-neck.jpg" alt="Kurti Neck"><span>Kurti Neck</span></li>
+                                <li><img src="images/stitch/saree/opposite-glass.jpg" alt="Opposite Glass"><span>Opposite Glass</span></li>
+                                <li><img src="images/stitch/saree/flame-neck.jpg" alt="Flame Neck"><span>Flame Neck</span></li>
+                                <li><img src="images/stitch/saree/scallop.jpg" alt="Scallop"><span>Scallop</span></li>
+                                <li><img src="images/stitch/saree/hexagon.jpg" alt="Hexagon"><span>Hexagon</span></li>
+                                <li><img src="images/stitch/saree/leaf-shape.jpg" alt="Leaf Shape"><span>Leaf Shape</span></li>
+                                <li><img src="images/stitch/saree/scalloped-u.jpg" alt="Scalloped U"><span>Scalloped U</span></li>
+                                <li><img src="images/stitch/saree/glass.jpg" alt="Glass"><span>Glass</span></li>
+                                <li><img src="images/stitch/saree/horse-shoe.jpg" alt="Horse Shoe"><span>Horse Shoe</span></li>
+                                <li><img src="images/stitch/saree/pointed.jpg" alt="Pointed"><span>Pointed</span></li>
+                                <li><img src="images/stitch/saree/rounded-sweet-heart.jpg" alt="Rounded Sweetheart"><span>Rounded Sweetheart</span></li>
+                                <li><img src="images/stitch/saree/scalloped-glass.jpg" alt="Scalloped Glass"><span>Scalloped Glass</span></li>
+                                <li><img src="images/stitch/saree/square.jpg" alt="Square"><span>Square</span></li>
+                                <li><img src="images/stitch/saree/sweet-heart.jpg" alt="Sweetheart"><span>Sweetheart</span></li>
+                                <li><img src="images/stitch/saree/sweet-heart-with-collar.jpg" alt="Sweetheart with Collar"><span>Sweetheart with Collar</span></li>
+                                <li><img src="images/stitch/saree/simple-u.jpg" alt="Simple U"><span>Simple U</span></li>
+                                <li><img src="images/stitch/saree/simple-v.jpg" alt="Simple V"><span>Simple V</span></li>
+                                <li><img src="images/stitch/saree/multi-string.jpg" alt="Multi String"><span>Multi String</span></li>
+                                <li><img src="images/stitch/saree/wave-neck.jpg" alt="Wave Neck"><span>Wave Neck</span></li>
+                                <li><img src="images/stitch/saree/inverted-tomb.jpg" alt="Inverted Tomb"><span>Inverted Tomb</span></li>
+                                <li><img src="images/stitch/saree/key-hole.jpg" alt="Key Hole"><span>Key Hole</span></li>
+                                <li><img src="images/stitch/saree/key-hole-with-string.jpg" alt="Key Hole with String"><span>Key Hole with String</span></li>
+                                <li><img src="images/stitch/saree/square-with-string.jpg" alt="Square with String"><span>Square with String</span></li>
+                                <li><img src="images/stitch/saree/oval-with-string.jpg" alt="Oval with String"><span>Oval with String</span></li>
+                                <li><img src="images/stitch/saree/butterfly-bustier.jpg" alt="Butterfly Bustier"><span>Butterfly Bustier</span></li>
+                                <li><img src="images/stitch/saree/bustier.jpg" alt="Bustier"><span>Bustier</span></li>
+                                <li><img src="images/stitch/saree/shape-with-bustier.jpg" alt="Shape with Bustier"><span>Shape with Bustier</span></li>
+                                <li><img src="images/stitch/saree/envelope.jpg" alt="Envelope"><span>Envelope</span></li>
+                                <li><img src="images/stitch/saree/halter-with-oval.jpg" alt="Halter with Oval"><span>Halter with Oval</span></li>
+                                <li><img src="images/stitch/saree/halter.jpg" alt="Halter"><span>Halter</span></li> 
+                                <li><img src="images/stitch/saree/halter-with-ring.jpg" alt="Halter with Ring"><span>Halter with Ring</span></li>
+                                <li><img src="images/stitch/saree/off-shoulder.jpg" alt="Off Shoulder"><span>Off Shoulder</span></li>
+                                <li><img src="images/stitch/saree/one-shoulder.jpg" alt="One Shoulder"><span>One Shoulder</span></li>
+
+
+                                </ul>
+                                </div>
+                                <div class="rgtArr"></div>
+                                </div>
+                                <!--Back Neck Style-->>
+                                <div class="bottomStyle mrgTop">
+                                <span>Back Neck Style</span>
+                                <p>Make a bold statement with the most gorgeous styles in back neck for your blouse.</p>
+                                <div class="lftArr"></div>
+                                <div class="imgbox" id="2">
+                                <ul style="width: 4292px;">
+                                <li><img src="images/stitch/saree/chinese-collar.jpg" alt="Chinese Collar"><span>Chinese Collar</span></li>
+                                <li><img src="images/stitch/saree/bateau-or-boat.jpg" alt="Bateau or Boat"><span>Bateau or Boat</span></li>
+                                <li><img src="images/stitch/saree/curved-square.jpg" alt="Curved Square"><span>Curved Square</span></li>
+                                <li><img src="images/stitch/saree/scallop.jpg" alt="Scallop"><span>Scallop</span></li>
+                                <li><img src="images/stitch/saree/horse-shoe.jpg" alt="Horse Shoe"><span>Horse Shoe</span></li>
+                                <li><img src="images/stitch/saree/pointed.jpg" alt="Pointed"><span>Pointed</span></li>
+                                <li><img src="images/stitch/saree/rounded.jpg" alt="Rounded"><span>Rounded</span></li>
+                                <li><img src="images/stitch/saree/simple-u.jpg" alt="Simple U"><span>Simple U</span></li>
+                                <li><img src="images/stitch/saree/simple-v.jpg" alt="Simple V"><span>Simple V</span></li>
+                                <li><img src="images/stitch/saree/asymmetrical.jpg" alt="Asymmetrical"><span>Asymmetrical</span></li>
+                                <li><img src="images/stitch/saree/loop-with-button.jpg" alt="Loop with Button"><span>Loop with Button</span></li>
+                                <li><img src="images/stitch/saree/asymmetrical-scallop.jpg" alt="Asymmetrical Scallop"><span>Asymmetrical Scallop</span></li>
+                                <li><img src="images/stitch/saree/pointed-round.jpg" alt="Pointed Round"><span>Pointed Round</span></li>
+                                <li><img src="images/stitch/saree/round-with-string.jpg" alt="Round with String"><span>Round with String</span></li>
+                                <li><img src="images/stitch/saree/potli-with-string.jpg" alt="Potli with String"><span>Potli with String</span></li>
+                                <li><img src="images/stitch/saree/pointed-with-string.jpg" alt="Pointed with String"><span>Pointed with String</span></li>
+                                <li><img src="images/stitch/saree/asymmetrical-with-string.jpg" alt="Asymmetrical with String"><span>Asymmetrical with String</span></li>
+                                <li><img src="images/stitch/saree/glass-with-v.jpg" alt="Glass with V"><span>Glass with V</span></li>
+                                <li><img src="images/stitch/saree/sweetheart-with-string.jpg" alt="Sweetheart with String"><span>Sweetheart with String</span></li>
+                                <li><img src="images/stitch/saree/square-with-lace.jpg" alt="Square with Lace"><span>Square with Lace</span></li>
+                                <li><img src="images/stitch/saree/circular-with-string.jpg" alt="Circular with String"><span>Circular with String</span></li>
+                                <li><img src="images/stitch/saree/open-with-string.jpg" alt="Open with String"><span>Open with String</span></li>
+                                <li><img src="images/stitch/saree/four-string.jpg" alt="Four String"><span>Four String</span></li>
+                                <li><img src="images/stitch/saree/bustier.jpg" alt="Bustier"><span>Bustier</span></li>
+                                <li><img src="images/stitch/saree/butterfly-bustier.jpg" alt="Butterfly Bustier"><span>Butterfly Bustier</span></li>
+                                <li><img src="images/stitch/saree/stringed-deep--neck.jpg" alt="Stringed Deep Neck"><span>Stringed Deep Neck</span></li>
+                                <li><img src="images/stitch/saree/off-shoulder.jpg" alt="Off Shoulder"><span>Off Shoulder</span></li>
+                                <li><img src="images/stitch/saree/one-shoulder.jpg" alt="One Shoulder"><span>One Shoulder</span></li>
+                                <li><img src="images/stitch/saree/backless.jpg" alt="Backless"><span>Backless</span></li>
+
+                                </ul>
+                                </div>
+                                <div class="rgtArr"></div>
+                                </div>
+
+                                <div class="bottomStyle mrgTop">
+                                <span>Sleeve Style</span>
+                                <p>Let your sleeve speak the twist of fashion identity you carry. Pick from our select range of traditional and designer styles for the most elegant finish for your blouse.</p>
+                                <div class="lftArr"></div>
+                                <div class="imgbox" id="3">
+                                <ul style="width: 1480px;">
+                                <li><img src="images/stitch/saree/cap.jpg" alt="Cap"><span>Cap</span></li>
+                                <li><img src="images/stitch/saree/elbow-sleeves.jpg" alt="Elbow Sleeves"><span>Elbow Sleeves</span></li>
+                                <li><img src="images/stitch/saree/half-sleeves.jpg" alt="Half Sleeves"><span>Half Sleeves</span></li>
+                                <li><img src="images/stitch/saree/short-sleeves.jpg" alt="Short Sleeves"><span>Short Sleeves</span></li>
+                                <li><img src="images/stitch/saree/sleeveless.jpg" alt="Sleeveless"><span>Sleeveless</span></li>
+                                <li><img src="images/stitch/saree/asymmetrical.jpg" alt="Asymmetrical"><span>Asymmetrical</span></li>
+                                <li><img src="images/stitch/saree/round-with-string.jpg" alt="Round with String"><span>Round with String</span></li>
+                                <li><img src="images/stitch/saree/zig-zag-string.jpg" alt="Zig Zag String"><span>Zig Zag String</span></li>
+                                <li><img src="images/stitch/saree/flutter.jpg" alt="Flutter"><span>Flutter</span></li>
+                                <li><img src="images/stitch/saree/puff-sleeves.jpg" alt="Puff Sleeves"><span>Puff Sleeves</span></li>
+                                </ul>
+                                </div>
+                                <div class="rgtArr"></div>
+                                </div>
+    </div>
+
+    <!-- CHOLI TAB-->
+    <div role="tabpanel" class="tab-pane fade" id="choli-tab">
+
+          <div style="float:left;" class="product-info-cell product-description content_info">
+              <h1 class="product_title" itemprop="name" align="center">MEASUREMENT</h1>
+                <div class="line-divider"></div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button rel="lehenga-bust" id="ctxtbust" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Bust</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
+                        </div>
+                </div>
+                
+                <div class="line-divider"></div>
+
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button rel="lehenga-around_above_waist" id="ctxtawaist" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Above Waist</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
+                        </div>
+                </div>
+                <div class="line-divider"></div>
+
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button rel="lehenga-shoulder" id="ctxtshoulder" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Shoulder</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
+                        </div>
+                </div>
+                <div class="line-divider"></div>
+
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button rel="lehenga-around_arm" id="ctxtarmhole" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Arm Hole</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
+                        </div>
+                </div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button rel="lehenga-arm" id="ctxtarm" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Arm</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
+                        </div>
+                </div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button id="ctxtheight" rel="lgn-height" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Your Height</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
+                        </div>
+                </div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button id="ctxtfrontneckdepth" rel="lehenga-front_neck_depth" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Front Neck Depth</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
+                        </div>
+                </div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button id="ctxtbackneckdepth" rel="lehenga-back_neck" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Back Neck Depth</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
+                        </div>
+                </div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button id="ctxtsleevelength" rel="lehenga-sleeves_length" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Sleeve Length</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
+                        </div>
+                </div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button id="ctxtuppertoplength" rel="lehenga-top_length" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Choli Length</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
+                        </div>
+                </div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button rel="lehenga-waist" id="ctxtwaist" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Waist</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
+                        </div>
+                </div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button rel="lehenga-hips" id="ctxthips" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Around Hips</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
+                        </div>
+                </div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button id="txtbottomlength" rel="lehenga_length" class="btn btn-cool btn-measure"><i class="icon flaticon-pencil43">  </i> Lehenga Length</button>
+
+                        <div class="input-measure">
+                            <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
+                        </div>
+                </div>
+                <div class="measure-tab">    
+                        <div class="clearfix visible-xs"></div>
+                        <button id="measure-done-choli" style="width:100%" class="btn btn-cool"><i class="icon flaticon-pencil43">  </i> Add to Cart</button>
+                </div>
+                      <!--end tabs for creative product view-->
+
+              <div class="line-divider"></div>
+         </div>
+
+          <div class="demoRgt demoWidth rgt">
+                                    <div class="lft mesureUnit">
+                                        <div class="clr">
+                                        </div>
+                                        <div id="ctxtbusttext" class="howMesure fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Around Bust</strong></h3>
+                                            <p>
+                                                Measure under arms around the fullest part of the bust. Be sure to keep tape level across back and comfortably loose as per your wearing habits. 
+                                            </p>
+                                        </div>
+                                        <div id="ctxtawaisttext" class="howMesure fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Around Above Waist</strong></h3>
+                                            <p>
+                                                Place the tape well under arms, straight across the back and measure this from just
+                                                under the bust and just above the waist.
+                                            </p>
+                                        </div>
+                                        <div id="ctxtshouldertext" class="howMesure  fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Shoulder</strong></h3>
+                                            <p>
+                                                Measure shoulder from one shoulder point to other shoulder point horizontally from
+                                                back.
+                                            </p>
+                                        </div>
+                                        <div id="ctxtarmholetext" class="howMesure fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Around Arm Hole</strong></h3>
+                                            <p>
+                                                From the highest point on the shoulder measure around arm hole with your arm hanging
+                                                down.
+                                            </p>
+                                        </div>
+                                        <div id="ctxtarmtext" class="howMesure fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Around Arm</strong></h3>
+                                            <p>
+                                                Measure the middle of bisceps level of your arm keeping the hand relaxed.
+                                            </p>
+                                        </div>
+                                        <div id="ctxtheighttext" class="howMesure fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Your Height</strong></h3>
+                                            <p>
+                                                Stand in your stocking feet with your feet slightly apart and your back to a wall.
+                                                Measure from the floor to the top of your head.
+                                            </p>
+                                        </div>
+                                        <div id="ctxtheightCmtext" class="howMesure fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Your Height</strong></h3>
+                                            <p>
+                                                Stand in your stocking feet with your feet slightly apart and your back to a wall.
+                                                Measure from the floor to the top of your head.
+                                            </p>
+                                        </div>
+                                         <div id="ctxtfrontneckdepthtext" class="howMesure fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Front Neck Depth</strong></h3>
+                                            <p>
+                                                Measuring from the front neck point to your desired depth diagonally.
+                                            </p>
+                                        </div>
+                                        <div id="ctxtbackneckdepthtext" class="howMesure fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Back Neck Depth</strong></h3>
+                                            <p>
+                                                Measuring from the back neck point to your desired depth diagonally.
+                                            </p>
+                                        </div>
+                                        <div id="ctxtsleevelengthtext" class="howMesure fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Sleeve Length</strong></h3>
+                                            <p>
+                                                Starting from the outside edge of the shoulder bone, measure upto the desired length.
+                                            </p>
+                                        </div>
+                                        <div id="ctxtuppertoplengthtext" class="howMesure fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Choli Length</strong></h3>
+                                            <p>
+                                                Measure length from the shoulder point to your desired length like shown in the image.
+                                            </p>
+                                        </div>
+                                        <div id="ctxtwaisttext" class="howMesure fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Around Waist</strong></h3>
+                                            <p>
+                                                Measure around waist keeping the tape straight from back.
+                                            </p>
+                                        </div>
+                                        <div id="ctxthipstext" class="howMesure fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong>Around Hips</strong></h3>
+                                            <p>
+                                                Measure around the upper part of the hip, keeping the tape straight from the back
+                                                and front.
+                                            </p>
+                                        </div>
+                                        <div id="ctxtbottomlengthtext" class="howMesure fit" style="display: none;">
+                                            <span class="rgtArrow">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                            <p>
+                                                How to Measure</p>
+                                            <h3>
+                                                <strong> Lehenga Length</strong></h3>
+                                            <p>
+                                                Measuring from the waist, measuring upto the desired length.
+                                            </p>
+                                        </div>
+                                        <div class="clr">
+                                        </div>
+                                        
+                                    </div>                                    <div class="rgt">
+                                        <img alt="" src="images/stitch/lehenga-dummy.jpg" class="DummyImg" id="fitdummy"></div>
+                                </div>
+
+                                <div class="bottomStyle">
+                                <span>Front Neck Style</span>
+                                <p>For an ultra-feminine look, custom-tailor your choli design with these curvaceous front neck style options.</p>
+                                <div class="lftArr"></div>
+                                <div class="imgbox" id="1">
+                                <ul style="width: 5476px;">
+                                <li><img src="images/stitch/choli/chinese-collar.jpg" alt="Chinese Collar"><span>Chinese Collar</span></li>
+                                <li><img src="images/stitch/choli/décolleté.jpg" alt="Décolleté"><span>Décolleté</span></li>
+                                <li><img src="images/stitch/choli/round-with-oval.jpg" alt="Round with Oval"><span>Round with Oval</span></li>
+                                <li><img src="images/stitch/choli/round-with-v.jpg" alt="Round with V"><span>Round with V</span></li>
+                                <li><img src="images/stitch/choli/kurti-neck.jpg" alt="Kurti Neck"><span>Kurti Neck</span></li>
+                                <li><img src="images/stitch/choli/opposite-glass.jpg" alt="Opposite Glass"><span>Opposite Glass</span></li>
+                                <li><img src="images/stitch/choli/flame-neck.jpg" alt="Flame Neck"><span>Flame Neck</span></li>
+                                <li><img src="images/stitch/choli/scallop.jpg" alt="Scallop"><span>Scallop</span></li>
+                                <li><img src="images/stitch/choli/hexagon.jpg" alt="hexagon"><span>hexagon</span></li>
+                                <li><img src="images/stitch/choli/leaf-shape.jpg" alt="Leaf Shape"><span>Leaf Shape</span></li>
+                                <li><img src="images/stitch/choli/scalloped-u.jpg" alt="Scalloped U"><span>Scalloped U</span></li>
+                                <li><img src="images/stitch/choli/glass.jpg" alt="Glass"><span>Glass</span></li>
+                                <li><img src="images/stitch/choli/horse-shoe.jpg" alt="Horse Shoe"><span>Horse Shoe</span></li>
+                                <li><img src="images/stitch/choli/pointed.jpg" alt="Pointed"><span>Pointed</span></li>
+                                <li><img src="images/stitch/choli/rounded-sweet-heart.jpg" alt="Rounded Sweetheart"><span>Rounded Sweetheart</span></li>
+                                <li><img src="images/stitch/choli/scalloped-glass.jpg" alt="Scalloped Glass"><span>Scalloped Glass</span></li>
+                                <li><img src="images/stitch/choli/square.jpg" alt="Square"><span>Square</span></li>
+                                <li><img src="images/stitch/choli/sweet-heart.jpg" alt="Sweetheart"><span>Sweetheart</span></li>
+                                <li><img src="images/stitch/choli/sweet-heart-with-collar.jpg" alt="Sweetheart with Collar"><span>Sweetheart with Collar</span></li>
+                                <li><img src="images/stitch/choli/simple-u.jpg" alt="Simple U"><span>Simple U</span></li>
+                                <li><img src="images/stitch/choli/simple-v.jpg" alt="Simple V"><span>Simple V</span></li>
+                                <li><img src="images/stitch/choli/multi-string.jpg" alt="Multi String"><span>Multi String</span></li>
+                                <li><img src="images/stitch/choli/wave-neck.jpg" alt="Wave Neck"><span>Wave Neck</span></li>
+                                <li><img src="images/stitch/choli/inverted-tomb.jpg" alt="Inverted Tomb"><span>Inverted Tomb</span></li>
+                                <li><img src="images/stitch/choli/key-hole.jpg" alt="Key Hole"><span>Key Hole</span></li>
+                                <li><img src="images/stitch/choli/key-hole-with-string.jpg" alt="Key Hole with String"><span>Key Hole with String</span></li>
+                                <li><img src="images/stitch/choli/square-with-string.jpg" alt="Square with String"><span>Square with String</span></li>
+                                <li><img src="images/stitch/choli/oval-with-string.jpg" alt="Oval with String"><span>Oval with String</span></li>
+                                <li><img src="images/stitch/choli/butterfly-bustier.jpg" alt="Butterfly Bustier"><span>Butterfly Bustier</span></li>
+                                <li><img src="images/stitch/choli/bustier.jpg" alt="Bustier"><span>Bustier</span></li>
+                                <li><img src="images/stitch/choli/halter-with-oval.jpg" alt="Halter with Oval"><span>Halter with Oval</span></li>
+                                <li><img src="images/stitch/choli/envelope.jpg" alt="Envelope"><span>Envelope</span></li>
+                                <li><img src="images/stitch/choli/shape-with-bustier.jpg" alt="Shape with Bustier"><span>Shape with Bustier</span></li>
+                                <li><img src="images/stitch/choli/halter.jpg" alt="Halter"><span>Halter</span></li>
+                                <li><img src="images/stitch/choli/halter-with-ring.jpg" alt="Halter with Ring"><span>Halter with Ring</span></li>
+                                <li><img src="images/stitch/choli/off-shoulder.jpg" alt="Off Shoulder"><span>Off Shoulder</span></li>
+                                <li><img src="images/stitch/choli/one-shoulder.jpg" alt="One Shoulder"><span>One Shoulder</span></li>
+                                </ul>
+                                </div>
+                                <div class="rgtArr"></div>
+                                </div>
+
+                                <div class="bottomStyle mrgTop">
+                                <span>Back Neck Style</span>
+                                <p>Deck up your choli blouse design with these bold and trendy back neck styles.</p>
+                                <div class="lftArr"></div>
+                                <div class="imgbox" id="2">
+                                <ul style="width: 4292px;">
+                                <li><img src="images/stitch/choli/chinese-collar.jpg" alt="Chinese Collar"><span>Chinese Collar</span></li>
+                                <li><img src="images/stitch/choli/bateau-or-boat.jpg" alt="Bateau or Boat"><span>Bateau or Boat</span></li>
+                                <li><img src="images/stitch/choli/curved-square.jpg" alt="Curved Square"><span>Curved Square</span></li>
+                                <li><img src="images/stitch/choli/horse-shoe.jpg" alt="Horse Shoe"><span>Horse Shoe</span></li>
+                                <li><img src="images/stitch/choli/pointed.jpg" alt="Pointed"><span>Pointed</span></li>
+                                <li><img src="images/stitch/choli/rounded.jpg" alt="Rounded"><span>Rounded</span></li>
+                                <li><img src="images/stitch/choli/simple-u.jpg" alt="Simple U"><span>Simple U</span></li>
+                                <li><img src="images/stitch/choli/simple-v.jpg" alt="Simple V"><span>Simple V</span></li>
+                                <li><img src="images/stitch/choli/asymmetrical.jpg" alt="Asymmetrical"><span>Asymmetrical</span></li>
+                                <li><img src="images/stitch/choli/loop-with-button.jpg" alt="Loop with Button"><span>Loop with Button</span></li>
+                                <li><img src="images/stitch/choli/scallop.jpg" alt="Scallop"><span>Scallop</span></li>
+                                <li><img src="images/stitch/choli/asymmetrical-scallop.jpg" alt="Asymmetrical Scallop"><span>Asymmetrical Scallop</span></li>
+                                <li><img src="images/stitch/choli/pointed-round.jpg" alt="Pointed Round"><span>Pointed Round</span></li>
+                                <li><img src="images/stitch/choli/round-with-string.jpg" alt="Pointed Round"><span>Round with String</span></li>
+                                <li><img src="images/stitch/choli/potli-with-string.jpg" alt="Potli with String"><span>Potli with String</span></li>
+                                <li><img src="images/stitch/choli/pointed-with-string.jpg" alt="Pointed with String"><span>Pointed with String</span></li>
+                                <li><img src="images/stitch/choli/asymmetrical-with-string.jpg" alt="Asymmetrical with String"><span>Asymmetrical with String</span></li>
+                                <li><img src="images/stitch/choli/glass-with-v.jpg" alt="Glass with V"><span>Glass with V</span></li>
+                                <li><img src="images/stitch/choli/sweetheart-with-string.jpg" alt="Sweetheart with String"><span>Sweetheart with String</span></li>
+                                <li><img src="images/stitch/choli/square-with-lace.jpg" alt="Square with Lace"><span>Square with Lace</span></li>
+                                <li><img src="images/stitch/choli/circular-with-string.jpg" alt="Circular with String"><span>Circular with String</span></li>
+                                <li><img src="images/stitch/choli/open-with-string.jpg" alt="Open with String"><span>Open with String</span></li>
+                                <li><img src="images/stitch/choli/four-string.jpg" alt="Four String"><span>Four String</span></li>
+                                <li><img src="images/stitch/choli/bustier.jpg" alt="Bustier"><span>Bustier</span></li>
+                                <li><img src="images/stitch/choli/butterfly-bustier.jpg" alt="Butterfly Bustier"><span>Butterfly Bustier</span></li>
+                                <li><img src="images/stitch/choli/stringed-deep--neck.jpg" alt="Stringed Deep Neck"><span>Stringed Deep Neck</span></li>
+                                <li><img src="images/stitch/choli/off-shoulder.jpg" alt="Off Shoulder"><span>Off Shoulder</span></li>
+                                <li><img src="images/stitch/choli/one-shoulder.jpg" alt="One Shoulder"><span>One Shoulder</span></li>
+                                <li><img src="images/stitch/choli/backless.jpg" alt="Backless"><span>Backless</span></li>
+
+                                </ul>
+                                </div>
+                                <div class="rgtArr"></div>
+                                </div>
+
+                                <div class="bottomStyle mrgTop">
+                                <span>Sleeve Style</span>
+                                <p>Choose a sleeve style for your choli blouse from our handpicked styles and pepper up your ethnic look.</p>
+                                <div class="lftArr"></div>
+                                <div class="imgbox" id="3">
+                                <ul style="width: 2516px;">
+                                <li><img src="images/stitch/choli/cap-sleeves.jpg" alt="Cap Sleeves"><span>Cap Sleeves</span></li>
+                                <li><img src="images/stitch/choli/half-sleeves.jpg" alt="Half Sleeves"><span>Half Sleeves</span></li>
+                                <li><img src="images/stitch/choli/sleeveless.jpg" alt="Sleeveless"><span>Sleeveless</span></li>
+                                <li><img src="images/stitch/choli/elbow-sleeves.jpg" alt="Elbow Sleeves"><span>Elbow Sleeves</span></li>
+                                <li><img src="images/stitch/choli/short-sleeves.jpg" alt="Short Sleeves"><span>Short Sleeves</span></li>
+                                <li><img src="images/stitch/choli/v-cut.jpg" alt="V Cut"><span>V Cut</span></li>
+                                <li><img src="images/stitch/choli/bell-sleeves.jpg" alt="Bell Sleeves"><span>Bell Sleeves</span></li>
+                                <li><img src="images/stitch/choli/flutter.jpg" alt="Flutter"><span>Flutter</span></li>
+                                <li><img src="images/stitch/choli/laces.jpg" alt="Laces"><span>Laces</span></li>
+                                <li><img src="images/stitch/choli/lantern-sleeves.jpg" alt="Lantern Sleeves"><span>Lantern Sleeves</span></li>
+                                <li><img src="images/stitch/choli/puff-sleeves.jpg" alt="Puff Sleeves"><span>Puff Sleeves</span></li>
+                                <li><img src="images/stitch/choli/roll-up-sleeves.jpg" alt="Roll up Sleeves"><span>Roll up Sleeves</span></li>
+                                <li><img src="images/stitch/choli/round-with-string.jpg" alt="Round with String"><span>Round with String</span></li>
+                                <li><img src="images/stitch/choli/zig-zag-string.jpg" alt="Zig Zag String"><span>Zig Zag String</span></li>
+                                <li><img src="images/stitch/choli/bishop-sleeves.jpg" alt="Bishop Sleeves"><span>Bishop Sleeves</span></li>
+                                <li><img src="images/stitch/choli/trumpet-1.jpg" alt="Trumpet"><span>Trumpet 1</span></li>
+                                <li><img src="images/stitch/choli/trumpet-2.jpg" alt="Trumpet"><span>Trumpet 2</span></li>
+
+                                </ul>
+                                </div>
+                                <div class="rgtArr"></div>
+                                </div>
+
+                                <div class="bottomStyle mrgTop">
+                                <span>Bottom Style</span>
+                                <p>Select a pattern from our myriad lehenga style design options and stay in vogue.</p>
+                                <div class="imgbox" id="4">
+                                <ul style="margin-left: 56px; width: 740px;">
+                                <li><img src="images/stitch/choli/umbrella.jpg" alt="Umbrella"><span>Umbrella</span></li>
+                                <li><img src="images/stitch/choli/a-line.jpg" alt="A Line"><span>A Line</span></li>
+                                <li><img src="images/stitch/choli/fish-kali.jpg" alt="Fish Kali"><span>Fish Kali</span></li>
+                                <li><img src="images/stitch/choli/mermaid-fish-tail.jpg" alt="Mermaid/Fish Tail"><span>Mermaid/Fish Tail</span></li>
+                                <li><img src="images/stitch/choli/straight.jpg" alt="Straight"><span>Straight</span></li>
+                                </ul>
+                                </div>
+                                </div>
+    </div>
 
   </div>
+
+
+
+</div> <!--content-dress-->
 
 
 <!--tabs for classic product view-->

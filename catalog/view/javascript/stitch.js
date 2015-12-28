@@ -2,7 +2,9 @@ $(function(){
    var  i=0;
    $('.imgbox ul').each(function(){
    i=i+1;
-   $(this).css({width:$('#'+i+ ' ul li').length*148});
+   console.log();
+   var ulwidth = $(this).children().length * 148;
+   $(this).css({width:ulwidth});
    })
 
    $('.lftArr').click(function(){
@@ -38,14 +40,31 @@ $(function(){
 $(document).ready(function() {
 
 	//Taking all measurements of Salwar from the input fields
-	$('#measure-done-salwar').click(function(){
+	$('.imgbox li img').click(function(){
+		$(this).parent().siblings().removeClass('active');
+		$(this).parent().addClass('active');
+	});
 
+	$('#measure-done-salwar').click(function(){
+		//Validation for salwar
+		var flag=1;
+		$('#salwar-tab input').each(function(){
+			if($(this).val()=='')
+			{
+				$(this).css({"border-color": "red"});
+				$(this).focus();
+				flag=0;
+			}
+		});
+		if(flag==0)
+			return false;
 		var all_measure = '';
 		$('#salwar-tab .btn-measure').each(function(){
 			var rel = $(this).attr('rel');
 			var measure_input = $(this).next().children('input').val();
 			all_measure += '"'+rel+'":"'+measure_input+'",';
 		});
+
 		all_measure = all_measure.slice(0,-1);
 		var measure_list = '{"type":"Salwar","data":{'+all_measure+'}}';
 		console.log(measure_list);
