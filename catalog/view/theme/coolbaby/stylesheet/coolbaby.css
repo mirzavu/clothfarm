@@ -8017,8 +8017,8 @@ opacity: 1.0;
 .imgbox ul li img{border:1px solid #C1C2C1;cursor:pointer;}
 .imgbox ul li span{display:block;font-size:12px; text-align:center;}
 .imgbox ul li.mrgRgt{margin-right:0px;}
-.lftArr{margin:58px 0px 0px 34px;float:left;cursor:pointer;background: url("../images/left-arrows.gif") no-repeat scroll 0px 0px transparent; cursor: pointer; width:22px;height: 33px;}
-.rgtArr{margin:58px 0px 0px 0px;float:left;cursor:pointer;background:url(../images/right-arrows.gif) no-repeat right 0px;height:33px; width:22px}
+.lftArr{margin:66px 0px 0px 34px;float:left;cursor:pointer;background: url("../images/left-arrows.gif") no-repeat scroll 0px 0px transparent; cursor: pointer; width:22px;height: 33px; background-size: 37px;}
+.rgtArr{margin:58px 0px 0px 0px;float:left;cursor:pointer;background:url(../images/right-arrows.gif) no-repeat right 0px;height:33px; width:22px;    background-size: 37px;}
 .mrgTop{margin-top:0px;}
 
 li img.active{

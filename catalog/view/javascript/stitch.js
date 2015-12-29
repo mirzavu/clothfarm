@@ -170,22 +170,169 @@ $(document).ready(function() {
 		all_measure = all_measure.slice(0,-1);
 		var measure_list = '{"type":"Salwar","data":{'+all_measure+'}}';
 		console.log(measure_list);
-		$('#input-measures').val(measure_list);
-		$('#input-stitch-type').val('salwar');
 
-		
-		$('#salwar-tab imgbox').each(function(){
-			var imgflag=0;
+
+		var imgflag=0;
+		$('#salwar-tab .imgbox').each(function(){
+			imgflag=0;
 			$(this).children('ul').children('li').each(function(){
 				if($(this).children('img').hasClass('active'))
 					imgflag=1;
 			});
 			if(imgflag==0)
 			{
-				$(this).hide();
 				return false;
 			}
 		});
+
+		if(imgflag==0)
+		{
+				return false;
+		}
+
+		var style_all='';
+		$('#salwar-tab img.active').each(function(){
+			var style = $(this).parent().parent().parent().parent().children('span').html();
+			var styleval = $(this).next().html();
+			style_all +='"'+style+'":"'+styleval+'",';
+
+		});
+		style_all = style_all.slice(0,-1);
+		measure_list = measure_list.slice(0,-1);
+		measure_list = measure_list + ',"style":{'+style_all+'}}';
+		console.log(measure_list);
+		$('#input-measures').val(measure_list);
+		$('#input-stitch-type').val('salwar');
+
+		$('#content-new').hide();
+		$('#content').show();
+		$('html,body').animate({
+        scrollTop: $("#content").offset().top},
+        'slow');
+		$('#button-cart').click();
+	});
+
+	$('#material-done-saree').click(function(){
+		//Validation for salwar
+		var flag=1;
+		$('#saree-tab input').each(function(){
+			if($(this).val()=='')
+			{
+				$(this).css({"border-color": "red"});
+				$(this).focus();
+				flag=0;
+			}
+		});
+		if(flag==0)
+			return false;
+		var all_measure = '';
+		$('#saree-tab .btn-measure').each(function(){
+			var rel = $(this).attr('rel');
+			var measure_input = $(this).next().children('input').val();
+			all_measure += '"'+rel+'":"'+measure_input+'",';
+		});
+
+		all_measure = all_measure.slice(0,-1);
+		var measure_list = '{"type":"Saree","data":{'+all_measure+'}}';
+		console.log(measure_list);
+
+
+		var imgflag=0;
+		$('#saree-tab .imgbox').each(function(){
+			imgflag=0;
+			$(this).children('ul').children('li').each(function(){
+				if($(this).children('img').hasClass('active'))
+					imgflag=1;
+			});
+			if(imgflag==0)
+			{
+				return false;
+			}
+		});
+
+		if(imgflag==0)
+		{
+				return false;
+		}
+
+		var style_all='';
+		$('#saree-tab img.active').each(function(){
+			var style = $(this).parent().parent().parent().parent().children('span').html();
+			var styleval = $(this).next().html();
+			style_all +='"'+style+'":"'+styleval+'",';
+
+		});
+		style_all = style_all.slice(0,-1);
+		measure_list = measure_list.slice(0,-1);
+		measure_list = measure_list + ',"style":{'+style_all+'}}';
+		console.log(measure_list);
+		$('#input-measures').val(measure_list);
+		$('#input-stitch-type').val('saree');
+
+		$('#content-new').hide();
+		$('#content').show();
+		$('html,body').animate({
+        scrollTop: $("#content").offset().top},
+        'slow');
+		$('#button-cart').click();
+	});
+
+	$('#material-done-choli').click(function(){
+		//Validation for salwar
+		var flag=1;
+		$('#choli-tab input').each(function(){
+			if($(this).val()=='')
+			{
+				$(this).css({"border-color": "red"});
+				$(this).focus();
+				flag=0;
+			}
+		});
+		if(flag==0)
+			return false;
+		var all_measure = '';
+		$('#choli-tab .btn-measure').each(function(){
+			var rel = $(this).attr('rel');
+			var measure_input = $(this).next().children('input').val();
+			all_measure += '"'+rel+'":"'+measure_input+'",';
+		});
+
+		all_measure = all_measure.slice(0,-1);
+		var measure_list = '{"type":"Choli","data":{'+all_measure+'}}';
+		console.log(measure_list);
+
+
+		var imgflag=0;
+		$('#choli-tab .imgbox').each(function(){
+			imgflag=0;
+			$(this).children('ul').children('li').each(function(){
+				if($(this).children('img').hasClass('active'))
+					imgflag=1;
+			});
+			if(imgflag==0)
+			{
+				return false;
+			}
+		});
+
+		if(imgflag==0)
+		{
+				return false;
+		}
+
+		var style_all='';
+		$('#choli-tab img.active').each(function(){
+			var style = $(this).parent().parent().parent().parent().children('span').html();
+			var styleval = $(this).next().html();
+			style_all +='"'+style+'":"'+styleval+'",';
+
+		});
+		style_all = style_all.slice(0,-1);
+		measure_list = measure_list.slice(0,-1);
+		measure_list = measure_list + ',"style":{'+style_all+'}}';
+		console.log(measure_list);
+		$('#input-measures').val(measure_list);
+		$('#input-stitch-type').val('choli');
 
 		$('#content-new').hide();
 		$('#content').show();
