@@ -39,10 +39,12 @@ $(function(){
 
 $(document).ready(function() {
 
-	//Taking all measurements of Salwar from the input fields
+	//material type selection
 	$('.imgbox li img').click(function(){
-		$(this).parent().siblings().removeClass('active');
-		$(this).parent().addClass('active');
+		$(this).parent().siblings().each(function(){
+			$(this).children().removeClass('active');
+		});
+		$(this).addClass('active');
 	});
 
 	$('#measure-done-salwar').click(function(){
@@ -80,6 +82,17 @@ $(document).ready(function() {
 	});
 
 	$('#measure-done-saree').click(function(){
+		var flag=1;
+		$('#saree-tab input').each(function(){
+			if($(this).val()=='')
+			{
+				$(this).css({"border-color": "red"});
+				$(this).focus();
+				flag=0;
+			}
+		});
+		if(flag==0)
+			return false;
 		console.log('asdasd');
 		var all_measure = '';
 		$('#saree-tab .btn-measure').each(function(){
@@ -102,7 +115,17 @@ $(document).ready(function() {
 	});
 
 	$('#measure-done-choli').click(function(){
-
+		var flag=1;
+		$('#choli-tab input').each(function(){
+			if($(this).val()=='')
+			{
+				$(this).css({"border-color": "red"});
+				$(this).focus();
+				flag=0;
+			}
+		});
+		if(flag==0)
+			return false;
 		var all_measure = '';
 		$('#choli-tab .btn-measure').each(function(){
 			var rel = $(this).attr('rel');
@@ -181,10 +204,21 @@ $(document).ready(function() {
 		$('#button-cart').click();
 	});
 
-	$('#stitch').on("click",function(){
+	//on popup stitch farm click
+	$('#stitch-ready').on("click",function(){
 		$.fancybox.close();
 		$('#content').hide();
 		$('#content-new').show();
+		$('html,body').animate({
+        scrollTop: $("#header_type1").offset().top},
+        'slow');
+		//$('#measure-trigger').click();
+	});
+
+	$('#stitch-material').on("click",function(){
+		$.fancybox.close();
+		$('#content').hide();
+		$('#content-dress').show();
 		$('html,body').animate({
         scrollTop: $("#header_type1").offset().top},
         'slow');

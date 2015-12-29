@@ -8013,10 +8013,15 @@ opacity: 1.0;
 .bottomStyle{margin:75px 0px 20px 0px;width:987px;float:left;}
 .bottomStyle span{display:block;font-size:21px; color:#231f20}    
 .imgbox{width:888px;overflow:hidden;float:left;margin:0px 10px;height:185px;}  
-.imgbox ul li{float:left; padding:12px 17px 0 18px; width:113px;}
-.imgbox ul li img{border:1px solid #C1C2C1;}
-.imgbox ul li span{display:block;font-size:12px; text-align:center}
+.imgbox ul li{float:left; padding:12px 17px 0 18px; width:113px;margin-right: 35px;}
+.imgbox ul li img{border:1px solid #C1C2C1;cursor:pointer;}
+.imgbox ul li span{display:block;font-size:12px; text-align:center;}
 .imgbox ul li.mrgRgt{margin-right:0px;}
 .lftArr{margin:58px 0px 0px 34px;float:left;cursor:pointer;background: url("../images/left-arrows.gif") no-repeat scroll 0px 0px transparent; cursor: pointer; width:22px;height: 33px;}
 .rgtArr{margin:58px 0px 0px 0px;float:left;cursor:pointer;background:url(../images/right-arrows.gif) no-repeat right 0px;height:33px; width:22px}
 .mrgTop{margin-top:0px;}
+
+li img.active{
+    border-color: #0060AD;
+    box-shadow: 0 0 16px #005DA7;
+}

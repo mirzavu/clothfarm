@@ -480,7 +480,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                     <a style="display: none" id="measure-trigger" class="mam2" href="#measure"></a>
                     <div style="display: none">
                               <div id="stitch-pop">
-                                <div style="float:left" id="stitch"><button class="btn btn-cool btn-lg" id="button-stitch"><i class="icon icon flaticon-star129"></i>Stitch Farm</button></div>
+                                <div style="float:left" id="stitch-ready"><button class="btn btn-cool btn-lg" id="button-stitch"><i class="icon icon flaticon-star129"></i>Stitch Farm</button></div>
                                 <div style="float:left;padding-left:15px;" id="nostitch"><button class="btn btn-cool btn-lg" id="button-no-stitch"><i class="icon icon"></i>Continue to Checkout</button></div>
                               </div>
                     </div>
@@ -490,6 +490,18 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                   }
                   else if($stitch == "material")
                   {
+                    ?>
+                    <a class="mam btn btn-cool btn-lg" href="#stitch-pop"><i class="icon flaticon-shopping66">  </i>Add to Cart</a>
+                    <a style="display: none" id="measure-trigger" class="mam2" href="#measure"></a>
+                    <div style="display: none">
+                              <div id="stitch-pop">
+                                <div style="float:left" id="stitch-material"><button class="btn btn-cool btn-lg" id="button-stitch"><i class="icon icon flaticon-star129"></i>Stitch Farm</button></div>
+                                <div style="float:left;padding-left:15px;" id="nostitch"><button class="btn btn-cool btn-lg" id="button-no-stitch"><i class="icon icon"></i>Continue to Checkout</button></div>
+                              </div>
+                    </div>
+                    <button style="display: none" class="btn btn-cool btn-lg" type="submit" id="button-cart" data-loading-text="<?php echo $text_loading; ?>"><i class="icon flaticon-shopping66"></i><?php echo $button_cart; ?></button>
+
+                  <?php
                   }
                   else
                   {
