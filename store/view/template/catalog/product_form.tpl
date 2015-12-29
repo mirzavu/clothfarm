@@ -196,12 +196,22 @@
                 </div>
               </div>
               <div class="form-group">
-                <label class="col-sm-2 control-label" for="input-stitch"><span data-toggle="tooltip" title="<?php echo $entry_stitch; ?>"><?php echo $entry_stitch; ?></span></label>
+                <label class="col-sm-2 control-label"><?php echo $entry_stitch; ?></label>
                 <div class="col-sm-10">
-                  <select name="stitch" id="input-stitch" class="form-control">
-                    <option value="yes" <?php if($stitch == "yes") echo 'selected="selected"'; ?>>Yes</option>
-                    <option value="no"  <?php if($stitch != "yes") echo 'selected="selected"'; ?>>No</option>
-                  </select>
+                  <label>
+                    <input type="radio" name="stitch" value="material" <?php if ($stitch=="material") { echo 'checked="checked"'; }?> />
+                    Dress material
+                  </label>
+                    <br>
+                  <label>
+                    <input type="radio" name="stitch" value="ready" <?php if ($stitch=="ready") { echo 'checked="checked"'; }?> />
+                    Ready to stitch
+                  </label>
+                    <br>
+                  <label>
+                    <input type="radio" name="stitch" value="no" <?php if ($stitch=="no" || ($stitch!="material" && $stitch!="ready")) { echo 'checked="checked"'; }?> />
+                    No stitch
+                  </label>
                 </div>
               </div>
               <div class="form-group">

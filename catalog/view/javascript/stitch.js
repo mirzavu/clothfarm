@@ -1,4 +1,4 @@
-$(function(){ 
+$(function(){  
    var  i=0;
    $('.imgbox ul').each(function(){
    i=i+1;
@@ -138,6 +138,55 @@ $(document).ready(function() {
 		$('#input-measures').val(measure_list);
 		$('#input-stitch-type').val('choli');
 		console.log($('#input-stitch-type'));
+		$('#content-new').hide();
+		$('#content').show();
+		$('html,body').animate({
+        scrollTop: $("#content").offset().top},
+        'slow');
+		$('#button-cart').click();
+	});
+
+	//Material
+	$('#material-done-salwar').click(function(){
+		//Validation for salwar
+		var flag=1;
+		$('#salwar-tab input').each(function(){
+			if($(this).val()=='')
+			{
+				$(this).css({"border-color": "red"});
+				$(this).focus();
+				flag=0;
+			}
+		});
+		if(flag==0)
+			return false;
+		var all_measure = '';
+		$('#salwar-tab .btn-measure').each(function(){
+			var rel = $(this).attr('rel');
+			var measure_input = $(this).next().children('input').val();
+			all_measure += '"'+rel+'":"'+measure_input+'",';
+		});
+
+		all_measure = all_measure.slice(0,-1);
+		var measure_list = '{"type":"Salwar","data":{'+all_measure+'}}';
+		console.log(measure_list);
+		$('#input-measures').val(measure_list);
+		$('#input-stitch-type').val('salwar');
+
+		
+		$('#salwar-tab imgbox').each(function(){
+			var imgflag=0;
+			$(this).children('ul').children('li').each(function(){
+				if($(this).children('img').hasClass('active'))
+					imgflag=1;
+			});
+			if(imgflag==0)
+			{
+				$(this).hide();
+				return false;
+			}
+		});
+
 		$('#content-new').hide();
 		$('#content').show();
 		$('html,body').animate({
