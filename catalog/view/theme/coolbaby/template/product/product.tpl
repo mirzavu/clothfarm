@@ -1881,7 +1881,7 @@ if($stitch=="material")
                 </div>
                 <div class="measure-tab">    
                         <div class="clearfix visible-xs"></div>
-                        <button id="material-done-salwar" style="width:100%" class="btn btn-cool"><i class="icon flaticon-pencil43">  </i> Add to Cart</button>
+                        
                 </div>
 
 
@@ -2233,7 +2233,7 @@ if($stitch=="material")
                       </div>
                       <div class="rgtArr"></div>
                       </div>
-
+                      <button id="material-done-salwar" style="width:100%" class="btn btn-cool"><i class="icon flaticon-pencil43">  </i> Add to Cart</button>
     </div>
 
     <!--  SAREE TAB-->
@@ -2331,7 +2331,6 @@ if($stitch=="material")
                 </div>
                 <div class="measure-tab">    
                         <div class="clearfix visible-xs"></div>
-                        <button id="material-done-saree" style="width:100%" class="btn btn-cool"><i class="icon flaticon-pencil43">  </i> Add to Cart</button>
                 </div>
                 <!--End measure for saree-->
 
@@ -2579,6 +2578,7 @@ if($stitch=="material")
                                 </div>
                                 <div class="rgtArr"></div>
                                 </div>
+                                <button id="material-done-saree" style="width:100%" class="btn btn-cool"><i class="icon flaticon-pencil43">  </i> Add to Cart</button>
     </div>
 
     <!-- CHOLI TAB-->
@@ -2700,7 +2700,6 @@ if($stitch=="material")
                 </div>
                 <div class="measure-tab">    
                         <div class="clearfix visible-xs"></div>
-                        <button id="material-done-choli" style="width:100%" class="btn btn-cool"><i class="icon flaticon-pencil43">  </i> Add to Cart</button>
                 </div>
                       <!--end tabs for creative product view-->
 
@@ -2995,6 +2994,8 @@ if($stitch=="material")
                                 </ul>
                                 </div>
                                 </div>
+
+                              <button id="material-done-choli" style="width:100%" class="btn btn-cool"><i class="icon flaticon-pencil43">  </i> Add to Cart</button>
     </div>
 
   </div>

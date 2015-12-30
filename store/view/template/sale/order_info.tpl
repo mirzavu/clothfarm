@@ -359,13 +359,24 @@
                     //echo "<pre>";print_r($measure_all);
                     echo '<div style="display: none">';
                       echo '      <div id="pop_'.$i.'">';
-                      echo '        <h2>'.$measure_all['type'].'</h2><table>';
-
+                      echo '        <h2>'.$measure_all['type'].'</h2>';
+                      echo '  <table>    ';
                       foreach($measure_all['data'] as $measure => $val)
                         {echo "<tr><td>".$measure."</td>";
                       echo "<td>".$val."</td></tr>";
                         }        
-                      echo '  </table>    </div>';
+                      echo '  </table>    ';
+                      if(isset($measure_all['style']))
+                      {
+                          echo '        <h2>Style</h2>';
+                          echo '  <table>    ';
+                          foreach($measure_all['style'] as $measure => $val)
+                            {echo "<tr><td>".$measure."</td>";
+                          echo "<td>".$val."</td></tr>";
+                            }        
+                          echo '  </table>    ';
+                      }
+                      echo '</div>';
                   echo '    </div>';
                   }
                   ?>
