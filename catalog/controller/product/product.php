@@ -438,6 +438,9 @@ class ControllerProductProduct extends Controller {
 
 			if ($product_info['stitch']) {
 				$data['stitch'] = $product_info['stitch'];
+				$data['salwar_cost'] = $this->config->get('config_salwar_cost');
+				$data['saree_cost'] = $this->config->get('config_saree_cost');
+				$data['choli_cost'] = $this->config->get('config_choli_cost');
 			} else {
 				$data['stitch'] = 'no';
 			}

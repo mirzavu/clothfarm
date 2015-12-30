@@ -953,10 +953,6 @@ if($stitch=="ready")
                             <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
                         </div>
                 </div>
-                <div class="measure-tab">    
-                        <div class="clearfix visible-xs"></div>
-                        <button id="measure-done-salwar" style="width:100%" class="btn btn-cool"><i class="icon flaticon-pencil43">  </i> Add to Cart</button>
-                </div>
 
 
                       <!--end tabs for creative product view-->
@@ -1175,8 +1171,19 @@ if($stitch=="ready")
                                     </div>
                                     <div class="rgt">
                                         <img alt="" src="images/stitch/measure-dummy.jpg" class="DummyImg" id="fitdummy"></div>
-                                </div> 
+                                </div>
 
+                                <div class="cart-div">
+                                  <div style="float: left;">
+                                    <li>Confirm that the above measurements are accurate<span>*</span></li>
+                                  </div>
+                                  <div style="float: right;width: 190px;">
+                                    <div>
+                                      Stitch Cost : <span><?= $salwar_cost ?></span>
+                                    </div>
+                                     <button id="measure-done-salwar" style="width:100%" class="btn btn-cool"><i class="icon flaticon-pencil43">  </i> Add to Cart</button>
+                                  </div>
+                                </div>
 
     </div>
 
@@ -1272,10 +1279,6 @@ if($stitch=="ready")
                         <div class="input-measure">
                             <input type="text" name="name" style="margin-bottom: 0px;" class="form-control" placeholder="Enter in Inches">
                         </div>
-                </div>
-                <div class="measure-tab">    
-                        <div class="clearfix visible-xs"></div>
-                        <button id="measure-done-saree" style="width:100%" class="btn btn-cool"><i class="icon flaticon-pencil43">  </i> Add to Cart</button>
                 </div>
                 <!--End measure for saree-->
 
@@ -1408,6 +1411,18 @@ if($stitch=="ready")
                                         
                                     </div>                                    <div class="rgt">
                                         <img alt="" src="images/stitch/saree-dummy.jpg" class="DummyImg" id="fitdummy"></div>
+                                </div>
+
+                                <div class="cart-div">
+                                  <div style="float: left;">
+                                    <li>Confirm that the above measurements are accurate<span>*</span></li>
+                                  </div>
+                                  <div style="float: right;width: 190px;">
+                                    <div>
+                                      Stitch Cost : <span><?= $saree_cost ?></span>
+                                    </div>
+                                     <button id="measure-done-saree" style="width:100%" class="btn btn-cool"><i class="icon flaticon-pencil43">  </i> Add to Cart</button>
+                                  </div>
                                 </div>
     </div>
 
@@ -1692,6 +1707,18 @@ if($stitch=="ready")
                                         
                                     </div>                                    <div class="rgt">
                                         <img alt="" src="images/stitch/lehenga-dummy.jpg" class="DummyImg" id="fitdummy"></div>
+                                </div>
+
+                                <div class="cart-div">
+                                  <div style="float: left;">
+                                    <li>Confirm that the above measurements are accurate<span>*</span></li>
+                                  </div>
+                                  <div style="float: right;width: 190px;">
+                                    <div>
+                                      Stitch Cost : <span><?= $choli_cost ?></span>
+                                    </div>
+                                     <button id="measure-done-choli" style="width:100%" class="btn btn-cool"><i class="icon flaticon-pencil43">  </i> Add to Cart</button>
+                                  </div>
                                 </div>
     </div>
 
