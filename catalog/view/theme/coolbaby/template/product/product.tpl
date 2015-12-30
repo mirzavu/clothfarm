@@ -2152,19 +2152,19 @@ if($stitch=="material")
                       <li><img src="images/stitch/glass-neck.jpg" alt="Glass Neck"><span>Glass Neck</span></li>
                       <li><img src="images/stitch/kurti-neck.jpg" alt="Kurti Neck"><span>Kurti Neck</span></li>
                       <li><img src="images/stitch/back-star.jpg" alt="Back Star"><span>Back Star</span></li>
-                      <li><img src="images/stitch/glass-with-string.jpg" alt="Glass with String"><span>Glass with String</span></li>
+                      <li><img src="images/stitch/glass-with-string-back.jpg" alt="Glass with String"><span>Glass with String</span></li>
                       <li><img src="images/stitch/piggy-neck.jpg" alt="Piggy Neck"><span>Piggy Neck</span></li>
                       <li><img src="images/stitch/twisted-back.jpg" alt="Twisted Back"><span>Twisted Back</span></li>
                       <li><img src="images/stitch/pot-neck.jpg" alt="Pot Neck"><span>Pot Neck</span></li>
                       <li><img src="images/stitch/polygon-neck.jpg" alt="Polygon Neck"><span>Polygon Neck</span></li>
                       <li><img src="images/stitch/bottom-glass.jpg" alt="Bottom Glass"><span>Bottom Glass</span></li>
-                      <li><img src="images/stitch/key-hole.jpg" alt="Key Hole"><span>Key Hole</span></li>
-                      <li><img src="images/stitch/bateau-or-boat.jpg" alt="Bateau or Boat"><span>Bateau or Boat</span></li>
+                      <li><img src="images/stitch/key-hole-back.jpg" alt="Key Hole"><span>Key Hole</span></li>
+                      <li><img src="images/stitch/bateau-or-boat-back.jpg" alt="Bateau or Boat"><span>Bateau or Boat</span></li>
                       <li><img src="images/stitch/round-with-string.jpg" alt="Round with String"><span>Round with String</span></li>
-                      <li><img src="images/stitch/horse-shoe.jpg" alt="Horse Shoe"><span>Horse Shoe</span></li>
+                      <li><img src="images/stitch/horse-shoe-back.jpg" alt="Horse Shoe"><span>Horse Shoe</span></li>
                       <li><img src="images/stitch/pointed.jpg" alt="Pointed"><span>Pointed</span></li>
                       <li><img src="images/stitch/round.jpg" alt="Round"><span>Round</span></li>
-                      <li><img src="images/stitch/square.jpg" alt="Square"><span>Square</span></li>
+                      <li><img src="images/stitch/square-back.jpg" alt="Square"><span>Square</span></li>
                       <li><img src="images/stitch/sweet-heart.jpg" alt="Sweet Heart"><span>Sweet Heart</span></li>
                       <li><img src="images/stitch/back-chinese-collar.jpg" alt="Back Chinese Collar"><span>Back Chinese Collar</span></li>
                       <li><img src="images/stitch/simply-u.jpg" alt="Simply U"><span>Simply U</span></li>
@@ -2189,7 +2189,7 @@ if($stitch=="material")
                       <li><img src="images/stitch/cap-sleeves.jpg" alt="Cap Sleeves"><span>Cap Sleeves</span></li>
                       <li><img src="images/stitch/half-sleeves.jpg" alt="Half Sleeves"><span>Half Sleeves</span></li>
                       <li><img src="images/stitch/megan-sleeves.jpg" alt="Megan Sleeves"><span>Megan Sleeves</span></li>
-                      <li><img src="images/stitch/pointed.jpg" alt="Pointed"><span>Pointed</span></li>
+                      <li><img src="images/stitch/pointed-sleeves.jpg" alt="Pointed"><span>Pointed</span></li>
                       <li><img src="images/stitch/sleeveless.jpg" alt="Sleeveless"><span>Sleeveless</span></li>
                       <li><img src="images/stitch/tailored-sleeves.jpg" alt="Tailored Sleeves"><span>Tailored Sleeves</span></li>
                       <li><img src="images/stitch/elbow-sleeves.jpg" alt="Elbow Sleeves"><span>Elbow Sleeves</span></li>
@@ -2523,15 +2523,15 @@ if($stitch=="material")
                                 <div class="lftArr"></div>
                                 <div class="imgbox" id="2">
                                 <ul style="width: 4292px;">
-                                <li><img src="images/stitch/saree/chinese-collar.jpg" alt="Chinese Collar"><span>Chinese Collar</span></li>
+                                <li><img src="images/stitch/saree/chinese-collar-back.jpg" alt="Chinese Collar"><span>Chinese Collar</span></li>
                                 <li><img src="images/stitch/saree/bateau-or-boat.jpg" alt="Bateau or Boat"><span>Bateau or Boat</span></li>
                                 <li><img src="images/stitch/saree/curved-square.jpg" alt="Curved Square"><span>Curved Square</span></li>
-                                <li><img src="images/stitch/saree/scallop.jpg" alt="Scallop"><span>Scallop</span></li>
-                                <li><img src="images/stitch/saree/horse-shoe.jpg" alt="Horse Shoe"><span>Horse Shoe</span></li>
-                                <li><img src="images/stitch/saree/pointed.jpg" alt="Pointed"><span>Pointed</span></li>
+                                <li><img src="images/stitch/saree/scallop-back.jpg" alt="Scallop"><span>Scallop</span></li>
+                                <li><img src="images/stitch/saree/horse-shoe-back.jpg" alt="Horse Shoe"><span>Horse Shoe</span></li>
+                                <li><img src="images/stitch/saree/pointed-back.jpg" alt="Pointed"><span>Pointed</span></li>
                                 <li><img src="images/stitch/saree/rounded.jpg" alt="Rounded"><span>Rounded</span></li>
-                                <li><img src="images/stitch/saree/simple-u.jpg" alt="Simple U"><span>Simple U</span></li>
-                                <li><img src="images/stitch/saree/simple-v.jpg" alt="Simple V"><span>Simple V</span></li>
+                                <li><img src="images/stitch/saree/simple-u-back.jpg" alt="Simple U"><span>Simple U</span></li>
+                                <li><img src="images/stitch/saree/simple-v-back.jpg" alt="Simple V"><span>Simple V</span></li>
                                 <li><img src="images/stitch/saree/asymmetrical.jpg" alt="Asymmetrical"><span>Asymmetrical</span></li>
                                 <li><img src="images/stitch/saree/loop-with-button.jpg" alt="Loop with Button"><span>Loop with Button</span></li>
                                 <li><img src="images/stitch/saree/asymmetrical-scallop.jpg" alt="Asymmetrical Scallop"><span>Asymmetrical Scallop</span></li>
@@ -2546,11 +2546,11 @@ if($stitch=="material")
                                 <li><img src="images/stitch/saree/circular-with-string.jpg" alt="Circular with String"><span>Circular with String</span></li>
                                 <li><img src="images/stitch/saree/open-with-string.jpg" alt="Open with String"><span>Open with String</span></li>
                                 <li><img src="images/stitch/saree/four-string.jpg" alt="Four String"><span>Four String</span></li>
-                                <li><img src="images/stitch/saree/bustier.jpg" alt="Bustier"><span>Bustier</span></li>
-                                <li><img src="images/stitch/saree/butterfly-bustier.jpg" alt="Butterfly Bustier"><span>Butterfly Bustier</span></li>
+                                <li><img src="images/stitch/saree/bustier-back.jpg" alt="Bustier"><span>Bustier</span></li>
+                                <li><img src="images/stitch/saree/butterfly-bustier-back.jpg" alt="Butterfly Bustier"><span>Butterfly Bustier</span></li>
                                 <li><img src="images/stitch/saree/stringed-deep--neck.jpg" alt="Stringed Deep Neck"><span>Stringed Deep Neck</span></li>
-                                <li><img src="images/stitch/saree/off-shoulder.jpg" alt="Off Shoulder"><span>Off Shoulder</span></li>
-                                <li><img src="images/stitch/saree/one-shoulder.jpg" alt="One Shoulder"><span>One Shoulder</span></li>
+                                <li><img src="images/stitch/saree/off-shoulder-back.jpg" alt="Off Shoulder"><span>Off Shoulder</span></li>
+                                <li><img src="images/stitch/saree/one-shoulder-back.jpg" alt="One Shoulder"><span>One Shoulder</span></li>
                                 <li><img src="images/stitch/saree/backless.jpg" alt="Backless"><span>Backless</span></li>
 
                                 </ul>
@@ -2569,8 +2569,8 @@ if($stitch=="material")
                                 <li><img src="images/stitch/saree/half-sleeves.jpg" alt="Half Sleeves"><span>Half Sleeves</span></li>
                                 <li><img src="images/stitch/saree/short-sleeves.jpg" alt="Short Sleeves"><span>Short Sleeves</span></li>
                                 <li><img src="images/stitch/saree/sleeveless.jpg" alt="Sleeveless"><span>Sleeveless</span></li>
-                                <li><img src="images/stitch/saree/asymmetrical.jpg" alt="Asymmetrical"><span>Asymmetrical</span></li>
-                                <li><img src="images/stitch/saree/round-with-string.jpg" alt="Round with String"><span>Round with String</span></li>
+                                <li><img src="images/stitch/saree/asymmetrical-sleeves.jpg" alt="Asymmetrical"><span>Asymmetrical</span></li>
+                                <li><img src="images/stitch/saree/round-with-string-sleeves.jpg" alt="Round with String"><span>Round with String</span></li>
                                 <li><img src="images/stitch/saree/zig-zag-string.jpg" alt="Zig Zag String"><span>Zig Zag String</span></li>
                                 <li><img src="images/stitch/saree/flutter.jpg" alt="Flutter"><span>Flutter</span></li>
                                 <li><img src="images/stitch/saree/puff-sleeves.jpg" alt="Puff Sleeves"><span>Puff Sleeves</span></li>
@@ -2917,17 +2917,17 @@ if($stitch=="material")
                                 <div class="lftArr"></div>
                                 <div class="imgbox" id="2">
                                 <ul style="width: 4292px;">
-                                <li><img src="images/stitch/choli/chinese-collar.jpg" alt="Chinese Collar"><span>Chinese Collar</span></li>
+                                <li><img src="images/stitch/choli/chinese-collar-back.jpg" alt="Chinese Collar"><span>Chinese Collar</span></li>
                                 <li><img src="images/stitch/choli/bateau-or-boat.jpg" alt="Bateau or Boat"><span>Bateau or Boat</span></li>
                                 <li><img src="images/stitch/choli/curved-square.jpg" alt="Curved Square"><span>Curved Square</span></li>
-                                <li><img src="images/stitch/choli/horse-shoe.jpg" alt="Horse Shoe"><span>Horse Shoe</span></li>
-                                <li><img src="images/stitch/choli/pointed.jpg" alt="Pointed"><span>Pointed</span></li>
+                                <li><img src="images/stitch/choli/horse-shoe-back.jpg" alt="Horse Shoe"><span>Horse Shoe</span></li>
+                                <li><img src="images/stitch/choli/pointed-back.jpg" alt="Pointed"><span>Pointed</span></li>
                                 <li><img src="images/stitch/choli/rounded.jpg" alt="Rounded"><span>Rounded</span></li>
-                                <li><img src="images/stitch/choli/simple-u.jpg" alt="Simple U"><span>Simple U</span></li>
-                                <li><img src="images/stitch/choli/simple-v.jpg" alt="Simple V"><span>Simple V</span></li>
+                                <li><img src="images/stitch/choli/simple-u-back.jpg" alt="Simple U"><span>Simple U</span></li>
+                                <li><img src="images/stitch/choli/simple-v-back.jpg" alt="Simple V"><span>Simple V</span></li>
                                 <li><img src="images/stitch/choli/asymmetrical.jpg" alt="Asymmetrical"><span>Asymmetrical</span></li>
                                 <li><img src="images/stitch/choli/loop-with-button.jpg" alt="Loop with Button"><span>Loop with Button</span></li>
-                                <li><img src="images/stitch/choli/scallop.jpg" alt="Scallop"><span>Scallop</span></li>
+                                <li><img src="images/stitch/choli/scallop-back.jpg" alt="Scallop"><span>Scallop</span></li>
                                 <li><img src="images/stitch/choli/asymmetrical-scallop.jpg" alt="Asymmetrical Scallop"><span>Asymmetrical Scallop</span></li>
                                 <li><img src="images/stitch/choli/pointed-round.jpg" alt="Pointed Round"><span>Pointed Round</span></li>
                                 <li><img src="images/stitch/choli/round-with-string.jpg" alt="Pointed Round"><span>Round with String</span></li>
@@ -2940,11 +2940,11 @@ if($stitch=="material")
                                 <li><img src="images/stitch/choli/circular-with-string.jpg" alt="Circular with String"><span>Circular with String</span></li>
                                 <li><img src="images/stitch/choli/open-with-string.jpg" alt="Open with String"><span>Open with String</span></li>
                                 <li><img src="images/stitch/choli/four-string.jpg" alt="Four String"><span>Four String</span></li>
-                                <li><img src="images/stitch/choli/bustier.jpg" alt="Bustier"><span>Bustier</span></li>
-                                <li><img src="images/stitch/choli/butterfly-bustier.jpg" alt="Butterfly Bustier"><span>Butterfly Bustier</span></li>
+                                <li><img src="images/stitch/choli/bustier-back.jpg" alt="Bustier"><span>Bustier</span></li>
+                                <li><img src="images/stitch/choli/butterfly-bustier-back.jpg" alt="Butterfly Bustier"><span>Butterfly Bustier</span></li>
                                 <li><img src="images/stitch/choli/stringed-deep--neck.jpg" alt="Stringed Deep Neck"><span>Stringed Deep Neck</span></li>
-                                <li><img src="images/stitch/choli/off-shoulder.jpg" alt="Off Shoulder"><span>Off Shoulder</span></li>
-                                <li><img src="images/stitch/choli/one-shoulder.jpg" alt="One Shoulder"><span>One Shoulder</span></li>
+                                <li><img src="images/stitch/choli/off-shoulder-back.jpg" alt="Off Shoulder"><span>Off Shoulder</span></li>
+                                <li><img src="images/stitch/choli/one-shoulder-back.jpg" alt="One Shoulder"><span>One Shoulder</span></li>
                                 <li><img src="images/stitch/choli/backless.jpg" alt="Backless"><span>Backless</span></li>
 
                                 </ul>
@@ -2970,7 +2970,7 @@ if($stitch=="material")
                                 <li><img src="images/stitch/choli/lantern-sleeves.jpg" alt="Lantern Sleeves"><span>Lantern Sleeves</span></li>
                                 <li><img src="images/stitch/choli/puff-sleeves.jpg" alt="Puff Sleeves"><span>Puff Sleeves</span></li>
                                 <li><img src="images/stitch/choli/roll-up-sleeves.jpg" alt="Roll up Sleeves"><span>Roll up Sleeves</span></li>
-                                <li><img src="images/stitch/choli/round-with-string.jpg" alt="Round with String"><span>Round with String</span></li>
+                                <li><img src="images/stitch/choli/round-with-string-sleeves.jpg" alt="Round with String"><span>Round with String</span></li>
                                 <li><img src="images/stitch/choli/zig-zag-string.jpg" alt="Zig Zag String"><span>Zig Zag String</span></li>
                                 <li><img src="images/stitch/choli/bishop-sleeves.jpg" alt="Bishop Sleeves"><span>Bishop Sleeves</span></li>
                                 <li><img src="images/stitch/choli/trumpet-1.jpg" alt="Trumpet"><span>Trumpet 1</span></li>
