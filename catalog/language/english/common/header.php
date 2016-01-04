@@ -10,4 +10,6 @@ $_['text_account']        = 'My Account';
 $_['text_checkout']       = 'Checkout';
 $_['text_login']          = 'Login';
 $_['text_logout']         = 'Logout';
+$_['text_transaction']         = 'Transactions';
+$_['text_download']         = 'Downloads';
 ?>
