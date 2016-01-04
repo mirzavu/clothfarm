@@ -8030,3 +8030,271 @@ li img.active{
     clear: both;
     padding: 12px 3px 4px 32px;
 }
+
+.nav ul, #lang_sel ul, #wcml_currency_switcher ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#welcome-menu-login li.login-menu {
+  position: relative;
+}
+
+.nav li {
+  position: relative;
+}
+
+.nav ul, #lang_sel ul, #wcml_currency_switcher ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a, a:hover, a:visited {
+  text-decoration: none;
+  outline: 0 none !important;
+}
+
+#welcome-menu-login li.login-menu .submenu {
+  width: auto;
+}
+
+.submenu.clearfix {
+  border-color: #f2f2f2;
+}
+
+.nav div.submenu, .nav ul.children, #header .yit_cart_widget .widget_shopping_cart_content, #header .sbHolder .sbOptions, #topbar .widget_nav_menu ul.menu ul.sub-menu, #lang_sel li > ul, #wcml_currency_switcher ul li ul {
+  position: absolute;
+  background: #fff;
+  border: 1px solid;
+  border-bottom-width: 0;
+  -webkit-box-shadow: 1px 1.732px 3px 0px rgba( 0, 0, 0, 0.19 );
+  -moz-box-shadow: 1px 1.732px 3px 0px rgba( 0, 0, 0, 0.19 );
+  box-shadow: 1px 1.732px 3px 0px rgba( 0, 0, 0, 0.19 );
+  z-index: -1;
+  opacity: 0;
+  margin-top: -26px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+#welcome-menu-login .login-box {
+  min-width: 280px;
+  display: block;
+  padding: 10px 15px;
+  text-align: left;
+  text-transform: none;
+}
+
+#welcome-menu-login #customer_login {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+#welcome-menu-login .login-box form.login {
+  border: 0;
+  padding: 0;
+  background: none;
+}
+#welcome-menu-login .login-box label, #customer_login #wp-social-login-connect-with, #welcome-menu-login .ywsl-label {
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: none;
+}
+input[type="password"], input[type="text"], input[type="email"], input[type="tel"] {
+  height: 35px;
+  border-width: 1px;
+  border-style: solid;
+  padding: 0 10px;
+}
+input[type="text"], input[type="password"], input[type="email"], input[type="search"], input[type="submit"], textarea {
+  border-radius: 0;
+  border-style: solid;
+  -webkit-appearance: none;
+  box-shadow: none;
+}
+#welcome-menu-login .login-submit {
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+#welcome-menu-login input.button.button-login, #welcome-menu-login input.button.button-register {
+  float: right;
+}
+#welcome-menu-login .lost_password {
+  text-align: left;
+  line-height: 1.7em;
+  margin-bottom: 0 !important;
+}
+#welcome-menu-login .lost_password a {
+  text-transform: none !important;
+}
+#welcome-menu-login .wp-social-login-widget {
+  padding: 10px 15px;
+  text-align: center;
+  width: 100%;
+}
+
+#welcome-menu-login > ul > li.dropdown > a:after,
+.widget_product_categories ul.product-categories li i.icon-minus:after,
+.widget_product_categories ul.product-categories li i.icon-plus:after {
+    content: "\f107";
+    font-family: FontAwesome;
+    font-style: normal;
+    margin-left: 6px;
+    display: inline-block;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    transform:scale(0.8,1) translateZ(0px); /* W3C */
+    -webkit-transform:scale(0.8,1) translateZ(0px); /* Safari and Chrome */
+    -moz-transform:scale(0.8,1) translateZ(0px); /* Firefox */
+    -ms-transform:scale(0.8,1) translateZ(0px); /* IE 9 */
+    -o-transform:scale(0.8,1) translateZ(0px); /* Opera */
+
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#welcome-menu-login .login-box form.login{
+    border: 0;
+    padding: 0;
+    background: none;
+}
+
+#welcome-menu-login #customer_login {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+#welcome-menu-login .login-box label,
+#customer_login #wp-social-login-connect-with, #welcome-menu-login .ywsl-label {
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: none;
+}
+
+#welcome-menu-login input.button.button-login,
+#welcome-menu-login input.button.button-register{
+    float: right;
+}
+
+#welcome-menu-login .text_demo{
+    font-size: 12px;
+}
+
+#welcome-menu-login .login-submit {
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+#welcome-menu-login .lost_password {
+    text-align: left;
+    line-height: 1.7em;
+    margin-bottom: 0 !important;
+}
+
+#welcome-menu-login .lost_password a {
+    text-transform: none !important;
+}
+
+#welcome-menu-login .wp-social-login-widget {
+    padding: 10px 15px;
+    text-align: center;
+    width: 100%;
+}
+
+#topbar #welcome-menu-login i {
+    font-size: 14px;
+}
+
+#welcome-menu-login div.tooltip {
+    width: auto;
+}
+
+#welcome-menu-login div.tooltip-inner {
+    max-width: none;
+}
+
+#topbar-right .submenu,
+#topbar-right #lang_sel li > ul,
+#wcml_currency_switcher ul li ul {
+    left: -18px;
+}
+
+#topbar .nav > ul > li > .submenu,
+#lang_sel > ul > li > ul {
+    top: 34px;
+}
+
+.nav li.menu-item-has-children li.menu-item-has-children > a:after,
+#topbar .widget_nav_menu ul.menu ul.submenu li.menu-item-has-children > a:after,
+.nav.vertical li.menu-item-has-children > a:after {
+    transform:rotate(-90deg) scale(0.8,1) translateZ(0px); /* W3C */
+    -webkit-transform:rotate(-90deg) scale(0.8,1) translateZ(0px); /* Safari and Chrome */
+    -moz-transform:rotate(-90deg) scale(0.8,1) translateZ(0px); /* Firefox */
+    -ms-transform:rotate(-90deg) scale(0.8,1) translateZ(0px); /* IE 9 */
+    -o-transform:rotate(-90deg) scale(0.8,1) translateZ(0px); /* Opera */
+}
+
+.nav div.submenu,
+.nav ul.children,
+#header .yit_cart_widget .widget_shopping_cart_content,
+#header .sbHolder .sbOptions,
+#topbar .widget_nav_menu ul.menu ul.sub-menu,
+#lang_sel li > ul,
+#wcml_currency_switcher ul li ul {
+    position: absolute;
+    background: #fff;
+    border: 1px solid;
+    border-bottom-width: 0;
+    -webkit-box-shadow: 1px 1.732px 3px 0px rgba( 0, 0, 0, 0.19 );
+    -moz-box-shadow: 1px 1.732px 3px 0px rgba( 0, 0, 0, 0.19 );
+    box-shadow: 1px 1.732px 3px 0px rgba( 0, 0, 0, 0.19 );
+    z-index: -1;
+    opacity: 0;
+    margin-top: -26px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-transition-delay: 0.3s; /* Safari */
+    transition-delay: 0.3s;
+}
+
+#nav .level-1 > ul > li:first-child > div.submenu,
+#nav > ul > li:first-child > ul.children {
+    margin-left: -18px;
+}
+
+.nav div.submenu ul,
+.nav ul.children,
+#topbar .widget_nav_menu ul.menu ul.sub-menu,
+#lang_sel li > ul,
+#wcml_currency_switcher ul li ul {
+    padding: 16px 0 !important;
+}
+
+.nav li:hover > div.submenu,
+.nav li:hover > ul.children,
+#header .yit_cart_widget:hover .widget_shopping_cart_content,
+#header .yit_cart_widget .widget_shopping_cart_content.active,
+#header .sbHolder .sbOptions,
+#header .shop-by-category:hover > div.submenu,
+#topbar .widget_nav_menu ul.menu li:hover > ul.sub-menu,
+#lang_sel li:hover > ul,
+#wcml_currency_switcher ul li ul {
+    z-index: 10000;
+    opacity: 1;
+    margin-top: 0;
+}
+
