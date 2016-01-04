@@ -8,4 +8,6 @@ $_['text_welcome']        = 'Welcome visitor you can <a href="%s" data-dropdown=
 $_['text_logged']         = 'You are logged in as <a href="%s">%s</a> <b>(</b> <a href="%s">Logout</a> <b>)</b>';
 $_['text_account']        = 'My Account';
 $_['text_checkout']       = 'Checkout';
+$_['text_login']          = 'Login';
+$_['text_logout']         = 'Logout';
 ?>
