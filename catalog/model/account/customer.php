@@ -77,8 +77,8 @@ class ModelAccountCustomer extends Model {
 			
 			
 			$mail->setTo($this->config->get('config_email'));
-			$mail->setFrom($data['email']);
-			$mail->setSender($data['firstname']);
+			$mail->setFrom($this->config->get('config_email')); 
+			$mail->setSender($this->config->get('config_name'));
 			$mail->setSubject($this->language->get('text_new_customer'));
 			$mail->setText($message);
 			$mail->send();
