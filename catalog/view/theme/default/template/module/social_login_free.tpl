@@ -23,6 +23,7 @@
   margin: 2px;
   margin-bottom: 10px;
   padding:0px;
+  width:100%;
 }
 #social_login_free  .dsl-button:hover{
   text-decoration: none;
@@ -59,7 +60,7 @@
 }
 #social_login_free .dsl-button.dsl-button-huge .r-side {
   font-size: 15px;
-  padding: 12px 20px 11px 20px;
+  padding: 12px 20px 11px 51px;
 }
 #social_login_free .dsl-button.dsl-button-large .l-side {
   font-size: 20px;
@@ -103,8 +104,8 @@ a [class*="dsl-icon-"],
   opacity: 0
 }
 </style>
-<div id="social_login_free">
-  <span class="dsl-label dsl-label-<?php echo $size; ?>"><?php echo $button_sign_in; ?></span>
+<div id="social_login_free" class="well">
+  <h2>Social Login</h2>
   <?php foreach($providers as $key => $provider){ ?><?php if ($provider['enabled']) { ?><a id="dsl_<?php echo $provider['id']; ?>_button" class="dsl-button dsl-button-<?php echo $size; ?>" href="index.php?route=module/social_login_free/provider_login&provider=<?php echo $key; ?>"><span class="l-side"><span class="dsl-icon dsl-icon-<?php echo $provider['id']; ?>"></span></span><span class="r-side"><?php echo $provider['heading']; ?></span></a><?php }  ?><?php } ?>
 </div>
 <script>

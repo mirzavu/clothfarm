@@ -21,7 +21,7 @@
 }
 
 .dsl-icon-facebook:before {
-  content: "b";
+  content: "f";
 }
 .dsl-icon-linkedin:before {
   content: "a";
@@ -33,7 +33,7 @@
   content: "d";
 }
 .dsl-icon-google:before {
-  content: "e";
+  content: "g";
 }
 .dsl-icon-mailru:before {
   content: "i";

@@ -41,7 +41,8 @@
 
     <link href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700" rel="stylesheet" type="text/css" />
 
-    <link href="catalog/view/theme/<?php echo $config->get('config_template'); ?>/stylesheet/common_styles.css" rel="stylesheet">
+    <link href="catalog/view/theme/<?php echo $config->get('config_template'); ?>/stylesheet/common_styles.css" rel="stylesheet"> 
+    <link href="catalog/view/theme/<?php echo $config->get('config_template'); ?>/stylesheet/bootstrap.min.css" rel="stylesheet"> 
 
 
     <?php if (isset($customisation_colors["layout_skin"][$store_id]) && $customisation_colors["layout_skin"][$store_id] == 'tools') : ?>
