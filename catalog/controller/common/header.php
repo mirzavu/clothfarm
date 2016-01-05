@@ -127,43 +127,8 @@ class ControllerCommonHeader extends Controller {
 		$data['currency'] = $this->load->controller('common/currency');
 		$data['search'] = $this->load->controller('common/search');
 		$data['cart'] = $this->load->controller('common/cart');
-
-					//add quick login
-			$this->load->language('account/login');
-			$data['heading_title'] = $this->language->get('heading_title');
-			$data['text_returning_customer'] = $this->language->get('text_returning_customer');
-			$data['text_forgotten'] = $this->language->get('text_forgotten');
-			$data['entry_email'] = $this->language->get('entry_email');
-			$data['entry_password'] = $this->language->get('entry_password');
-
-			$data['button_login'] = $this->language->get('button_login');
-			
-			// Added strpos check to pass McAfee PCI compliance test (http://forum.opencart.com/viewtopic.php?f=10&t=12043&p=151494#p151295)
-			if (isset($this->request->post['redirect']) && (strpos($this->request->post['redirect'], $this->config->get('config_url')) !== false || strpos($this->request->post['redirect'], $this->config->get('config_ssl')) !== false)) {
-				$data['redirect'] = $this->request->post['redirect'];
-			} elseif (isset($this->session->data['redirect'])) {
-				$data['redirect'] = $this->session->data['redirect'];
-
-				unset($this->session->data['redirect']);		  	
-			} else {
-				$data['redirect'] = '';
-			}
-			
-			if (isset($this->request->post['email'])) {
-			$data['email'] = $this->request->post['email'];
-			} else {
-				$data['email'] = '';
-			}
-
-			if (isset($this->request->post['password'])) {
-				$data['password'] = $this->request->post['password'];
-			} else {
-				$data['password'] = '';
-			}
-			
-			$data['action'] = $this->url->link('account/login', '', 'SSL');
-			$data['forgotten'] = $this->url->link('account/forgotten', '', 'SSL');
-
+		$data['action'] = $this->url->link('account/login', '', 'SSL');
+				
 		// For page specific css
 		if (isset($this->request->get['route'])) {
 			if (isset($this->request->get['product_id'])) {

@@ -1082,7 +1082,7 @@ ul.sitemap.styled-list.circle ul ul li:before {
     background: #fff;
     top: 0;
     margin-bottom: 0;
-    z-index: 9990;
+    z-index: 9988;
     border: 0 !important
 }
 .navbar .background {
@@ -8037,6 +8037,11 @@ li img.active{
   list-style: none;
 }
 
+#welcome-menu-login{
+float:left;
+font-size: 14px;
+}
+
 #welcome-menu-login li.login-menu {
   position: relative;
 }
@@ -8058,6 +8063,7 @@ a, a:hover, a:visited {
 
 #welcome-menu-login li.login-menu .submenu {
   width: auto;
+  border-color: #f2f2f2;
 }
 
 .submenu.clearfix {
@@ -8285,16 +8291,33 @@ input[type="text"], input[type="password"], input[type="email"], input[type="sea
 }
 
 .nav li:hover > div.submenu,
-.nav li:hover > ul.children,
-#header .yit_cart_widget:hover .widget_shopping_cart_content,
-#header .yit_cart_widget .widget_shopping_cart_content.active,
-#header .sbHolder .sbOptions,
-#header .shop-by-category:hover > div.submenu,
-#topbar .widget_nav_menu ul.menu li:hover > ul.sub-menu,
-#lang_sel li:hover > ul,
-#wcml_currency_switcher ul li ul {
+.nav li:hover > ul.children{
     z-index: 10000;
     opacity: 1;
     margin-top: 0;
 }
 
+.form-group input:focus {
+    border-color: #C99C6D;
+    box-shadow: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+.wp-social-login-widget {
+    padding: 7px 12px;
+    border: 1px solid #e7e7e7;
+}
+.wp-social-login-connect-with {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-right: 25px;
+}
+.wp-social-login-widget > div {
+    display: inline-block;
+}
+#wp-social-login-connect-with{font-weight: bold}#wp-social-login-connect-options{padding:10px}#wp-social-login-connect-options a{text-decoration: none}#wp-social-login-connect-options img{border:0 none}.wsl_connect_with_provider{}

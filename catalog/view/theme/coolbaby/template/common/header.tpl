@@ -497,8 +497,8 @@ footer .open .footer-navbar .arrow,footer .footer-navbar .arrow,footer .footer-n
 <?php endif; ?>
 
 <script src="catalog/view/javascript/common.js" type="text/javascript"></script>
-<link type="text/css" rel="stylesheet" href="catalog/view/theme/default/stylesheet/jquery.dropdown.css" />
-<script type="text/javascript" src="catalog/view/theme/default/stylesheet/jquery.dropdown.js"></script>
+<link type="text/css" rel="stylesheet" href="catalog/view/theme/default/stylesheet/jquery.dropdowns.css" />
+<script type="text/javascript" src="catalog/view/theme/default/stylesheet/jquery.dropdowns.js"></script>
 
 <?php if (isset($ajaxadvancesearch_status) && $ajaxadvancesearch_status){ ?>
 <!--
@@ -967,7 +967,7 @@ $(document).ready(function(){
                 <div class="row">
                     <?php echo $loader->controller('common/content_blog'); ?>
 
-                    <div class="col-xs-5 col-sm-3 col-md-2 top-link pull-right">
+                    <div class="col-xs-5 col-sm-3 col-md-2 top-link pull-right" style="width:23%">
                         
                                  <div id="welcome-menu-login" class="nav">
                                     <ul id="menu-welcome-login">
@@ -977,10 +977,10 @@ $(document).ready(function(){
                                              <div class="clearfix login-box with_registration">
                                                 <div id="customer_login">
                                                    <div class="customer-login-box customer-login-box1">
-                                                      <form method="post" class="login">
+                                                      <form action="<?= $action?>" method="post" class="login">
                                                          <div class="form-group">
                                                             <label for="username">Username or email address <span class="required">*</span></label>
-                                                            <input type="text" class="form-control" name="username" id="username">
+                                                            <input type="text" class="form-control" name="email" id="username">
                                                          </div>
                                                          <div class="form-group">
                                                             <label for="password">Password <span class="required">*</span></label>
@@ -1003,14 +1003,11 @@ $(document).ready(function(){
                                                          <div class="wp-social-login-widget">
                                                             <div class="wp-social-login-connect-with">Connect with:</div>
                                                             <div class="wp-social-login-provider-list">
-                                                               <a rel="nofollow" href="http://live.yithemes.com/nielsen/wp-login.php?action=wordpress_social_authenticate&mode=login&provider=Facebook&redirect_to=http%3A%2F%2Flive.yithemes.com%2Fnielsen%2Fmy-account%2F" title="Connect with Facebook" class="wp-social-login-provider wp-social-login-provider-facebook" data-provider="Facebook">
-                                                               <img alt="Facebook" title="Connect with Facebook" src="./My Account   Nielsen_files/facebook.png">
+                                                               <a rel="nofollow" href="index.php?route=module/social_login_free/provider_login&provider=Facebook" title="Connect with Facebook" class="wp-social-login-provider wp-social-login-provider-facebook" data-provider="Facebook">
+                                                               <img alt="Facebook" title="Connect with Facebook" src="images/icons/facebook.png">
                                                                </a>
-                                                               <a rel="nofollow" href="http://live.yithemes.com/nielsen/wp-login.php?action=wordpress_social_authenticate&mode=login&provider=Google&redirect_to=http%3A%2F%2Flive.yithemes.com%2Fnielsen%2Fmy-account%2F" title="Connect with Google" class="wp-social-login-provider wp-social-login-provider-google" data-provider="Google">
-                                                               <img alt="Google" title="Connect with Google" src="./My Account   Nielsen_files/google.png">
-                                                               </a>
-                                                               <a rel="nofollow" href="http://live.yithemes.com/nielsen/wp-login.php?action=wordpress_social_authenticate&mode=login&provider=Twitter&redirect_to=http%3A%2F%2Flive.yithemes.com%2Fnielsen%2Fmy-account%2F" title="Connect with Twitter" class="wp-social-login-provider wp-social-login-provider-twitter" data-provider="Twitter">
-                                                               <img alt="Twitter" title="Connect with Twitter" src="./My Account   Nielsen_files/twitter.png">
+                                                               <a rel="nofollow" href="index.php?route=module/social_login_free/provider_login&provider=Google" title="Connect with Google" class="wp-social-login-provider wp-social-login-provider-google" data-provider="Google">
+                                                               <img alt="Google" title="Connect with Google" src="images/icons/google.png">
                                                                </a>
                                                             </div>
                                                             <div class="wp-social-login-widget-clearing"></div>
@@ -1581,27 +1578,7 @@ $(document).ready(function(){
 
 
     </header>
-               <div id="dropdown-login" class="dropdown dropdown-tip">
-                <div class="dropdown-panel">
-                    <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
-                    <div class="content">
-                      <b><?php echo $entry_email; ?></b><br />
-                      <input type="text" name="email" value="<?php echo $email; ?>" />
-                      <br />
-                      <br />
-                      <b><?php echo $entry_password; ?></b><br />
-                      <input type="password" name="password" value="<?php echo $password; ?>" />
-                      <br />
-                      <a href="<?php echo $forgotten; ?>"><?php echo $text_forgotten; ?></a><br />
-                      <br />
-                      <input type="submit" value="<?php echo $button_login; ?>" class="button" />
-                      <?php if ($redirect) { ?>
-                      <input type="hidden" name="redirect" value="<?php echo $redirect; ?>" />
-                      <?php } ?>
-                    </div>
-                  </form>
-                </div>
-            </div>
+
     <div id="notification"></div>
 
 
