@@ -480,8 +480,18 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                     <a style="display: none" id="measure-trigger" class="mam2" href="#measure"></a>
                     <div style="display: none">
                               <div id="stitch-pop">
-                                <div style="float:left" id="stitch-ready"><button class="btn btn-cool btn-lg" id="button-stitch"><i class="icon icon flaticon-star129"></i>Stitch Farm</button></div>
-                                <div style="float:left;padding-left:15px;" id="nostitch"><button class="btn btn-cool btn-lg" id="button-no-stitch"><i class="icon icon"></i>Continue to Checkout</button></div>
+                                  <div id="popup-box2">
+                                     <form class="form-inline" id="signup1" action="/clothfarm/index.php" method="get">
+                                        <div>
+                                           <button id="stitch-material" style="width: 208px;height: 46px;" class="btn-cool invert">
+                                           <span class="icon flaticon-new78"></span>
+                                           STITCH FARM                </button>
+                                           <button id="button-no-stitch" style="width: 208px;height: 46px;margin-left: 68px;" name="submit" type="submit" class="btn-cool invert">
+                                           <span class="icon flaticon-new78"></span>
+                                           Continue to Checkout                </button>
+                                        </div>
+                                     </form>
+                                  </div>
                               </div>
                     </div>
                     <button style="display: none" class="btn btn-cool btn-lg" type="submit" id="button-cart" data-loading-text="<?php echo $text_loading; ?>"><i class="icon flaticon-shopping66"></i><?php echo $button_cart; ?></button>
@@ -495,8 +505,18 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                     <a style="display: none" id="measure-trigger" class="mam2" href="#measure"></a>
                     <div style="display: none">
                               <div id="stitch-pop">
-                                <div style="float:left" id="stitch-material"><button class="btn btn-cool btn-lg" id="button-stitch"><i class="icon icon flaticon-star129"></i>Stitch Farm</button></div>
-                                <div style="float:left;padding-left:15px;" id="nostitch"><button class="btn btn-cool btn-lg" id="button-no-stitch"><i class="icon icon"></i>Continue to Checkout</button></div>
+                                  <div id="popup-box2">
+                                     <form class="form-inline" id="signup1" action="/clothfarm/index.php" method="get">
+                                        <div>
+                                           <button id="stitch-material" style="width: 208px;height: 46px;" class="btn-cool invert">
+                                           <span class="icon flaticon-new78"></span>
+                                           STITCH FARM                </button>
+                                           <button id="button-no-stitch" style="width: 208px;height: 46px;margin-left: 68px;" name="submit" type="submit" class="btn-cool invert">
+                                           <span class="icon flaticon-new78"></span>
+                                           Continue to Checkout                </button>
+                                        </div>
+                                     </form>
+                                  </div>
                               </div>
                     </div>
                     <button style="display: none" class="btn btn-cool btn-lg" type="submit" id="button-cart" data-loading-text="<?php echo $text_loading; ?>"><i class="icon flaticon-shopping66"></i><?php echo $button_cart; ?></button>

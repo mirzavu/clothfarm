@@ -369,8 +369,8 @@ $(document).ready(function() {
         scrollTop: $("#content").offset().top},
         'slow');
 		  },
-		maxWidth	: 412,
-		maxHeight	: 300,
+		maxWidth	: 650,
+		maxHeight	: 400,
 		fitToView	: false,
 		width		: '70%',
 		height		: '70%',

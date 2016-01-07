@@ -967,12 +967,13 @@ $(document).ready(function(){
                 <div class="row">
                     <?php echo $loader->controller('common/content_blog'); ?>
 
-                    <div class="col-xs-5 col-sm-3 col-md-2 top-link pull-right" style="width:23%">
+                    <div class="col-xs-5 col-sm-3 col-md-2 top-link pull-right" style="width:30%">
+                                <div style="float:left;display:inline;padding-right: inherit;"><span style="font-size: 14px;">Sell with us</span></div>
                                 <?php if (!$logged) { ?>
                                  <div id="welcome-menu-login" class="nav">
                                     <ul id="menu-welcome-login">
                                        <li class="menu-item login-menu dropdown">
-                                          <a href="./My Account   Nielsen_files/My Account   Nielsen.html">Login/Register</a>
+                                          <a href="./My Account   Nielsen_files/My Account   Nielsen.html">Login/Register</span></a>
                                           <div class="submenu clearfix">
                                              <div class="clearfix login-box with_registration">
                                                 <div id="customer_login">
