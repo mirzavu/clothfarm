@@ -8070,26 +8070,6 @@ a, a:hover, a:visited {
   border-color: #f2f2f2;
 }
 
-.nav div.submenu, .nav ul.children, #header .yit_cart_widget .widget_shopping_cart_content, #header .sbHolder .sbOptions, #topbar .widget_nav_menu ul.menu ul.sub-menu, #lang_sel li > ul, #wcml_currency_switcher ul li ul {
-  position: absolute;
-  background: #fff;
-  border: 1px solid;
-  border-bottom-width: 0;
-  -webkit-box-shadow: 1px 1.732px 3px 0px rgba( 0, 0, 0, 0.19 );
-  -moz-box-shadow: 1px 1.732px 3px 0px rgba( 0, 0, 0, 0.19 );
-  box-shadow: 1px 1.732px 3px 0px rgba( 0, 0, 0, 0.19 );
-  z-index: -1;
-  opacity: 0;
-  margin-top: -26px;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  -webkit-transition-delay: 0.3s;
-  transition-delay: 0.3s;
-}
-
 #welcome-menu-login .login-box {
   min-width: 280px;
   display: block;
@@ -8267,6 +8247,7 @@ input[type="text"], input[type="password"], input[type="email"], input[type="sea
     box-shadow: 1px 1.732px 3px 0px rgba( 0, 0, 0, 0.19 );
     z-index: -1;
     opacity: 0;
+    visibility: hidden;
     margin-top: -26px;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
@@ -8295,6 +8276,7 @@ input[type="text"], input[type="password"], input[type="email"], input[type="sea
     z-index: 10000;
     opacity: 1;
     margin-top: 0;
+    visibility: visible;
 }
 
 .form-group input:focus {

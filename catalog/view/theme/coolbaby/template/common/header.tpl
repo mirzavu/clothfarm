@@ -968,7 +968,7 @@ $(document).ready(function(){
                     <?php echo $loader->controller('common/content_blog'); ?>
 
                     <div class="col-xs-5 col-sm-3 col-md-2 top-link pull-right" style="width:23%">
-                        
+                                <?php if (!$logged) { ?>
                                  <div id="welcome-menu-login" class="nav">
                                     <ul id="menu-welcome-login">
                                        <li class="menu-item login-menu dropdown">
@@ -1021,6 +1021,7 @@ $(document).ready(function(){
                                        </li>
                                     </ul>
                                  </div>
+                                 <?php } ?>
                         <?php if (!isset($customisation_general["search_block"][$store_id]) || $customisation_general["search_block"][$store_id] != 0) : ?>
                         <div class="btn-outer btn-search">
                             <a class="btn btn-xs btn-default" data-toggle="dropdown"><span class="icon icon-lg flaticon-zoom45"></span></a>
