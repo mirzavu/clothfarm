@@ -989,7 +989,7 @@ $(document).ready(function(){
                                                          </div>
                                                          <div class="form-group login-submit">
                                                             <input type="hidden" id="_wpnonce" name="_wpnonce" value="80869806a5"><input type="hidden" name="_wp_http_referer" value="/nielsen/my-account/">                                                    <input type="submit" class="button btn btn-flat-red button-login" name="login" value="Login">
-                                                            <p class="lost_password">
+                                                            <p class="lost_password" style="font-size: 13px;">
                                                                New Customer ? <a class="signup" href="./My Account   Nielsen_files/My Account   Nielsen.html">Sign up</a>
                                                             </p>
                                                             <!-- <label for="rememberme" class="inline">

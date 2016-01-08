@@ -8062,7 +8062,7 @@ a, a:hover, a:visited {
 }
 
 #welcome-menu-login li.login-menu .submenu {
-  width: auto;
+  width: 300px;
   border-color: #f2f2f2;
 }
 
