@@ -8092,18 +8092,7 @@ a, a:hover, a:visited {
   font-weight: 400;
   text-transform: none;
 }
-input[type="password"], input[type="text"], input[type="email"], input[type="tel"] {
-  height: 35px;
-  border-width: 1px;
-  border-style: solid;
-  padding: 0 10px;
-}
-input[type="text"], input[type="password"], input[type="email"], input[type="search"], input[type="submit"], textarea {
-  border-radius: 0;
-  border-style: solid;
-  -webkit-appearance: none;
-  box-shadow: none;
-}
+
 #welcome-menu-login .login-submit {
   margin-top: 25px;
   margin-bottom: 20px;
@@ -8128,7 +8117,6 @@ input[type="text"], input[type="password"], input[type="email"], input[type="sea
 #welcome-menu-login > ul > li.dropdown > a:after,
 .widget_product_categories ul.product-categories li i.icon-minus:after,
 .widget_product_categories ul.product-categories li i.icon-plus:after {
-    content: "\f107";
     font-family: FontAwesome;
     font-style: normal;
     margin-left: 6px;

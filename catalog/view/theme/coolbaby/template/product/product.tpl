@@ -486,7 +486,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                                            <button id="stitch-material" style="width: 208px;height: 46px;" class="btn-cool invert">
                                            <span class="icon flaticon-new78"></span>
                                            STITCH FARM                </button>
-                                           <button id="button-no-stitch" style="width: 208px;height: 46px;margin-left: 68px;" name="submit" type="submit" class="btn-cool invert">
+                                           <button id="no-stitch" style="width: 208px;height: 46px;margin-left: 68px;" name="submit" type="submit" class="btn-cool invert">
                                            <span class="icon flaticon-new78"></span>
                                            Continue to Checkout                </button>
                                         </div>
@@ -511,7 +511,7 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                                            <button id="stitch-material" style="width: 208px;height: 46px;" class="btn-cool invert">
                                            <span class="icon flaticon-new78"></span>
                                            STITCH FARM                </button>
-                                           <button id="button-no-stitch" style="width: 208px;height: 46px;margin-left: 68px;" name="submit" type="submit" class="btn-cool invert">
+                                           <button id="no-stitch" style="width: 208px;height: 46px;margin-left: 68px;" name="submit" type="submit" class="btn-cool invert">
                                            <span class="icon flaticon-new78"></span>
                                            Continue to Checkout                </button>
                                         </div>

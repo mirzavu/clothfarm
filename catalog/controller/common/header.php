@@ -128,6 +128,7 @@ class ControllerCommonHeader extends Controller {
 		$data['search'] = $this->load->controller('common/search');
 		$data['cart'] = $this->load->controller('common/cart');
 		$data['action'] = $this->url->link('account/login', '', 'SSL');
+		$data['seller_url'] = $this->url->link('account/seller/pricing', '');
 				
 		// For page specific css
 		if (isset($this->request->get['route'])) {

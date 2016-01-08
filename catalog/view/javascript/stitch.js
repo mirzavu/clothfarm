@@ -395,7 +395,7 @@ $(document).ready(function() {
    }
 	});
 
-	$('#nostitch').on("click",function(){
+	$('#no-stitch').on("click",function(){
 		$.fancybox.close();
 		$('#button-cart').click();
 	});
