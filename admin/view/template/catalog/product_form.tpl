@@ -28,7 +28,22 @@
       </div>
       <div class="panel-body">
         <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" id="form-product" class="form-horizontal">
-
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#tab-general" data-toggle="tab"><?php echo $tab_general; ?></a></li>
+            <li><a href="#tab-data" data-toggle="tab"><?php echo $tab_data; ?></a></li>
+            <li><a href="#tab-links" data-toggle="tab"><?php echo $tab_links; ?></a></li>
+            <li><a href="#tab-attribute" data-toggle="tab"><?php echo $tab_attribute; ?></a></li>
+            <li><a href="#tab-option" data-toggle="tab"><?php echo $tab_option; ?></a></li>
+            <li><a href="#tab-recurring" data-toggle="tab"><?php echo $tab_recurring; ?></a></li>
+            <li><a href="#tab-discount" data-toggle="tab"><?php echo $tab_discount; ?></a></li>
+            <li><a href="#tab-special" data-toggle="tab"><?php echo $tab_special; ?></a></li>
+            <li><a href="#tab-image" data-toggle="tab"><?php echo $tab_image; ?></a></li>
+            <li><a href="#tab-reward" data-toggle="tab"><?php echo $tab_reward; ?></a></li>
+            <li><a href="#tab-design" data-toggle="tab"><?php echo $tab_design; ?></a></li>
+			
+			<li><a href="#tab-shipping" data-toggle="tab"><?php echo 'Shipping'; ?></a></li>
+			
+          </ul>
           <div class="tab-content">
             <div class="tab-pane active" id="tab-general">
               <ul class="nav nav-tabs" id="language">
@@ -84,8 +99,8 @@
                 </div>
                 <?php } ?>
               </div>
-
-              <!-- Tab data-->
+            </div>
+            <div class="tab-pane" id="tab-data">
               <div class="form-group">
                 <label class="col-sm-2 control-label" for="input-image"><?php echo $entry_image; ?></label>
                 <div class="col-sm-10">
@@ -349,9 +364,9 @@
                   <input type="text" name="sort_order" value="<?php echo $sort_order; ?>" placeholder="<?php echo $entry_sort_order; ?>" id="input-sort-order" class="form-control" />
                 </div>
               </div>
-
-              <!-- Tab Links-->
-                            <div class="form-group">
+            </div>
+            <div class="tab-pane" id="tab-links">
+              <div class="form-group">
                 <label class="col-sm-2 control-label" for="input-manufacturer"><span data-toggle="tooltip" title="<?php echo $help_manufacturer; ?>"><?php echo $entry_manufacturer; ?></span></label>
                 <div class="col-sm-10">
                   <input type="text" name="manufacturer" value="<?php echo $manufacturer ?>" placeholder="<?php echo $entry_manufacturer; ?>" id="input-manufacturer" class="form-control" />
@@ -441,9 +456,9 @@
                   </div>
                 </div>
               </div>
-
-              <!-- Tab attribute-->
-                            <div class="table-responsive">
+            </div>
+            <div class="tab-pane" id="tab-attribute">
+              <div class="table-responsive">
                 <table id="attribute" class="table table-striped table-bordered table-hover">
                   <thead>
                     <tr>
@@ -476,8 +491,8 @@
                   </tfoot>
                 </table>
               </div>
-               <!-- Tab Option-->
-               <br>
+            </div>
+            <div class="tab-pane" id="tab-option">
               <div class="row">
                 <div class="col-sm-2">
                   <ul class="nav nav-pills nav-stacked" id="option">
@@ -680,9 +695,9 @@
                   </div>
                 </div>
               </div>
-              <br>
-              <!-- Tab recurring-->
-                            <div class="table-responsive">
+            </div>
+            <div class="tab-pane" id="tab-recurring">
+              <div class="table-responsive">
                 <table class="table table-striped table-bordered table-hover">
                   <thead>
                     <tr>
@@ -727,9 +742,9 @@
                   </tfoot>
                 </table>
               </div>
-
-              <!--Tab discount-->
-                           <div class="table-responsive">
+            </div>
+            <div class="tab-pane" id="tab-discount">
+              <div class="table-responsive">
                 <table id="discount" class="table table-striped table-bordered table-hover">
                   <thead>
                     <tr>
@@ -781,8 +796,8 @@
                   </tfoot>
                 </table>
               </div>
-
-              <!--Tab special-->
+            </div>
+            <div class="tab-pane" id="tab-special">
               <div class="table-responsive">
                 <table id="special" class="table table-striped table-bordered table-hover">
                   <thead>
@@ -833,9 +848,9 @@
                   </tfoot>
                 </table>
               </div>
-
-              <!--Tab image-->
-                            <div class="table-responsive">
+            </div>
+            <div class="tab-pane" id="tab-image">
+              <div class="table-responsive">
                 <table id="images" class="table table-striped table-bordered table-hover">
                   <thead>
                     <tr>
@@ -863,9 +878,9 @@
                   </tfoot>
                 </table>
               </div>
-
-              <!-- Tab reward-->
-                            <div class="form-group">
+            </div>
+            <div class="tab-pane" id="tab-reward">
+              <div class="form-group">
                 <label class="col-lg-2 control-label" for="input-points"><span data-toggle="tooltip" title="<?php echo $help_points; ?>"><?php echo $entry_points; ?></span></label>
                 <div class="col-lg-10">
                   <input type="text" name="points" value="<?php echo $points; ?>" placeholder="<?php echo $entry_points; ?>" id="input-points" class="form-control" />
@@ -889,8 +904,8 @@
                   </tbody>
                 </table>
               </div>
-
-              <!--Tab design-->
+            </div>
+            <div class="tab-pane" id="tab-design">
               <div class="table-responsive">
                 <table class="table table-bordered table-hover">
                   <thead>
@@ -931,103 +946,85 @@
                   </tbody>
                 </table>
               </div>
-
-              <!--Tab shipping--> 
-
-              <!--<ul class="nav nav-tabs">
-                  <li class="active"><a href="#" data-toggle="tab" aria-expanded="true">Shipping</a></li>
-              </ul>    -->
-              <div class="table-responsive">
-                 <div class="form-group  required">
-                    <label class="col-lg-2 control-label" for="input-points">
-                    <span data-toggle="tooltip" title="Select the shiping port from where the product will be shipped">
-                    Shipping Port</span>
-                    </label>
-                    <div class="col-lg-10">
-                       <select name="shipping_port" id="selectport" class="form-control">
-                          <option value="">Select port</option>
-                          <option value="1" <?php if(count($shipping_port)>0){if($shipping_port['port']=='1'){ echo 'Selected="selected"';  } }?>  >India</option>
-                          <option value="2" <?php if(count($shipping_port)>0){if($shipping_port['port']=='2'){ echo 'Selected="selected"';  } }?> >UAE</option>
-                       </select>
-                       <?php if ($error_shipping_port) { ?>
-                       <div class="text-danger"><?php echo $error_shipping_port; ?></div>
-                       <?php } ?>
-                    </div>
-                 </div>
-                 <div class="table-responsive">
-                    <table class="table table-bordered table-hover" id='ship_cost'>
-                       <thead>
-                          <tr>
-                             <td class="text-left">Shipping Option</td>
-                             <td class="text-left">Cost (AED)</td>
-                          </tr>
-                       </thead>
-                       <tbody>
-                          <?php 
-                             if(count($shipping_port)>0){
-                              if($shipping_port['port']=='1'){ ?>
-                          <tr>
-                             <td class="text-left" >India -> Other GCC</td>
-                             <td class="text-right"><input type="text" name="shipcost1" placeholder="Value in AED" value="<?php echo $shipping_port['ship1']; ?>" class="form-control" /></td>
-                          </tr>
-                          <tr>
-                             <td class="text-left" >India -> UAE</td>
-                             <td class="text-right"><input type="text" name="shipcost2" placeholder="Value in AED" value="<?php echo $shipping_port['ship2']; ?>" class="form-control" /></td>
-                          </tr>
-                          <?php }else{ ?>
-                          <tr>
-                             <td class="text-left" >UAE -> Other GCC</td>
-                             <td class="text-right"><input type="text" name="shipcost1" placeholder="Value in AED" value="<?php echo $shipping_port['ship1']; ?>" class="form-control" /></td>
-                          </tr>
-                          <tr>
-                             <td class="text-left" >UAE -> India</td>
-                             <td class="text-right"><input type="text" name="shipcost2" placeholder="Value in AED" value="<?php echo $shipping_port['ship2']; ?>" class="form-control" /></td>
-                          </tr>
-                          <?php } 
-                             }        
-                                ?>
-                       </tbody>
-                    </table>
-                 </div>
-              </div>   
-
-            </div>
-            <div class="tab-pane" id="tab-data">
-              
-            </div>
-            <div class="tab-pane" id="tab-links">
-
-            </div>
-            <div class="tab-pane" id="tab-attribute">
-
-            </div>
-            <div class="tab-pane" id="tab-option">
-
-            </div>
-            <div class="tab-pane" id="tab-recurring">
-
-            </div>
-            <div class="tab-pane" id="tab-discount">
- 
-            </div>
-            <div class="tab-pane" id="tab-special">
-
-            </div>
-            <div class="tab-pane" id="tab-image">
-
-            </div>
-            <div class="tab-pane" id="tab-reward">
-
-            </div>
-            <div class="tab-pane" id="tab-design">
-
             </div>
 			
 			<?php ?>
 			
 			
 			<div class="tab-pane" id="tab-shipping">
- 
+              <div class="table-responsive">
+                
+				
+				<div class="form-group  required">
+				<label class="col-lg-2 control-label" for="input-points">
+					<span data-toggle="tooltip" title="Select the shiping port from where the product will be shipped">
+					Shipping Port</span>
+				</label>
+				
+				<div class="col-lg-10">
+												 
+				 <select name="shipping_port" id="selectport" class="form-control">
+				  <option value="">Select port</option>
+				  
+				  <option value="1" <?php if(count($shipping_port)>0){if($shipping_port['port']=='1'){ echo 'Selected="selected"';  } }?>  >India</option>
+				  <option value="2" <?php if(count($shipping_port)>0){if($shipping_port['port']=='2'){ echo 'Selected="selected"';  } }?> >UAE</option>
+				</select>
+				 
+												 
+				 <?php if ($error_shipping_port) { ?>
+				  <div class="text-danger"><?php echo $error_shipping_port; ?></div>
+				  <?php } ?>
+				 
+				</div>
+			  </div>
+							  
+							  
+							  
+				<div class="table-responsive">
+				
+				<table class="table table-bordered table-hover" id='ship_cost'>
+				  <thead>
+					<tr>
+					  <td class="text-left">Shipping Option</td>
+					  <td class="text-left">Cost (AED)</td>
+					</tr>
+				  </thead>
+				  <tbody>				
+					
+					<?php 
+					
+	if(count($shipping_port)>0){
+		if($shipping_port['port']=='1'){ ?>
+					
+					<tr>				
+					    <td class="text-left" >India -> Other GCC</td>
+					    <td class="text-right"><input type="text" name="shipcost1" placeholder="Value in AED" value="<?php echo $shipping_port['ship1']; ?>" class="form-control" /></td>
+					  </tr>					
+					  <tr>					
+					    <td class="text-left" >India -> UAE</td>
+					    <td class="text-right"><input type="text" name="shipcost2" placeholder="Value in AED" value="<?php echo $shipping_port['ship2']; ?>" class="form-control" /></td>
+					  </tr>			
+		<?php }else{ ?>
+					<tr>					
+					    <td class="text-left" >UAE -> Other GCC</td>
+					    <td class="text-right"><input type="text" name="shipcost1" placeholder="Value in AED" value="<?php echo $shipping_port['ship1']; ?>" class="form-control" /></td>
+					  </tr>
+					
+					  <tr>					
+					    <td class="text-left" >UAE -> India</td>
+					    <td class="text-right"><input type="text" name="shipcost2" placeholder="Value in AED" value="<?php echo $shipping_port['ship2']; ?>" class="form-control" /></td>
+					  </tr>
+		<?php } 
+		
+   }				
+					?>
+					
+				  </tbody>
+				</table>
+				</div>
+				
+				
+              </div>
             </div>
 			
           </div>
