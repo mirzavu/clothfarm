@@ -33,7 +33,7 @@ class ControllerMerchantDashboard extends Controller {
 		}
 
 		$data['token'] = $this->session->data['mtoken']; 
-
+		$data['quick_product'] = $this->url->link('catalog/product/quickadd', 'token=' . $this->session->data['mtoken'], 'SSL');
 		$data['header'] = $this->load->controller('merchant/header'); 
 		$data['column_left'] = $this->load->controller('merchant/column_left'); 
 		$data['order'] = $this->load->controller('dashboard/order');
