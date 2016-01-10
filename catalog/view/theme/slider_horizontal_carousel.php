@@ -461,7 +461,7 @@ foreach ($products as $product) :
                 <li><a onclick="compare_theme.add('<?php echo $product['product_id']; ?>');" data-toggle="tooltip" title="<?php echo $button_compare; ?>"><span class="icon flaticon-bars34"></span></a></li>
 
                 <?php if (!isset($customisation_products["product_catalog_mode"][$store_id]) || $customisation_products["product_catalog_mode"][$store_id] != 1) : ?>
-                <li><a onclick="cart_theme.add('<?php echo $product['product_id']; ?>');" class="add-to-cart open-cart7" data-toggle="tooltip" title="<?php echo $button_cart; ?>"><span class="icon flaticon-shopping66"></span></a></li>
+                <li><a href="<?php echo $product['href']; ?>" class="add-to-cart open-cart7" data-toggle="tooltip" title="<?php echo $button_cart; ?>"><span class="icon flaticon-shopping66"></span></a></li>
                <?php endif; ?>
             </ul>
 

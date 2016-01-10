@@ -120,7 +120,7 @@ if (isset($type_category) && $type_category == 1) {
                     <ul class="product-controls-list">
                         <li><a onclick="wishlist_theme.add('<?php echo $product['product_id']; ?>');" data-toggle="tooltip" title="<?php echo $button_wishlist; ?>"><span class="icon flaticon-heart68"></span></a></li>
                         <li><a onclick="compare_theme.add('<?php echo $product['product_id']; ?>');" data-toggle="tooltip" title="<?php echo $button_compare; ?>"><span class="icon flaticon-bars34"></span></a></li>
-                        <li><a onclick="cart_theme.add('<?php echo $product['product_id']; ?>');" class="add-to-cart7 open-cart7" data-toggle="tooltip" title="<?php echo $button_cart; ?>"><span class="icon flaticon-shopping66"></span></a></li>
+                        <li><a href="<?php echo $product['href']; ?>" class="add-to-cart7 open-cart7" data-toggle="tooltip" title="<?php echo $button_cart; ?>"><span class="icon flaticon-shopping66"></span></a></li>
 
                         <?php if (!isset($customisation_products["quick_status"][$store_id]) || $customisation_products["quick_status"][$store_id] != 0) : ?>
 

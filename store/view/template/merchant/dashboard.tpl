@@ -10,7 +10,7 @@
   <div class="page-header">
     <div class="container-fluid">
       <h1><?php echo $heading_title; ?></h1>
-      <a href="<?= $quick_product?>"><button style="background-color: #2D902D;" type="button" id="button-filter" class="btn btn-primary pull-right"><i class="fa  fa-lg fa-bolt"></i>  QUICK ADD A PRODUCT</button></a>
+      <a href="<?= $quick_product?>"><button style="background-color: #3366ff;" type="button" id="button-filter" class="btn btn-primary pull-right"><i class="fa  fa-lg fa-bolt"></i>  QUICK ADD A PRODUCT</button></a>
      
     </div>
   </div>

@@ -481,9 +481,13 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                     <div style="display: none">
                               <div id="stitch-pop">
                                   <div id="popup-box2">
+                                    <div><input id="terms-check" type="checkbox" style="width: 17px;margin-left: -18px;float: left;margin-top: -2px;">
+                                      <a target="_blank" href="http://clothfarm.com/index.php?route=information/information&information_id=12"><div style="width: 404px;height: 10px;margin-top: 0px;margin-bottom: 8px;">
+                                      </div></a>
+                                    </div>
                                      <form class="form-inline" id="signup1" action="/clothfarm/index.php" method="get">
                                         <div>
-                                           <button id="stitch-material" style="width: 208px;height: 46px;" class="btn-cool invert">
+                                           <button id="stitch-ready" style="width: 208px;height: 46px;" class="btn-cool invert">
                                            <span class="icon flaticon-new78"></span>
                                            STITCH FARM                </button>
                                            <button id="no-stitch" style="width: 208px;height: 46px;margin-left: 68px;" name="submit" type="submit" class="btn-cool invert">
@@ -506,6 +510,10 @@ echo '<div class="product_page_type'.$page_type.'">'.$breadcrumbs.'</div>';
                     <div style="display: none">
                               <div id="stitch-pop">
                                   <div id="popup-box2">
+                                     <div><input id="terms-check" type="checkbox" style="width: 17px;margin-left: -18px;float: left;margin-top: -2px;">
+                                      <a target="_blank" href="http://clothfarm.com/index.php?route=information/information&information_id=12"><div style="width: 404px;height: 10px;margin-top: 0px;margin-bottom: 8px;">
+                                      </div></a>
+                                    </div>
                                      <form class="form-inline" id="signup1" action="/clothfarm/index.php" method="get">
                                         <div>
                                            <button id="stitch-material" style="width: 208px;height: 46px;" class="btn-cool invert">

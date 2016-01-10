@@ -412,9 +412,23 @@ $(document).ready(function() {
 	});
 
 	$('#stitch-material').on("click",function(){
+		if(!$('#terms-check').is(':checked'))
+			return;
 		$.fancybox.close();
 		$('#content').hide();
 		$('#content-dress').show();
+		$('html,body').animate({
+        scrollTop: $("#header_type1").offset().top},
+        'slow');
+		//$('#measure-trigger').click();
+	});
+
+	$('#stitch-ready').on("click",function(){
+		if(!$('#terms-check').is(':checked'))
+			return;
+		$.fancybox.close();
+		$('#content').hide();
+		$('#content-new').show();
 		$('html,body').animate({
         scrollTop: $("#header_type1").offset().top},
         'slow');
